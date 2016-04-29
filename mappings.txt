@@ -1,0 +1,145 @@
+NAF                     FoLiA
+=================================================================================
+NAF/@xml:lang           meta[@id="language"]    (if native metadata is used and if available at all, not mandatory in FoLiA)
+NAF/@version            FoLiA/@version          mandatory in both (describes format version in both, not document version)
+n/a                     FoLiA/@xml:id           ID of the document, mandatory, may correspond to NAF/public/publicID? But is optional in NAF
+NafHeader               metadata/annotations
+fileDesc                metadata[@type="native"]
+fileDesc/@title  (opt)  meta[@id="title"] (opt)
+fileDesc/@author (opt)  meta[@id="author"] (opt)
+
+fileDesc/@X             meta[@id="X"]
+n/a                     meta[@id="Y"]   
+ -> FoLiA native metadata is a simple key->value store. Can attributes be added at will to fileDesc in NAF?
+
+public/publicId (opt)   FoLiA/@xml:id or a metadata entry (meta)
+public/uri (opt)        a metadata entry (meta)
+
+linguisticProcessors    metadata/annotations
+ -> Each FoLiA annotation type has a corresponding declaration element, which can set annotator/annotatortype (i.e the processor), timestamps are set individually on the annotations rather than on this level. @version would just be part of @annotator in FoLiA, @hostname is not supported.
+
+raw  (opt)              text/@t (opt)    can contain the entire text of the document, text can be embedded/reduplicated on every structure level in FoLiA if desired
+
+topics/topic             text/domain
+ @source                 @annotator
+ value or @uri           @class
+ @method                 feat[subset="@method"]   (not prescribed by FoLiA, use feature mechanism)
+-> domain annotation can occur within any structural element in FoLiA, it needs not cover the whole text
+
+text/wf                 text//w
+ @id                    @xml:id
+ n/a                    @class (opt, set-dependent, ucto for instance assigns classes like "WORD", "PUNCTUATION", "URL")
+ n/a                    @space (value defaults to "yes", can be "no", used to reconstruct untokenised text)
+ @sent                  (Is explicit in the structure)
+ @length                Is implicit from text content (@t)
+ @offset                @offset  (but usually left implicit, can be recomputed by library if need be)
+                        @ref     offset is relative to this element (default: text content of parent element)
+ value                  t        (text content element)
+-> FoLiA w elements (words/tokens) occur in their hierarchical structural context (for instance within a sentence [s], paragraph [p], division [div], etc...) rather than as a flat itemisation. Maintaining document structure is one of the defining characteristics of FoLiA.
+
+terms/term              text//w   (see note at end)
+ @id                    @xml:id  
+ @type (opt)            n/a  (closed/open vocabularies are property of the set definition, for instance for lemma-annotation)
+ @pos  (opt)            pos/@class    [actual classes (i.e. tagset) never prescribed by FoLiA, depends on used set definition]
+ @lemma   (opt)         lemma/@class 
+ @morphofeat  (opt)     morphology  (complex layer in FoLiA, not a single attribute!) 
+ @case (opt)            should be feature of pos (set-dependent), e.g. pos/@feat[subset="case"] 
+-> FoLiA does not make the token/term distinction like NAF does. The w element can be considered more like a term and it is not prohibited to have spaces in its text (technically multiple tokens). Alternatively, some types of terms may be represented as FoLiA entities.
+
+
+sentiment               text//subjectivity    (I'm not too happy about the FoLiA tag name, 'sentiment' would be better but this has existed historically (used in VU-DNC for instance), considering renaming in FoLiA v1.2)
+ @resource              @set (i.e, a FoLiA Set Definition covering the vocabulary)
+ @polarity              @class or feat/[@subset="polarity"] ?
+ @strength              @class or feat/[@subset="strength"] ?
+ @subjectivity          @class or feat/[@subset="subjectivity"] ?
+ @sentiment_semantic_type         @class or feat/[@subset="semantic_type"] ?
+ @sentiment_modifier              @class or feat/[@subset="modifier"] ?
+ @sentiment_product_feature       @class or feat/[@subset="product"] ?
+-> This is a bit underdeveloped in FoLiA. I think we can pre-define some subsets based on NAF attributes (polarity/strength/subjectivity/smeantic_type/modifier) for FoLiA v1.2 (which implies they can be used directly as attributes)
+
+
+externalRef             alignment
+@reftype                @class   (type of reference/alignment/relation) [set-dependent]
+@resource               @xlink:href  (expected to be a proper URI pointing to the resource in FoLiA)
+@reftype                @format     [proposed for FoLiA v1.2: expresses the format of the resource as a mime type]
+@reference              aref/@id  (alignment links to the external resource, the aref alement points inside it if necessary)
+@status                 use a feat
+@source                 @annotator
+@confidence             @confidence
+-> In FoLiA, do not include alignments to point to the external source of any classes, this is solved in the Set Definition instead using the conceptlink.
+
+
+term/component          w/morphology/morpheme
+ (see NAF:term  and FOLIA:text//w)
+-> Compound terms are considered as part of morphology in FoLiA
+
+markables/mark          //entities/entity  (annotation layer can be embedded in any structural element)
+@source                 @set
+-> Entities can be used fairly generically for many purposes in FoLiA
+
+
+deps/dep                //dependencies/dependency  (annotation layer can be embedded in any structural element)
+@from                   hd/wref/@id  (Head of the dependency relation, refers back to a w, multiple wrefs allowed)
+@to                     dep/wref/@id (Dependent in the dependency relation, refers back to a w, multiple wrefs allowed)
+@rfunc                  @class  [set-dependent]
+
+
+constituency/tree       syntax/su  (su is short for syntactic unit)
+nt/@label               su/@class  [set-dependent]
+t/span/target           su/wref    (multiple wrefs allowed)
+edge                    (expressed by XML structure)
+
+
+chunks/chunk            chunking/chunk
+span/target             wref
+
+entities/entity         entities/entity
+@id (req)               @xml:id (opt)
+@type                   @class [set-dependent]
+@source                 @annotator
+references/span/target  wref
+@head="yes"             embed wref(s) within hd 
+
+coreference/coref       coreferences/coreferencechain
+@type                   @class [set-dependent]
+span                    coferencelink
+target                  wref
+@head="yes"             embed wref(s) within hd
+
+opinions/opinion        n/a (only subjectivity element exists, can be considered for future implementation)
+
+attribution/statement   n/a (can be considered for future implementation)
+
+srl/predicate/role      semroles/semrole
+@id                     @xml:id
+@semRole                @class      [set-dependent]
+@confidence             @confidence
+span/target             wref            
+-> In FoLiA, roles are not grouped at predicate level, can be considered for future implementation
+
+
+Events as Coreference clusters      Would work in FoLiA as well
+
+timeExpressions/timex3  Use entities and features
+
+temporalRelations/tlink n/a (can be considered for future implementation)
+
+factuality              n/a (can be considered for future implementation)
+
+
+----------------------------------------------------------------------------------------------------------
+
+This is a non-exhaustive list of things that FoLiA contains but are currently not found in NAF, they can not be mapped:
+ - extensive structure annotation (NAF only knows sentences and paragraph),
+   FoLiA defines more structure elements (TEI-inspired), such as divisions, lists/listitems, figures/captions, tables, events (e.g tweets, chat messages etc), quotes, gaps, entries (e.g. dictionary entries), footnotes/references.
+ - phonology, phonetic representations, linking to audio with time offsets
+ - morphology (though to lesser extend covered by naf:term/@morphofeat and naf:term/component)
+ - lexical semantic sense annotation (folia:sense element)
+ - language identification (folia:lang element)
+ - correction for any type of annotation (including orthography), including suggestions for correction (folia:correction)
+ - error detection (marking of errors) (folia:errordetection)
+ - alternatives for any time of annotation (including orthography) (folia:alt, folia:altlayers)
+ - text markup/layout (styling, hyperlinks, linebreaks, whitespace, gaps) (folia:t-*, folia:br)
+ - higher-order annotation of arbitrary substrings (folia:str)
+ - metrics, the ability to associate some measure (key->value) with any annotation (folia:metric)
+ - description, ability for a description to be associated with any annotation (folia:desc)
