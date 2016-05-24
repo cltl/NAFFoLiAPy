@@ -47,7 +47,7 @@ terms/term              text//w   (see note at end)
 -> FoLiA does not make the token/term distinction like NAF does. The w element can be considered more like a term and it is not prohibited to have spaces in its text (technically multiple tokens). Alternatively, some types of terms may be represented as FoLiA entities.
 
 
-sentiment               text//subjectivity    (I'm not too happy about the FoLiA tag name, 'sentiment' would be better but this has existed historically (used in VU-DNC for instance), considering renaming in FoLiA v1.2)
+sentiment               text//subjectivity    (I'm not too happy about the FoLiA tag name, 'sentiment' would be better but this has existed historically (used in VU-DNC for instance), considering renaming in FoLiA v1.3)
  @resource              @set (i.e, a FoLiA Set Definition covering the vocabulary)
  @polarity              @class or feat/[@subset="polarity"] ?
  @strength              @class or feat/[@subset="strength"] ?
@@ -55,13 +55,13 @@ sentiment               text//subjectivity    (I'm not too happy about the FoLiA
  @sentiment_semantic_type         @class or feat/[@subset="semantic_type"] ?
  @sentiment_modifier              @class or feat/[@subset="modifier"] ?
  @sentiment_product_feature       @class or feat/[@subset="product"] ?
--> This is a bit underdeveloped in FoLiA. I think we can pre-define some subsets based on NAF attributes (polarity/strength/subjectivity/smeantic_type/modifier) for FoLiA v1.2 (which implies they can be used directly as attributes)
+-> This is a bit underdeveloped in FoLiA. I think we can pre-define some subsets based on NAF attributes (polarity/strength/subjectivity/smeantic_type/modifier) for FoLiA v1.3 (which implies they can be used directly as attributes)
 
 
 externalRef             alignment
 @reftype                @class   (type of reference/alignment/relation) [set-dependent]
 @resource               @xlink:href  (expected to be a proper URI pointing to the resource in FoLiA)
-@reftype                @format     [proposed for FoLiA v1.2: expresses the format of the resource as a mime type]
+@reftype                @format     (expresses the format of the resource as a mime type, since FoLiA v1.2)
 @reference              aref/@id  (alignment links to the external resource, the aref alement points inside it if necessary)
 @status                 use a feat
 @source                 @annotator
