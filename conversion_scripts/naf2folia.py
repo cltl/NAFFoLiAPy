@@ -49,6 +49,30 @@ def convert_text_layer(nafparser, foliadoc):
         prevsent_id = sent_id
     return textbody
 
+def convert_terms(nafparser, foliadoc):
+    pos_declared = lemma_declared = False
+    for naf_term in nafparser.get_terms():
+        span = [ foliadoc.id + '.w.' + w_id for w_id in naf_term.get_span().get_span_ids() ]
+        if len(span) > 1:
+            #NAF term spans multiple tokens
+            print("WARNING: NAF term " + naf_term.get_id() + " spans multiple tokens. Conversion not supported yet!" ,file=sys.stderr)
+        else:
+            word = foliadoc.index[span[0]]
+
+            naf_pos = naf_term.get_pos()
+            if naf_pos:
+                if not pos_declared:
+                    foliadoc.declare(folia.PosAnnotation, "https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_pos.foliaset.xml")
+                    pos_declared = True
+                word.append(folia.PosAnnotation, cls=naf_pos)
+
+            naf_lemma = naf_term.get_lemma()
+            if naf_lemma:
+                if not lemma_declared:
+                    foliadoc.declare(folia.LemmaAnnotation, "https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_lemma.foliaset.xml")
+                    lemma_declared = True
+                word.append(folia.LemmaAnnotation, cls=naf_lemma)
+
 
 def naf2folia(naffile, docid=None):
     nafparser = naf.KafNafParser(naffile)
@@ -63,6 +87,7 @@ def naf2folia(naffile, docid=None):
     foliadoc.metadata['language'] = nafparser.get_language()
 
     textbody = convert_text_layer(nafparser,foliadoc)
+    convert_terms(nafparser, foliadoc)
 
     return foliadoc
 
@@ -77,6 +102,7 @@ def main():
     args = parser.parse_args()
 
     foliadoc = naf2folia(args.naffile, args.id)
+
     if args.foliafile:
         foliadoc.save(args.foliafile)
     else:
