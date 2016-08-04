@@ -30,6 +30,8 @@ def naf2folia(naffile, docid=None):
     prevsent_id = None
     prevpara_id = None
     paragraph = None
+    prevword = None
+    prev_naf_token = None
     for naf_token in nafparser.get_tokens():
         para_id = naf_token.get_para()
         sent_id = naf_token.get_sent()
@@ -45,8 +47,13 @@ def naf2folia(naffile, docid=None):
                 sentence = textbody.append(folia.Sentence, id=docid + '.s.' + sent_id)
 
         token_id = naf_token.get_id()
+        if prev_naf_token is not None and int(prev_naf_token.get_offset()) + int(prev_naf_token.get_length()) == int(naf_token.get_offset()):
+            prevword.space = False
         word = sentence.append(folia.Word, id=docid + '.w.' + token_id)
         word.append(folia.TextContent, naf_token.get_text(), offset=naf_token.get_offset(), ref=textbody)
+
+        prevword = word
+        prev_naf_token = naf_token
 
         prevpara_id = para_id
         prevsent_id = sent_id
