@@ -13,19 +13,9 @@ from pynlpl.formats import folia
 VERSION = '0.1'
 
 
-def naf2folia(naffile, docid=None):
-    nafparser = naf.KafNafParser(naffile)
-
-    if not docid:
-        #derive document ID from filename
-        docid = os.path.basename(naffile).split('.')[0]
-
-    foliadoc = folia.Document(id=docid)
-    foliadoc.declare(folia.Word, 'undefined')
-    foliadoc.declare(folia.Sentence, 'undefined')
-
+def convert_text_layer(nafparser, foliadoc):
     textbody = foliadoc.append(folia.Text)
-    #TODO: add raw text to textbody
+    textbody.append(folia.TextContent, nafparser.get_raw())
 
     prevsent_id = None
     prevpara_id = None
@@ -39,17 +29,17 @@ def naf2folia(naffile, docid=None):
             if prevpara_id is None:
                 #first paragraph, declare for completion's sake
                 foliadoc.declare(folia.Paragraph, 'undefined')
-            paragraph = textbody.append(folia.Paragraph, id=docid + '.p.' + para_id)
+            paragraph = textbody.append(folia.Paragraph, id=foliadoc.id+ '.p.' + para_id)
         if sent_id != prevsent_id:
             if paragraph:
-                sentence = paragraph.append(folia.Sentence, id=docid + '.s.' + sent_id)
+                sentence = paragraph.append(folia.Sentence, id=foliadoc.id+ '.s.' + sent_id)
             else:
-                sentence = textbody.append(folia.Sentence, id=docid + '.s.' + sent_id)
+                sentence = textbody.append(folia.Sentence, id=foliadoc.id+ '.s.' + sent_id)
 
         token_id = naf_token.get_id()
         if prev_naf_token is not None and int(prev_naf_token.get_offset()) + int(prev_naf_token.get_length()) == int(naf_token.get_offset()):
             prevword.space = False
-        word = sentence.append(folia.Word, id=docid + '.w.' + token_id)
+        word = sentence.append(folia.Word, id=foliadoc.id+ '.w.' + token_id)
         word.append(folia.TextContent, naf_token.get_text(), offset=naf_token.get_offset(), ref=textbody)
 
         prevword = word
@@ -57,6 +47,22 @@ def naf2folia(naffile, docid=None):
 
         prevpara_id = para_id
         prevsent_id = sent_id
+    return textbody
+
+
+def naf2folia(naffile, docid=None):
+    nafparser = naf.KafNafParser(naffile)
+
+    if not docid:
+        #derive document ID from filename
+        docid = os.path.basename(naffile).split('.')[0]
+
+    foliadoc = folia.Document(id=docid)
+    foliadoc.declare(folia.Word, 'undefined')
+    foliadoc.declare(folia.Sentence, 'undefined')
+    foliadoc.metadata['language'] = nafparser.get_language()
+
+    textbody = convert_text_layer(nafparser,foliadoc)
 
     return foliadoc
 
