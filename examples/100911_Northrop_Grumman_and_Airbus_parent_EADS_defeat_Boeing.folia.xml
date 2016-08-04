@@ -1,0 +1,3630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="folia.xsl"?>
+<FoLiA xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ilk.uvt.nl/folia" xml:id="untitleddoc" generator="libfolia-v0.10">
+  <metadata type="native">
+    <annotations>
+      <token-annotation annotator="ucto" annotatortype="auto" datetime="2016-08-04T10:40:45" set="tokconfig-en"/>
+    </annotations>
+  </metadata>
+  <text xml:id="untitleddoc.text">
+    <p xml:id="untitleddoc.p.1">
+      <s xml:id="untitleddoc.p.1.s.1">
+        <w xml:id="untitleddoc.p.1.s.1.w.1" class="WORD">
+          <t>Northrop</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.2" class="WORD">
+          <t>Grumman</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.3" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.4" class="WORD">
+          <t>Airbus</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.5" class="WORD">
+          <t>parent</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.6" class="WORD">
+          <t>EADS</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.7" class="WORD">
+          <t>defeat</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.8" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.9" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.10" class="WORD">
+          <t>$</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.11" class="NUMBER">
+          <t>40</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.12" class="WORD">
+          <t>billion</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.13" class="WORD">
+          <t>US</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.14" class="WORD">
+          <t>airtanker</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.15" class="WORD">
+          <t>contract</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.16" class="WORD">
+          <t>March</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.17" class="NUMBER" space="no">
+          <t>01</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.18" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.19" class="NUMBER">
+          <t>2008</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.20" class="WORD">
+          <t>Northrop</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.21" class="WORD">
+          <t>Grumman</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.22" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.23" class="WORD">
+          <t>Airbus</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.24" class="WORD">
+          <t>parent</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.25" class="WORD">
+          <t>company</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.26" class="WORD">
+          <t>European</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.27" class="WORD">
+          <t>Aeronautic</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.28" class="WORD">
+          <t>Defence</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.29" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.30" class="WORD">
+          <t>Space</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.31" class="WORD">
+          <t>Company</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.32" class="WORD">
+          <t>EADS</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.33" class="ABBREVIATION">
+          <t>N.V.</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.34" class="PUNCTUATION" space="no">
+          <t>(</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.35" class="WORD" space="no">
+          <t>EADS</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.36" class="PUNCTUATION">
+          <t>)</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.37" class="WORD">
+          <t>have</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.38" class="WORD">
+          <t>unexpectedly</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.39" class="WORD">
+          <t>defeated</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.40" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.41" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.42" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.43" class="WORD">
+          <t>US$</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.44" class="NUMBER">
+          <t>40</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.45" class="WORD">
+          <t>billion</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.46" class="PUNCTUATION" space="no">
+          <t>(</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.47" class="WORD">
+          <t>GB</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.48" class="PUNCTUATION">
+          <t>#</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.49" class="NUMBER">
+          <t>20.1</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.50" class="WORD" space="no">
+          <t>billion</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.51" class="PUNCTUATION">
+          <t>)</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.52" class="WORD">
+          <t>contract</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.53" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.54" class="WORD">
+          <t>supply</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.55" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.56" class="WORD">
+          <t>United</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.57" class="WORD">
+          <t>States</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.58" class="WORD">
+          <t>Air</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.59" class="WORD">
+          <t>Force</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.60" class="PUNCTUATION" space="no">
+          <t>(</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.61" class="WORD" space="no">
+          <t>USAF</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.62" class="PUNCTUATION">
+          <t>)</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.63" class="WORD">
+          <t>with</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.64" class="NUMBER">
+          <t>179</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.65" class="WORD">
+          <t>new</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.66" class="WORD">
+          <t>aerial</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.67" class="WORD">
+          <t>refueling</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.68" class="WORD">
+          <t>tankers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.69" class="WORD">
+          <t>at</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.70" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.71" class="WORD">
+          <t>rate</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.72" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.73" class="NUMBER">
+          <t>15</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.74" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.75" class="WORD" space="no">
+          <t>year</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.1.w.76" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.2">
+        <w xml:id="untitleddoc.p.1.s.2.w.1" class="WORD">
+          <t>It</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.2" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.3" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.4" class="WORD">
+          <t>biggest</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.5" class="WORD">
+          <t>contract</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.6" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.7" class="WORD">
+          <t>its</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.8" class="WORD">
+          <t>kind</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.9" class="WORD">
+          <t>since</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.10" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.11" class="WORD">
+          <t>Joint</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.12" class="WORD">
+          <t>Strike</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.13" class="WORD">
+          <t>Fighter</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.14" class="WORD" space="no">
+          <t>program</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.2.w.15" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.3">
+        <w xml:id="untitleddoc.p.1.s.3.w.1" class="WORD">
+          <t>That</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.2" class="WORD">
+          <t>contract</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.3" class="WORD">
+          <t>was</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.4" class="WORD">
+          <t>fought</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.5" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.6" class="WORD">
+          <t>between</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.7" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.8" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.9" class="WORD">
+          <t>Lockheed</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.10" class="WORD" space="no">
+          <t>Martin</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.11" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.12" class="WORD">
+          <t>Lockheed</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.13" class="WORD">
+          <t>ultimately</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.14" class="WORD">
+          <t>winning</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.15" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.16" class="WORD" space="no">
+          <t>contest</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.3.w.17" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.4">
+        <w xml:id="untitleddoc.p.1.s.4.w.1" class="WORD">
+          <t>JSA</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.2" class="WORD">
+          <t>Research</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.3" class="WORD">
+          <t>defence</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.4" class="WORD">
+          <t>analysist</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.5" class="WORD">
+          <t>Paul</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.6" class="WORD">
+          <t>Nesbit</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.7" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.8" class="WORD">
+          <t>that</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.9" class="WORD" space="no">
+          <t>Maintenance</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.10" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.11" class="WORD">
+          <t>Repair</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.12" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.13" class="WORD">
+          <t>Overhaul</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.14" class="PUNCTUATION" space="no">
+          <t>(</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.15" class="WORD" space="no">
+          <t>MRO</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.16" class="PUNCTUATION">
+          <t>)</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.17" class="WORD">
+          <t>operations</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.18" class="WORD">
+          <t>across</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.19" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.20" class="WORD">
+          <t>aircraft</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.21" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.22" class="WORD">
+          <t>s</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.23" class="WORD-COMPOUND">
+          <t>fifty-year</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.24" class="WORD">
+          <t>service</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.25" class="WORD">
+          <t>life</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.26" class="WORD">
+          <t>could</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.27" class="WORD">
+          <t>push</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.28" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.29" class="WORD">
+          <t>value</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.30" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.31" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.32" class="WORD">
+          <t>contract</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.33" class="WORD">
+          <t>as</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.34" class="WORD">
+          <t>high</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.35" class="WORD">
+          <t>as</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.36" class="WORD">
+          <t>US$</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.37" class="NUMBER">
+          <t>100</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.38" class="WORD" space="no">
+          <t>billion</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.4.w.39" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.5">
+        <w xml:id="untitleddoc.p.1.s.5.w.1" class="WORD">
+          <t>Northrop</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.2" class="WORD">
+          <t>Grumman</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.3" class="WORD">
+          <t>CEO</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.4" class="WORD">
+          <t>Ron</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.5" class="WORD">
+          <t>Sugar</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.6" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.7" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.8" class="WORD">
+          <t>an</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.9" class="WORD">
+          <t>interview</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.10" class="WORD">
+          <t>``Everyone</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.11" class="WORD">
+          <t>told</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.12" class="WORD">
+          <t>us</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.13" class="WORD">
+          <t>we</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.14" class="WORD">
+          <t>were</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.15" class="WORD" space="no">
+          <t>crazy</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.16" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.17" class="WORD">
+          <t>that</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.18" class="WORD">
+          <t>we</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.19" class="WORD">
+          <t>had</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.20" class="WORD">
+          <t>no</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.21" class="WORD" space="no">
+          <t>chance</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.5.w.22" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.6">
+        <w xml:id="untitleddoc.p.1.s.6.w.1" class="WORD">
+          <t>But</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.2" class="WORD">
+          <t>we</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.3" class="WORD">
+          <t>took</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.4" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.5" class="WORD">
+          <t>big</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.6" class="WORD">
+          <t>swing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.7" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.8" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.9" class="WORD">
+          <t>this</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.10" class="WORD" space="no">
+          <t>case</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.11" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.12" class="WORD">
+          <t>we</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.13" class="WORD">
+          <t>hit</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.14" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.15" class="WORD">
+          <t>home</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.16" class="WORD" space="no">
+          <t>run</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.6.w.17" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.7">
+        <w xml:id="untitleddoc.p.1.s.7.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.3" class="WORD">
+          <t>USAF</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.4" class="WORD">
+          <t>officials</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.5" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.6" class="WORD">
+          <t>that</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.7" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.8" class="WORD">
+          <t>contract</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.9" class="WORD">
+          <t>had</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.10" class="WORD">
+          <t>been</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.11" class="WORD">
+          <t>awarded</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.12" class="WORD">
+          <t>based</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.13" class="WORD">
+          <t>on</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.14" class="WORD" space="no">
+          <t>competence</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.15" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.16" class="WORD">
+          <t>track</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.17" class="WORD">
+          <t>record</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.18" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.19" class="WORD">
+          <t>competitive</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.20" class="WORD" space="no">
+          <t>pricing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.21" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.22" class="WORD">
+          <t>with</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.23" class="WORD">
+          <t>UBS</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.24" class="WORD">
+          <t>analyst</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.25" class="WORD">
+          <t>David</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.26" class="WORD">
+          <t>Strauss</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.27" class="WORD">
+          <t>saying</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.28" class="WORD">
+          <t>``The</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.29" class="WORD">
+          <t>key</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.30" class="WORD">
+          <t>decision</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.31" class="WORD">
+          <t>was</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.32" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.33" class="WORD">
+          <t>amount</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.34" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.35" class="WORD">
+          <t>fuel</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.36" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.37" class="WORD">
+          <t>bigger</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.38" class="WORD">
+          <t>plane</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.39" class="WORD">
+          <t>could</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.40" class="WORD" space="no">
+          <t>carry</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.7.w.41" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.8">
+        <w xml:id="untitleddoc.p.1.s.8.w.1" class="WORD">
+          <t>In</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.2" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.3" class="WORD">
+          <t>armed</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.4" class="WORD" space="no">
+          <t>services</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.5" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.6" class="WORD">
+          <t>you</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.7" class="WORD">
+          <t>can</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.8" class="WORD">
+          <t>never</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.9" class="WORD">
+          <t>have</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.10" class="WORD">
+          <t>too</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.11" class="WORD">
+          <t>much</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.12" class="WORD">
+          <t>gas</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.13" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.14" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.15" class="WORD" space="no">
+          <t>air</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.8.w.16" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.9">
+        <w xml:id="untitleddoc.p.1.s.9.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.3" class="WORD">
+          <t>USAF</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.4" class="WORD">
+          <t>also</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.5" class="WORD">
+          <t>denied</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.6" class="WORD">
+          <t>that</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.7" class="WORD">
+          <t>creating</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.8" class="WORD">
+          <t>jobs</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.9" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.10" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.11" class="WORD">
+          <t>US</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.12" class="WORD">
+          <t>was</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.13" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.14" class="WORD" space="no">
+          <t>factor</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.15" class="PUNCTUATION">
+          <t>;</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.16" class="WORD">
+          <t>job</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.17" class="WORD">
+          <t>supply</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.18" class="WORD">
+          <t>had</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.19" class="WORD">
+          <t>been</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.20" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.21" class="WORD">
+          <t>reason</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.22" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.23" class="WORD">
+          <t>were</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.24" class="WORD">
+          <t>expected</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.25" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.26" class="WORD" space="no">
+          <t>win</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.27" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.28" class="WORD">
+          <t>with</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.29" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.30" class="WORD">
+          <t>airframer</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.31" class="WORD">
+          <t>promising</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.32" class="NUMBER">
+          <t>44,000</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.33" class="WORD">
+          <t>new</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.34" class="WORD">
+          <t>positions</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.35" class="WORD">
+          <t>at</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.36" class="NUMBER">
+          <t>300</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.37" class="WORD">
+          <t>suppliers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.38" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.39" class="NUMBER">
+          <t>40</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.40" class="WORD" space="no">
+          <t>states</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.9.w.41" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.10">
+        <w xml:id="untitleddoc.p.1.s.10.w.1" class="WORD">
+          <t>The</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.2" class="WORD">
+          <t>Northrop</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.3" class="WORD">
+          <t>Grumman</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.4" class="WORD" space="no">
+          <t>KC</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.5" class="NUMBER">
+          <t>-45</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.6" class="WORD">
+          <t>tankers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.7" class="PUNCTUATION">
+          <t>-</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.8" class="WORD">
+          <t>more</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.9" class="WORD">
+          <t>often</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.10" class="WORD">
+          <t>known</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.11" class="WORD">
+          <t>as</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.12" class="WORD" space="no">
+          <t>KC</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.13" class="NUMBER" space="no">
+          <t>-30</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.14" class="WORD">
+          <t>s</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.15" class="PUNCTUATION">
+          <t>-</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.16" class="WORD">
+          <t>are</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.17" class="WORD">
+          <t>based</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.18" class="WORD">
+          <t>on</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.19" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.20" class="WORD">
+          <t>Airbus</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.21" class="WORD" space="no">
+          <t>A</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.22" class="NUMBER">
+          <t>330</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.23" class="WORD" space="no">
+          <t>MRTT</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.10.w.24" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.11">
+        <w xml:id="untitleddoc.p.1.s.11.w.1" class="WORD">
+          <t>The</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.2" class="WORD">
+          <t>first</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.3" class="WORD">
+          <t>four</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.4" class="WORD">
+          <t>aircraft</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.5" class="WORD">
+          <t>will</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.6" class="WORD">
+          <t>be</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.7" class="WORD">
+          <t>assembled</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.8" class="WORD">
+          <t>at</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.9" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.10" class="WORD">
+          <t>main</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.11" class="WORD">
+          <t>Airbus</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.12" class="WORD">
+          <t>factory</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.13" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.14" class="WORD" space="no">
+          <t>Toulouse</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.15" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.16" class="WORD">
+          <t>France</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.17" class="WORD">
+          <t>but</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.18" class="WORD">
+          <t>by</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.19" class="NUMBER" space="no">
+          <t>2010</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.20" class="NUMBER">
+          <t>-11</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.21" class="WORD">
+          <t>production</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.22" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.23" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.24" class="WORD">
+          <t>remainder</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.25" class="WORD">
+          <t>will</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.26" class="WORD">
+          <t>be</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.27" class="WORD">
+          <t>carried</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.28" class="WORD">
+          <t>out</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.29" class="WORD">
+          <t>at</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.30" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.31" class="WORD">
+          <t>facility</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.32" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.33" class="WORD" space="no">
+          <t>Mobile</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.34" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.35" class="WORD" space="no">
+          <t>Alabama</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.11.w.36" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.12">
+        <w xml:id="untitleddoc.p.1.s.12.w.1" class="WORD">
+          <t>This</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.2" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.3" class="WORD">
+          <t>thought</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.4" class="WORD">
+          <t>likely</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.5" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.6" class="WORD">
+          <t>create</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.7" class="NUMBER">
+          <t>1,500</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.8" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.9" class="NUMBER">
+          <t>2,000</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.10" class="WORD">
+          <t>jobs</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.11" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.12" class="WORD">
+          <t>support</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.13" class="NUMBER">
+          <t>25,000</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.14" class="WORD" space="no">
+          <t>others</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.15" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.16" class="NUMBER">
+          <t>60</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.17" class="PUNCTUATION">
+          <t>%</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.18" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.19" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.20" class="WORD">
+          <t>parts</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.21" class="WORD">
+          <t>will</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.22" class="WORD">
+          <t>be</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.23" class="WORD">
+          <t>supplied</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.24" class="WORD">
+          <t>by</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.25" class="WORD">
+          <t>domestic</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.26" class="WORD" space="no">
+          <t>manufacturers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.12.w.27" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.13">
+        <w xml:id="untitleddoc.p.1.s.13.w.1" class="WORD">
+          <t>EADS</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.2" class="WORD">
+          <t>had</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.3" class="WORD">
+          <t>previously</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.4" class="WORD">
+          <t>announced</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.5" class="WORD">
+          <t>plans</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.6" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.7" class="WORD">
+          <t>shift</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.8" class="WORD">
+          <t>much</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.9" class="WORD">
+          <t>production</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.10" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.11" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.12" class="WORD">
+          <t>US</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.13" class="WORD">
+          <t>due</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.14" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.15" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.16" class="WORD">
+          <t>current</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.17" class="WORD">
+          <t>weakness</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.18" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.19" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.20" class="WORD" space="no">
+          <t>dollar</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.13.w.21" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.14">
+        <w xml:id="untitleddoc.p.1.s.14.w.1" class="WORD">
+          <t>General</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.2" class="WORD">
+          <t>Arthur</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.3" class="WORD" space="no">
+          <t>Lichte</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.4" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.5" class="WORD">
+          <t>head</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.6" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.7" class="WORD">
+          <t>USAF</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.8" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.9" class="WORD">
+          <t>s</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.10" class="WORD">
+          <t>Mobility</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.11" class="WORD" space="no">
+          <t>Command</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.12" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.13" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.14" class="WORD">
+          <t>it</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.15" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.16" class="WORD">
+          <t>hoped</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.17" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.18" class="WORD">
+          <t>first</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.19" class="WORD">
+          <t>aircraft</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.20" class="WORD">
+          <t>can</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.21" class="WORD">
+          <t>be</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.22" class="WORD">
+          <t>tested</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.23" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.24" class="NUMBER">
+          <t>2010</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.25" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.26" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.27" class="WORD">
+          <t>operation</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.28" class="WORD">
+          <t>three</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.29" class="WORD">
+          <t>years</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.30" class="WORD" space="no">
+          <t>afterwards</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.14.w.31" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.15">
+        <w xml:id="untitleddoc.p.1.s.15.w.1" class="WORD">
+          <t>USAF</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.2" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.3" class="WORD">
+          <t>s</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.4" class="WORD">
+          <t>chief</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.5" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.6" class="WORD">
+          <t>staff</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.7" class="WORD">
+          <t>General</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.8" class="WORD">
+          <t>Duncan</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.9" class="WORD">
+          <t>McNab</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.10" class="WORD">
+          <t>stated</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.11" class="WORD">
+          <t>``The</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.12" class="WORD">
+          <t>tanker</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.13" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.14" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.15" class="WORD-COMPOUND">
+          <t>number-one</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.16" class="WORD">
+          <t>procurement</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.17" class="WORD">
+          <t>priority</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.18" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.19" class="WORD">
+          <t>us</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.20" class="WORD">
+          <t>right</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.21" class="WORD" space="no">
+          <t>now</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.15.w.22" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.16">
+        <w xml:id="untitleddoc.p.1.s.16.w.1" class="WORD">
+          <t>It</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.2" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.3" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.4" class="WORD">
+          <t>first</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.5" class="WORD">
+          <t>step</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.6" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.7" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.8" class="WORD">
+          <t>critical</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.9" class="WORD">
+          <t>commitment</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.10" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.11" class="WORD">
+          <t>recapitalize</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.12" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.13" class="WORD">
+          <t>aging</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.14" class="WORD">
+          <t>fleet</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.15" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.16" class="WORD" space="no">
+          <t>move</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.17" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.18" class="WORD" space="no">
+          <t>supply</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.19" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.20" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.21" class="WORD">
+          <t>position</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.22" class="WORD">
+          <t>assets</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.23" class="WORD" space="no">
+          <t>anywhere</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.16.w.24" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.17">
+        <w xml:id="untitleddoc.p.1.s.17.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.3" class="WORD">
+          <t>There</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.4" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.5" class="WORD">
+          <t>still</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.6" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.7" class="WORD">
+          <t>possibility</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.8" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.9" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.10" class="WORD">
+          <t>challenging</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.11" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.12" class="WORD" space="no">
+          <t>decision</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.13" class="PUNCTUATION">
+          <t>;</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.14" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.15" class="WORD">
+          <t>themselves</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.16" class="WORD">
+          <t>were</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.17" class="WORD">
+          <t>successfuly</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.18" class="WORD">
+          <t>challenged</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.19" class="WORD">
+          <t>by</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.20" class="WORD">
+          <t>Lockheed</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.21" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.22" class="WORD">
+          <t>Sikorsky</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.23" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.24" class="NUMBER">
+          <t>2006</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.25" class="WORD">
+          <t>over</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.26" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.27" class="WORD">
+          <t>US$</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.28" class="NUMBER">
+          <t>10</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.29" class="WORD">
+          <t>billion</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.30" class="WORD">
+          <t>contract</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.31" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.32" class="WORD">
+          <t>supply</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.33" class="WORD">
+          <t>search</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.34" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.35" class="WORD">
+          <t>rescue</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.36" class="WORD">
+          <t>helicopters</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.37" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.38" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.39" class="WORD" space="no">
+          <t>Pentagon</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.17.w.40" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.18">
+        <w xml:id="untitleddoc.p.1.s.18.w.1" class="WORD">
+          <t>A</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.2" class="WORD">
+          <t>statement</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.3" class="WORD">
+          <t>by</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.4" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.5" class="WORD">
+          <t>given</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.6" class="WORD">
+          <t>by</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.7" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.8" class="WORD">
+          <t>spokesman</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.9" class="WORD">
+          <t>William</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.10" class="WORD">
+          <t>Barksdale</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.11" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.12" class="WORD">
+          <t>``Obviously</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.13" class="WORD">
+          <t>we</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.14" class="WORD">
+          <t>are</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.15" class="WORD">
+          <t>very</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.16" class="WORD">
+          <t>disappointed</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.18.w.17" class="PUNCTUATION-MULTI">
+          <t>...</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.19">
+        <w xml:id="untitleddoc.p.1.s.19.w.1" class="WORD">
+          <t>Once</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.2" class="WORD">
+          <t>we</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.3" class="WORD">
+          <t>have</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.4" class="WORD">
+          <t>reviewed</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.5" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.6" class="WORD">
+          <t>details</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.7" class="WORD">
+          <t>behind</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.8" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.9" class="WORD" space="no">
+          <t>award</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.10" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.11" class="WORD">
+          <t>we</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.12" class="WORD">
+          <t>will</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.13" class="WORD">
+          <t>make</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.14" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.15" class="WORD">
+          <t>decision</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.16" class="WORD">
+          <t>concerning</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.17" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.18" class="WORD">
+          <t>possible</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.19" class="WORD" space="no">
+          <t>options</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.19.w.20" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.20">
+        <w xml:id="untitleddoc.p.1.s.20.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.3" class="WORD">
+          <t>Washington</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.4" class="WORD">
+          <t>senator</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.5" class="WORD">
+          <t>Patty</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.6" class="WORD" space="no">
+          <t>Murray</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.7" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.8" class="WORD">
+          <t>who</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.9" class="WORD">
+          <t>hails</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.10" class="WORD">
+          <t>from</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.11" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.12" class="WORD">
+          <t>same</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.13" class="WORD">
+          <t>state</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.14" class="WORD">
+          <t>where</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.15" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.16" class="WORD">
+          <t>bases</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.17" class="WORD">
+          <t>their</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.18" class="WORD">
+          <t>commercial</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.19" class="WORD">
+          <t>airliner</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.20" class="WORD" space="no">
+          <t>operations</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.21" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.22" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.23" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.24" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.25" class="WORD">
+          <t>critical</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.26" class="WORD">
+          <t>statement</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.27" class="WORD">
+          <t>``We</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.28" class="WORD">
+          <t>are</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.29" class="WORD">
+          <t>shocked</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.30" class="WORD">
+          <t>that</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.31" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.32" class="WORD">
+          <t>Air</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.33" class="WORD">
+          <t>Force</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.34" class="WORD">
+          <t>tapped</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.35" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.36" class="WORD">
+          <t>European</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.37" class="WORD">
+          <t>company</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.38" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.39" class="WORD">
+          <t>its</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.40" class="WORD">
+          <t>foreign</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.41" class="WORD">
+          <t>workers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.42" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.43" class="WORD">
+          <t>provide</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.44" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.45" class="WORD">
+          <t>tanker</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.46" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.47" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.48" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.49" class="WORD" space="no">
+          <t>military</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.20.w.50" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.21">
+        <w xml:id="untitleddoc.p.1.s.21.w.1" class="WORD">
+          <t>At</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.2" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.3" class="WORD">
+          <t>time</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.4" class="WORD">
+          <t>when</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.5" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.6" class="WORD">
+          <t>economy</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.7" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.8" class="WORD" space="no">
+          <t>hurting</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.9" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.10" class="WORD">
+          <t>this</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.11" class="WORD">
+          <t>decision</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.12" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.13" class="WORD">
+          <t>outsource</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.14" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.15" class="WORD">
+          <t>tankers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.16" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.17" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.18" class="WORD">
+          <t>blow</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.19" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.20" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.21" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.22" class="WORD">
+          <t>aerospace</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.23" class="WORD" space="no">
+          <t>industry</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.24" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.25" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.26" class="WORD">
+          <t>workers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.27" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.28" class="WORD">
+          <t>America</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.29" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.30" class="WORD">
+          <t>s</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.31" class="WORD" space="no">
+          <t>military</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.21.w.32" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.22">
+        <w xml:id="untitleddoc.p.1.s.22.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.3" class="WORD">
+          <t>Washington</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.4" class="WORD">
+          <t>representative</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.5" class="WORD">
+          <t>Norm</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.6" class="WORD">
+          <t>Dicks</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.7" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.8" class="WORD">
+          <t>he</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.9" class="WORD">
+          <t>too</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.10" class="WORD">
+          <t>was</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.11" class="UNKNOWN" space="no">
+          <t>`</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.12" class="UNKNOWN">
+          <t>`</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.13" class="WORD" space="no">
+          <t>shocked</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.14" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.15" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.16" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.17" class="WORD">
+          <t>releasing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.18" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.19" class="WORD">
+          <t>statement</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.20" class="WORD">
+          <t>saying</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.21" class="WORD">
+          <t>``This</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.22" class="WORD">
+          <t>decision</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.23" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.24" class="WORD">
+          <t>even</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.25" class="WORD">
+          <t>more</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.26" class="WORD">
+          <t>disappointing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.27" class="WORD">
+          <t>because</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.28" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.29" class="WORD">
+          <t>Air</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.30" class="WORD">
+          <t>Force</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.31" class="WORD">
+          <t>had</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.32" class="WORD">
+          <t>previously</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.33" class="WORD">
+          <t>favored</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.34" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.35" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.36" class="NUMBER">
+          <t>767</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.37" class="WORD">
+          <t>tanker</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.38" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.39" class="WORD">
+          <t>we</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.40" class="WORD">
+          <t>were</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.41" class="WORD">
+          <t>prepared</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.42" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.43" class="WORD">
+          <t>move</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.44" class="WORD">
+          <t>forward</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.45" class="WORD">
+          <t>with</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.46" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.47" class="WORD">
+          <t>production</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.48" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.49" class="NUMBER">
+          <t>100</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.50" class="WORD">
+          <t>tankers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.51" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.52" class="NUMBER" space="no">
+          <t>2003</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.53" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.54" class="WORD">
+          <t>before</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.55" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.56" class="WORD">
+          <t>process</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.57" class="WORD">
+          <t>was</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.58" class="WORD">
+          <t>halted</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.59" class="WORD">
+          <t>due</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.60" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.61" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.62" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.63" class="WORD" space="no">
+          <t>scandal</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.22.w.64" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.23">
+        <w xml:id="untitleddoc.p.1.s.23.w.1" class="WORD">
+          <t>I</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.2" class="WORD">
+          <t>regret</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.3" class="WORD">
+          <t>that</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.4" class="WORD">
+          <t>it</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.5" class="WORD">
+          <t>has</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.6" class="WORD">
+          <t>taken</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.7" class="WORD">
+          <t>so</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.8" class="WORD">
+          <t>long</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.9" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.10" class="WORD">
+          <t>respond</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.11" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.12" class="WORD">
+          <t>what</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.13" class="WORD">
+          <t>was</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.14" class="PUNCTUATION-MULTI">
+          <t>--</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.15" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.16" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.17" class="PUNCTUATION-MULTI">
+          <t>--</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.18" class="WORD">
+          <t>an</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.19" class="WORD">
+          <t>urgent</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.20" class="WORD">
+          <t>need</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.21" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.22" class="WORD">
+          <t>replace</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.23" class="WORD">
+          <t>these</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.24" class="WORD">
+          <t>older</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.25" class="WORD" space="no">
+          <t>aircraft</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.23.w.26" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.24">
+        <w xml:id="untitleddoc.p.1.s.24.w.1" class="WORD">
+          <t>And</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.2" class="WORD">
+          <t>even</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.3" class="WORD">
+          <t>more</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.4" class="WORD">
+          <t>regrettable</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.5" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.6" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.7" class="WORD">
+          <t>decision</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.8" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.9" class="WORD">
+          <t>award</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.10" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.11" class="WORD">
+          <t>contract</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.12" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.13" class="WORD" space="no">
+          <t>Airbus</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.14" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.15" class="WORD">
+          <t>which</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.16" class="WORD">
+          <t>has</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.17" class="WORD">
+          <t>consistently</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.18" class="WORD">
+          <t>used</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.19" class="WORD">
+          <t>unfair</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.20" class="WORD">
+          <t>European</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.21" class="WORD">
+          <t>government</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.22" class="WORD">
+          <t>subsidies</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.23" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.24" class="WORD">
+          <t>take</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.25" class="WORD">
+          <t>jobs</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.26" class="WORD">
+          <t>away</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.27" class="WORD">
+          <t>from</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.28" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.29" class="WORD">
+          <t>aircraft</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.30" class="WORD" space="no">
+          <t>workers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.24.w.31" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.25">
+        <w xml:id="untitleddoc.p.1.s.25.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.3" class="WORD">
+          <t>Kansas</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.4" class="WORD">
+          <t>senator</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.5" class="WORD">
+          <t>Sam</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.6" class="WORD">
+          <t>Brownback</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.7" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.8" class="WORD">
+          <t>``It</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.9" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.10" class="WORD">
+          <t>s</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.11" class="WORD">
+          <t>stunning</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.12" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.13" class="WORD">
+          <t>me</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.14" class="WORD">
+          <t>that</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.15" class="WORD">
+          <t>we</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.16" class="WORD">
+          <t>would</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.17" class="WORD">
+          <t>outsource</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.18" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.19" class="WORD">
+          <t>production</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.20" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.21" class="WORD">
+          <t>these</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.22" class="WORD">
+          <t>airplanes</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.23" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.24" class="WORD">
+          <t>Europe</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.25" class="WORD">
+          <t>instead</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.26" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.27" class="WORD">
+          <t>building</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.28" class="WORD">
+          <t>them</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.29" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.30" class="WORD" space="no">
+          <t>America</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.25.w.31" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.26">
+        <w xml:id="untitleddoc.p.1.s.26.w.1" class="WORD" space="no">
+          <t>I</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.3" class="WORD">
+          <t>ll</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.4" class="WORD">
+          <t>be</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.5" class="WORD">
+          <t>calling</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.6" class="WORD">
+          <t>upon</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.7" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.8" class="WORD">
+          <t>Secretary</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.9" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.10" class="WORD">
+          <t>Defense</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.11" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.12" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.13" class="WORD">
+          <t>full</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.14" class="WORD">
+          <t>debriefing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.15" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.16" class="WORD">
+          <t>expect</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.17" class="WORD">
+          <t>there</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.18" class="WORD">
+          <t>will</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.19" class="WORD">
+          <t>be</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.20" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.21" class="WORD">
+          <t>protest</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.22" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.23" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.24" class="WORD">
+          <t>award</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.25" class="WORD">
+          <t>by</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.26" class="WORD" space="no">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.26.w.27" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.27">
+        <w xml:id="untitleddoc.p.1.s.27.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.3" class="WORD">
+          <t>Todd</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.4" class="WORD" space="no">
+          <t>Tiahrt</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.5" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.6" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.7" class="WORD">
+          <t>Kansas</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.8" class="WORD" space="no">
+          <t>representative</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.9" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.10" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.11" class="WORD">
+          <t>``We</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.12" class="WORD">
+          <t>should</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.13" class="WORD">
+          <t>have</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.14" class="WORD">
+          <t>an</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.15" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.16" class="WORD">
+          <t>tanker</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.17" class="WORD">
+          <t>built</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.18" class="WORD">
+          <t>by</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.19" class="WORD">
+          <t>an</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.20" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.21" class="WORD">
+          <t>company</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.22" class="WORD">
+          <t>with</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.23" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.24" class="WORD" space="no">
+          <t>workers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.27.w.25" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.28">
+        <w xml:id="untitleddoc.p.1.s.28.w.1" class="WORD">
+          <t>I</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.2" class="WORD">
+          <t>can</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.3" class="WORD">
+          <t>not</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.4" class="WORD">
+          <t>believe</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.5" class="WORD">
+          <t>we</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.6" class="WORD">
+          <t>would</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.7" class="WORD">
+          <t>create</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.8" class="WORD">
+          <t>French</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.9" class="WORD">
+          <t>jobs</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.10" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.11" class="WORD">
+          <t>place</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.12" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.13" class="WORD">
+          <t>Kansas</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.14" class="WORD" space="no">
+          <t>jobs</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.28.w.15" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.29">
+        <w xml:id="untitleddoc.p.1.s.29.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.3" class="WORD">
+          <t>A</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.4" class="WORD">
+          <t>group</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.5" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.6" class="WORD">
+          <t>Washington</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.7" class="WORD">
+          <t>politicians</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.8" class="WORD">
+          <t>released</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.9" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.10" class="WORD">
+          <t>joint</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.11" class="WORD">
+          <t>statement</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.12" class="WORD">
+          <t>saying</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.13" class="WORD">
+          <t>``We</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.14" class="WORD">
+          <t>will</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.15" class="WORD">
+          <t>be</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.16" class="WORD">
+          <t>asking</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.17" class="WORD">
+          <t>tough</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.18" class="WORD">
+          <t>questions</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.19" class="WORD">
+          <t>about</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.20" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.21" class="WORD">
+          <t>decision</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.22" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.23" class="WORD">
+          <t>outsource</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.24" class="WORD">
+          <t>this</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.25" class="WORD">
+          <t>contract</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.29.w.26" class="PUNCTUATION-MULTI">
+          <t>...</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.30">
+        <w xml:id="untitleddoc.p.1.s.30.w.1" class="WORD">
+          <t>At</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.2" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.3" class="WORD">
+          <t>time</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.4" class="WORD">
+          <t>when</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.5" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.6" class="WORD">
+          <t>economy</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.7" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.8" class="WORD" space="no">
+          <t>hurting</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.9" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.10" class="WORD">
+          <t>this</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.11" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.12" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.13" class="WORD">
+          <t>blow</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.14" class="WORD">
+          <t>not</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.15" class="WORD">
+          <t>only</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.16" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.17" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.18" class="WORD" space="no">
+          <t>state</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.19" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.20" class="WORD">
+          <t>but</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.21" class="WORD">
+          <t>more</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.22" class="WORD">
+          <t>than</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.23" class="NUMBER">
+          <t>40</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.24" class="WORD">
+          <t>states</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.25" class="WORD">
+          <t>across</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.26" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.27" class="WORD">
+          <t>country</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.28" class="WORD">
+          <t>who</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.29" class="WORD">
+          <t>would</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.30" class="WORD">
+          <t>help</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.31" class="WORD">
+          <t>build</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.32" class="WORD">
+          <t>this</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.33" class="WORD">
+          <t>national</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.34" class="WORD" space="no">
+          <t>plane</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.30.w.35" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.31">
+        <w xml:id="untitleddoc.p.1.s.31.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.3" class="WORD">
+          <t>Alabama</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.4" class="WORD">
+          <t>Governor</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.5" class="WORD">
+          <t>Bob</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.6" class="WORD">
+          <t>Riley</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.7" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.8" class="WORD">
+          <t>``To</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.9" class="WORD">
+          <t>say</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.10" class="WORD">
+          <t>this</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.11" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.12" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.13" class="WORD">
+          <t>great</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.14" class="WORD">
+          <t>day</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.15" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.16" class="WORD">
+          <t>Alabama</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.17" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.18" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.19" class="WORD">
+          <t>monumental</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.20" class="WORD" space="no">
+          <t>understatement</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.31.w.21" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.32">
+        <w xml:id="untitleddoc.p.1.s.32.w.1" class="WORD">
+          <t>This</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.2" class="WORD">
+          <t>will</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.3" class="WORD">
+          <t>go</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.4" class="WORD">
+          <t>down</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.5" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.6" class="WORD">
+          <t>history</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.7" class="WORD">
+          <t>as</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.8" class="WORD">
+          <t>one</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.9" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.10" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.11" class="WORD">
+          <t>greatest</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.12" class="WORD" space="no">
+          <t>days</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.32.w.13" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.33">
+        <w xml:id="untitleddoc.p.1.s.33.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.3" class="WORD">
+          <t>Ralph</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.4" class="WORD" space="no">
+          <t>Crosby</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.5" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.6" class="WORD">
+          <t>EADS</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.7" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.8" class="WORD">
+          <t>s</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.9" class="WORD">
+          <t>North</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.10" class="WORD">
+          <t>America</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.11" class="WORD">
+          <t>CEO</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.12" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.13" class="WORD">
+          <t>ex</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.14" class="WORD">
+          <t>Northrop</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.15" class="WORD">
+          <t>executive</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.16" class="WORD">
+          <t>commented</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.17" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.18" class="WORD">
+          <t>business</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.19" class="WORD">
+          <t>has</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.20" class="WORD">
+          <t>``committed</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.21" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.22" class="WORD">
+          <t>full</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.23" class="WORD">
+          <t>resources</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.24" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.25" class="WORD">
+          <t>support</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.26" class="WORD">
+          <t>this</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.27" class="WORD">
+          <t>vital</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.28" class="WORD">
+          <t>program</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.29" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.30" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.31" class="WORD">
+          <t>prime</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.32" class="WORD" space="no">
+          <t>contractor</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.33" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.34" class="WORD">
+          <t>Northrop</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.35" class="WORD" space="no">
+          <t>Grumman</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.36" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.37" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.38" class="WORD">
+          <t>Air</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.39" class="WORD" space="no">
+          <t>Force</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.40" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.41" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.42" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.43" class="WORD">
+          <t>war</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.44" class="WORD">
+          <t>fighters</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.45" class="WORD">
+          <t>that</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.46" class="WORD">
+          <t>this</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.47" class="WORD">
+          <t>system</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.48" class="WORD">
+          <t>will</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.49" class="WORD">
+          <t>serve</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.50" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.51" class="WORD">
+          <t>decades</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.52" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.53" class="WORD" space="no">
+          <t>come</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.33.w.54" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.34">
+        <w xml:id="untitleddoc.p.1.s.34.w.1" class="WORD">
+          <t>We</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.2" class="WORD">
+          <t>already</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.3" class="WORD">
+          <t>have</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.4" class="WORD">
+          <t>begun</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.5" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.6" class="WORD">
+          <t>work</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.7" class="WORD">
+          <t>necessary</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.8" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.9" class="WORD">
+          <t>expand</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.10" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.11" class="ABBREVIATION">
+          <t>U.S.</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.12" class="WORD">
+          <t>industrial</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.13" class="WORD">
+          <t>footprint</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.14" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.15" class="WORD">
+          <t>support</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.16" class="WORD">
+          <t>of</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.17" class="WORD">
+          <t>this</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.18" class="WORD">
+          <t>important</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.19" class="WORD" space="no">
+          <t>program</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.34.w.20" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.35">
+        <w xml:id="untitleddoc.p.1.s.35.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.3" class="WORD">
+          <t>EADS</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.4" class="WORD">
+          <t>chief</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.5" class="WORD">
+          <t>executive</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.6" class="WORD">
+          <t>Louis</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.7" class="WORD">
+          <t>Gallois</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.8" class="WORD">
+          <t>commented</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.9" class="WORD">
+          <t>``This</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.10" class="WORD">
+          <t>major</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.11" class="WORD">
+          <t>selection</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.12" class="WORD">
+          <t>is</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.13" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.14" class="WORD-COMPOUND">
+          <t>win-win</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.15" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.16" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.17" class="WORD" space="no">
+          <t>customers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.18" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.19" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.20" class="WORD">
+          <t>allied</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.21" class="WORD">
+          <t>industrial</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.22" class="WORD">
+          <t>cooperation</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.23" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.24" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.25" class="WORD" space="no">
+          <t>EADS</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.35.w.26" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.36">
+        <w xml:id="untitleddoc.p.1.s.36.w.1" class="WORD">
+          <t>It</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.2" class="WORD">
+          <t>signals</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.3" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.4" class="WORD-COMPOUND">
+          <t>quantum-leap</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.5" class="WORD">
+          <t>forward</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.6" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.7" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.8" class="WORD">
+          <t>commitment</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.9" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.10" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.11" class="WORD">
+          <t>US</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.12" class="WORD">
+          <t>defence</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.13" class="WORD" space="no">
+          <t>customer</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.14" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.15" class="WORD">
+          <t>reflects</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.16" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.17" class="WORD">
+          <t>supports</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.18" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.19" class="WORD">
+          <t>global</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.20" class="WORD">
+          <t>strategy</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.21" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.22" class="WORD">
+          <t>increase</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.23" class="WORD">
+          <t>EADS</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.24" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.25" class="WORD">
+          <t>s</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.26" class="WORD">
+          <t>industrial</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.27" class="WORD">
+          <t>presence</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.28" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.29" class="WORD">
+          <t>key</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.30" class="WORD">
+          <t>markets</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.31" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.32" class="WORD">
+          <t>our</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.33" class="WORD">
+          <t>goal</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.34" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.35" class="WORD">
+          <t>balance</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.36" class="WORD">
+          <t>the</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.37" class="WORD">
+          <t>company</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.38" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.39" class="WORD">
+          <t>s</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.40" class="WORD">
+          <t>defence</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.41" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.42" class="WORD">
+          <t>commercial</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.43" class="WORD" space="no">
+          <t>portfolios</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.36.w.44" class="PUNCTUATION" space="no">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.37">
+        <w xml:id="untitleddoc.p.1.s.37.w.1" class="PUNCTUATION" space="no">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.2" class="PUNCTUATION">
+          <t>'</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.3" class="WORD">
+          <t>General</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.4" class="WORD">
+          <t>Arthur</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.5" class="WORD">
+          <t>Lichte</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.6" class="WORD">
+          <t>said</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.7" class="WORD">
+          <t>``This</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.8" class="WORD">
+          <t>will</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.9" class="WORD">
+          <t>be</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.10" class="WORD">
+          <t>an</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.11" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.12" class="WORD" space="no">
+          <t>tanker</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.13" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.14" class="WORD">
+          <t>flown</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.15" class="WORD">
+          <t>by</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.16" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.17" class="WORD">
+          <t>airmen</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.18" class="WORD">
+          <t>with</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.19" class="WORD">
+          <t>an</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.20" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.21" class="WORD">
+          <t>flag</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.22" class="WORD">
+          <t>on</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.23" class="WORD">
+          <t>its</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.24" class="WORD">
+          <t>tail</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.25" class="WORD" space="no">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.26" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.27" class="WORD">
+          <t>every</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.28" class="WORD" space="no">
+          <t>day</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.29" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.30" class="WORD">
+          <t>it</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.31" class="WORD">
+          <t>will</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.32" class="WORD">
+          <t>be</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.33" class="WORD">
+          <t>saving</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.34" class="WORD">
+          <t>American</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.35" class="WORD" space="no">
+          <t>lives</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.37.w.36" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.38">
+        <w xml:id="untitleddoc.p.1.s.38.w.1" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.2" class="WORD">
+          <t>had</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.3" class="WORD">
+          <t>initially</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.4" class="WORD">
+          <t>agreed</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.5" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.6" class="WORD">
+          <t>lease</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.7" class="NUMBER">
+          <t>100</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.8" class="WORD" space="no">
+          <t>tankers</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.9" class="PUNCTUATION">
+          <t>,</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.10" class="WORD">
+          <t>but</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.11" class="WORD">
+          <t>in</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.12" class="NUMBER">
+          <t>2003</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.13" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.14" class="WORD">
+          <t>scandal</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.15" class="WORD">
+          <t>erupted</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.16" class="WORD">
+          <t>when</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.17" class="WORD">
+          <t>it</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.18" class="WORD">
+          <t>emerged</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.19" class="WORD">
+          <t>that</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.20" class="WORD">
+          <t>Boeing</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.21" class="WORD">
+          <t>executive</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.22" class="WORD">
+          <t>Michael</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.23" class="INITIAL">
+          <t>M.</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.24" class="WORD">
+          <t>Sears</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.25" class="WORD">
+          <t>arranged</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.26" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.27" class="WORD">
+          <t>job</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.28" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.29" class="WORD">
+          <t>USAF</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.30" class="WORD">
+          <t>official</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.31" class="WORD">
+          <t>Darleen</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.32" class="WORD">
+          <t>Druyun</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.33" class="WORD">
+          <t>while</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.34" class="WORD">
+          <t>negotiations</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.35" class="WORD">
+          <t>were</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.36" class="WORD">
+          <t>still</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.37" class="WORD" space="no">
+          <t>underway</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.38.w.38" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitleddoc.p.1.s.39">
+        <w xml:id="untitleddoc.p.1.s.39.w.1" class="WORD">
+          <t>Both</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.2" class="WORD">
+          <t>served</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.3" class="WORD">
+          <t>jail</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.4" class="WORD">
+          <t>sentences</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.5" class="WORD">
+          <t>for</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.6" class="WORD">
+          <t>corruption</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.7" class="WORD">
+          <t>charges</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.8" class="WORD">
+          <t>and</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.9" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.10" class="WORD">
+          <t>competition</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.11" class="WORD">
+          <t>was</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.12" class="WORD">
+          <t>opened</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.13" class="WORD">
+          <t>up</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.14" class="WORD">
+          <t>to</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.15" class="WORD">
+          <t>award</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.16" class="WORD">
+          <t>a</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.17" class="WORD">
+          <t>new</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.18" class="WORD" space="no">
+          <t>contract</t>
+        </w>
+        <w xml:id="untitleddoc.p.1.s.39.w.19" class="PUNCTUATION">
+          <t>.</t>
+        </w>
+      </s>
+    </p>
+  </text>
+</FoLiA>
+
+
