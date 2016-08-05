@@ -110,7 +110,7 @@ def convert_terms(nafparser, foliadoc):
         span = [ foliadoc.id + '.w.' + w_id for w_id in naf_term.get_span().get_span_ids() ]
         if len(span) > 1:
             #NAF term spans multiple tokens
-            print("WARNING: NAF term " + naf_term.get_id() + " spans multiple tokens. Conversion not supported yet!" ,file=sys.stderr)
+            print("WARNING: Convertor limitation: NAF term " + naf_term.get_id() + " spans multiple tokens. Conversion not supported yet!" ,file=sys.stderr)
         else:
             word = foliadoc.index[span[0]]
 
@@ -138,7 +138,26 @@ def convert_terms(nafparser, foliadoc):
             convert_senses(naf_term, word)
 
 
-
+def convert_entities(nafparser, foliadoc):
+    entityset =  "https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_entities.foliaset.xml"
+    first = True
+    for naf_entity in nafparser.get_entities():
+        if first:
+            foliadoc.declare(folia.Entity, entityset)
+            first = False
+        naf_references = list(naf_entity.get_references())
+        if len(naf_references) > 1:
+            raise Exception("Entity has multiple references, this was unexpected...",file=sys.stderr)
+        span = []
+        for target in naf_references[0].get_span():
+            naf_term = nafparser.get_term(target.get_id())
+            span += [ foliadoc[foliadoc.id + '.w.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+        sentence = span[0].sentence()
+        try:
+            layer = sentence.annotation(folia.EntitiesLayer, entityset)
+        except folia.NoSuchAnnotation:
+            layer = sentence.add(folia.EntitiesLayer, set=entityset)
+        layer.add(folia.Entity, *span,  id=foliadoc.id + '.e.' + naf_entity.get_id(), set=entityset, cls=naf_entity.get_type())
 
 
 
@@ -156,6 +175,7 @@ def naf2folia(naffile, docid=None):
 
     textbody = convert_text_layer(nafparser,foliadoc)
     convert_terms(nafparser, foliadoc)
+    convert_entities(nafparser, foliadoc)
 
     return foliadoc
 
