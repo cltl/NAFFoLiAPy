@@ -6,6 +6,7 @@ from __future__ import print_function, unicode_literals, division, absolute_impo
 import sys
 import os
 import argparse
+from collections import defaultdict
 
 import KafNafParserPy as naf
 from pynlpl.formats import folia
@@ -49,8 +50,52 @@ def convert_text_layer(nafparser, foliadoc):
         prevsent_id = sent_id
     return textbody
 
+def validate_confidence(confidence):
+    if confidence is None:
+        return None
+    else:
+        confidence = float(confidence)
+    if confidence < 0:
+        print("WARNING: NAF error: confidence  " + str(confidence) + " is not in range! Forcing to 0"  ,file=sys.stderr)
+        return 0.0
+    if confidence > 1:
+        print("WARNING: NAF error: confidence  " + str(confidence) + " is not in range! Forcing to 1"  ,file=sys.stderr)
+        return 1.0
+    return confidence
+
+def convert_senses(naf_term, word):
+    senses = defaultdict(list) #resource => []
+    for naf_exref in naf_term.get_external_references():
+        resource = naf_exref.get_resource()
+        reference = naf_exref.get_reference()
+        features = {}
+        if resource.lower().find('wordnet') != -1 or resource.startswith('wn'):
+            #wordnet
+            #see if the ID follows the NAF convention for wordnet
+            if len(reference) > 10 and reference[3] == '-' and reference[6] == '-' and reference[-2] == '-':
+                features = {'version': reference[4:6], 'language': reference[:3],'pos': reference[-1]}
+                reference = reference[7:-2]
+                confidence = validate_confidence(naf_exref.get_confidence())
+                if confidence is None: confidence = 0 #needed for sorting later
+                senses[resource].append( ( confidence, reference, features) )
+
+    for resource, sensedata in senses.items():
+        senseset = "https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/" + resource.replace(' ','_') + ".foliaset.xml"
+        word.doc.declare(folia.SenseAnnotation, senseset)
+        first = True
+        for confidence, reference, features in reversed(sorted(sensedata)): #get highest confidence item first, the rest will be alternatives
+            if first:
+                anchor = word
+            else:
+                anchor = word.add(folia.Alternative)
+            sense = anchor.add(folia.SenseAnnotation, set=senseset, cls=reference, confidence=confidence)
+            if features:
+                for subset, cls in features.items():
+                    sense.add(folia.Feature, subset=subset,cls=cls)
+            first = False
+
 def convert_terms(nafparser, foliadoc):
-    pos_declared = lemma_declared = False
+    pos_declared = pos2_declared = lemma_declared = False
     for naf_term in nafparser.get_terms():
         span = [ foliadoc.id + '.w.' + w_id for w_id in naf_term.get_span().get_span_ids() ]
         if len(span) > 1:
@@ -64,7 +109,14 @@ def convert_terms(nafparser, foliadoc):
                 if not pos_declared:
                     foliadoc.declare(folia.PosAnnotation, "https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_pos.foliaset.xml")
                     pos_declared = True
-                word.append(folia.PosAnnotation, cls=naf_pos)
+                word.append(folia.PosAnnotation, cls=naf_pos, set="https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_pos.foliaset.xml")
+
+            naf_morphofeat = naf_term.get_morphofeat()
+            if naf_morphofeat:
+                if not pos2_declared:
+                    foliadoc.declare(folia.PosAnnotation, "https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_morphofeat.foliaset.xml")
+                    pos2_declared = True
+                word.append(folia.PosAnnotation, cls=naf_morphofeat, set="https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_morphofeat.foliaset.xml")
 
             naf_lemma = naf_term.get_lemma()
             if naf_lemma:
@@ -72,6 +124,12 @@ def convert_terms(nafparser, foliadoc):
                     foliadoc.declare(folia.LemmaAnnotation, "https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_lemma.foliaset.xml")
                     lemma_declared = True
                 word.append(folia.LemmaAnnotation, cls=naf_lemma)
+
+            convert_senses(naf_term, word)
+
+
+
+
 
 
 def naf2folia(naffile, docid=None):
