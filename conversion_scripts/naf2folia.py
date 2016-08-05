@@ -16,7 +16,8 @@ VERSION = '0.1'
 
 def convert_text_layer(nafparser, foliadoc):
     textbody = foliadoc.append(folia.Text)
-    textbody.append(folia.TextContent, nafparser.get_raw())
+    naf_raw = nafparser.get_raw()
+    textbody.append(folia.TextContent, naf_raw)
 
     prevsent_id = None
     prevpara_id = None
@@ -41,7 +42,16 @@ def convert_text_layer(nafparser, foliadoc):
         if prev_naf_token is not None and int(prev_naf_token.get_offset()) + int(prev_naf_token.get_length()) == int(naf_token.get_offset()):
             prevword.space = False
         word = sentence.append(folia.Word, id=foliadoc.id+ '.w.' + token_id)
-        word.append(folia.TextContent, naf_token.get_text(), offset=naf_token.get_offset(), ref=textbody)
+        offset=int(naf_token.get_offset())
+        try:
+            offset_valid = naf_raw[offset+int(naf_token.get_length())] == naf_token.get_text()
+        except IndexError:
+            offset_valid = False
+        if not offset_valid:
+            print("WARNING: NAF error: offset for token " + token_id +" does not align properly with raw layer! Discarding offset information for FoLiA conversion",file=sys.stderr)
+            word.append(folia.TextContent, naf_token.get_text(), ref=textbody)
+        else:
+            word.append(folia.TextContent, naf_token.get_text(), offset=naf_token.get_offset(), ref=textbody)
 
         prevword = word
         prev_naf_token = naf_token
