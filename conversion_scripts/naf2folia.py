@@ -15,7 +15,7 @@ VERSION = '0.1'
 
 
 def convert_text_layer(nafparser, foliadoc):
-    textbody = foliadoc.append(folia.Text)
+    textbody = foliadoc.append(folia.Text(foliadoc, id=foliadoc.id+'.text'))
     naf_raw = nafparser.get_raw()
     textbody.append(folia.TextContent, naf_raw)
 
@@ -31,17 +31,17 @@ def convert_text_layer(nafparser, foliadoc):
             if prevpara_id is None:
                 #first paragraph, declare for completion's sake
                 foliadoc.declare(folia.Paragraph, 'undefined')
-            paragraph = textbody.append(folia.Paragraph, id=foliadoc.id+ '.p.' + para_id)
+            paragraph = textbody.append(folia.Paragraph, id=foliadoc.id+ '.para' + para_id)
         if sent_id != prevsent_id:
             if paragraph:
-                sentence = paragraph.append(folia.Sentence, id=foliadoc.id+ '.s.' + sent_id)
+                sentence = paragraph.append(folia.Sentence, id=foliadoc.id+ '.sent' + sent_id)
             else:
-                sentence = textbody.append(folia.Sentence, id=foliadoc.id+ '.s.' + sent_id)
+                sentence = textbody.append(folia.Sentence, id=foliadoc.id+ '.sent' + sent_id)
 
         token_id = naf_token.get_id()
         if prev_naf_token is not None and int(prev_naf_token.get_offset()) + int(prev_naf_token.get_length()) == int(naf_token.get_offset()):
             prevword.space = False
-        word = sentence.append(folia.Word, id=foliadoc.id+ '.w.' + token_id)
+        word = sentence.append(folia.Word, id=foliadoc.id+ '.' + token_id)
         offset=int(naf_token.get_offset())
         try:
             offset_valid = naf_raw[offset+int(naf_token.get_length())] == naf_token.get_text()
@@ -49,7 +49,7 @@ def convert_text_layer(nafparser, foliadoc):
             offset_valid = False
         if not offset_valid:
             print("WARNING: NAF error: offset for token " + token_id +" does not align properly with raw layer! Discarding offset information for FoLiA conversion",file=sys.stderr)
-            word.append(folia.TextContent, naf_token.get_text(), ref=textbody)
+            word.append(folia.TextContent, naf_token.get_text())
         else:
             word.append(folia.TextContent, naf_token.get_text(), offset=naf_token.get_offset(), ref=textbody)
 
@@ -107,7 +107,7 @@ def convert_senses(naf_term, word):
 def convert_terms(nafparser, foliadoc):
     pos_declared = pos2_declared = lemma_declared = False
     for naf_term in nafparser.get_terms():
-        span = [ foliadoc.id + '.w.' + w_id for w_id in naf_term.get_span().get_span_ids() ]
+        span = [ foliadoc.id + '.' + w_id for w_id in naf_term.get_span().get_span_ids() ]
         if len(span) > 1:
             #NAF term spans multiple tokens
             print("WARNING: Convertor limitation: NAF term " + naf_term.get_id() + " spans multiple tokens. Conversion not supported yet!" ,file=sys.stderr)
@@ -151,13 +151,13 @@ def convert_entities(nafparser, foliadoc):
         span = []
         for target in naf_references[0].get_span():
             naf_term = nafparser.get_term(target.get_id())
-            span += [ foliadoc[foliadoc.id + '.w.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+            span += [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
         sentence = span[0].sentence()
         try:
             layer = sentence.annotation(folia.EntitiesLayer, entityset)
         except folia.NoSuchAnnotation:
             layer = sentence.add(folia.EntitiesLayer, set=entityset)
-        layer.add(folia.Entity, *span,  id=foliadoc.id + '.e.' + naf_entity.get_id(), set=entityset, cls=naf_entity.get_type())
+        layer.add(folia.Entity, *span,  id=foliadoc.id + '.' + naf_entity.get_id(), set=entityset, cls=naf_entity.get_type())
 
 
 
