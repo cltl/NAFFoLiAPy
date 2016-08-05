@@ -159,9 +159,44 @@ def convert_entities(nafparser, foliadoc):
             layer = sentence.add(folia.EntitiesLayer, set=entityset)
         layer.add(folia.Entity, *span,  id=foliadoc.id + '.' + naf_entity.get_id(), set=entityset, cls=naf_entity.get_type())
 
+def convert_coreferences(nafparser, foliadoc):
+    textbody = foliadoc.data[0]
+    corefset = {
+            'entity': "https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_coreference.foliaset.xml",
+            'event': "https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_events.foliaset.xml"
+    }
+    declared = defaultdict(bool)
+    layer = {}
+    for naf_coref in nafparser.get_corefs():
+        coreftype = naf_coref.get_type()
+        if not coreftype: coreftype = 'entity'
+
+        if not declared[coreftype]:
+            foliadoc.declare(folia.CoreferenceChain, corefset[coreftype])
+            declared[coreftype] = True
+
+        try:
+            layer[coreftype] = textbody.annotation(folia.CoreferenceLayer, corefset[coreftype])
+        except folia.NoSuchAnnotation:
+            layer[coreftype] = textbody.add(folia.CoreferenceLayer, set=corefset[coreftype])
+
+        corefchain = layer[coreftype].add(folia.CoreferenceChain, set=corefset[coreftype])
+        for naf_span in naf_coref.get_spans():
+            span =  []
+            for term_id in naf_span.get_span_ids():
+                for w_id in nafparser.get_dict_tokens_for_termid(term_id):
+                    span.append( foliadoc[foliadoc.id + '.' + w_id])
+            corefchain.add(folia.CoreferenceLink, *span)
 
 
 def naf2folia(naffile, docid=None):
+    """
+    Converts a NAF Document to FoLiA, returns a FoLiA document instance.
+    :param naffile: The NAF file to load (str)
+    :param docid: the ID for the FoLiA document, will be derived from the filename if not specified (may not always work out) (str)
+    :return: a folia.Document instance
+    """
+
     nafparser = naf.KafNafParser(naffile)
 
     if not docid:
@@ -176,6 +211,7 @@ def naf2folia(naffile, docid=None):
     textbody = convert_text_layer(nafparser,foliadoc)
     convert_terms(nafparser, foliadoc)
     convert_entities(nafparser, foliadoc)
+    convert_coreferences(nafparser, foliadoc)
 
     return foliadoc
 
