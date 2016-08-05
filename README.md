@@ -17,6 +17,7 @@ The following conversions are currently supported:
  * Lemmas
  * Lexical semantic senses (wordnet external references in NAF)
  * Named Entities
+ * Co-references and events as co-references
 
 Anything not listed is not yet supported.
 
