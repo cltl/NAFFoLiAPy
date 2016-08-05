@@ -1,0 +1,2710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="folia.xsl"?>
+<FoLiA xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ilk.uvt.nl/folia" xml:id="potgrond" generator="libfolia-v1.4" version="1.2.0">
+  <metadata type="native">
+    <annotations>
+      <token-annotation annotator="ucto" annotatortype="auto" datetime="2016-08-05T12:12:15" set="tokconfig-nl"/>
+      <pos-annotation annotator="frog-mbpos-1.0" annotatortype="auto" datetime="2016-08-05T12:12:15" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+      <lemma-annotation annotator="frog-mblem-1.1" annotatortype="auto" datetime="2016-08-05T12:12:15" set="http://ilk.uvt.nl/folia/sets/frog-mblem-nl"/>
+      <morphological-annotation annotator="frog-mbma-1.0" annotatortype="auto" datetime="2016-08-05T12:12:15" set="http://ilk.uvt.nl/folia/sets/frog-mbma-nl"/>
+      <pos-annotation annotator="frog-mbma-1.0" annotatortype="auto" datetime="2016-08-05T12:12:15" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+      <chunking-annotation annotator="frog-chunker-1.0" annotatortype="auto" datetime="2016-08-05T12:12:15" set="http://ilk.uvt.nl/folia/sets/frog-chunker-nl"/>
+      <entity-annotation annotator="frog-ner-1.0" annotatortype="auto" datetime="2016-08-05T12:12:15" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl"/>
+      <entity-annotation annotator="frog-mwu-1.0" annotatortype="auto" datetime="2016-08-05T12:12:15" set="http://ilk.uvt.nl/folia/sets/frog-mwu-nl"/>
+      <dependency-annotation annotator="frog-depparse-1.0" annotatortype="auto" set="http://ilk.uvt.nl/folia/sets/frog-depparse-nl"/>
+    </annotations>
+  </metadata>
+  <text xml:id="potgrond.text">
+    <p xml:id="potgrond.p.1">
+      <t>A50 afgesloten na gekantelde vrachtwagen met potgrond</t>
+      <s xml:id="potgrond.p.1.s.1">
+        <t>A50 afgesloten na gekantelde vrachtwagen met potgrond</t>
+        <w xml:id="potgrond.p.1.s.1.w.1" class="STRING-NUMBER">
+          <t>A50</t>
+          <pos class="SPEC(deeleigen)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="deeleigen" subset="spectype"/>
+          </pos>
+          <morphology>
+            <morpheme class="stem">
+              <t>A50</t>
+              <feat class="[A50]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="A50"/>
+        </w>
+        <w xml:id="potgrond.p.1.s.1.w.2" class="WORD">
+          <t>afgesloten</t>
+          <pos class="WW(vd,vrij,zonder)" confidence="0.954545" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="vd" subset="wvorm"/>
+            <feat class="vrij" subset="positie"/>
+            <feat class="zonder" subset="buiging"/>
+          </pos>
+          <lemma class="afsluiten"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>afgesloten</t>
+              <feat class="[[afge]preposition[sluit]verb[en]/participle/past-tense]verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="PV" subset="compound"/>
+              </pos>
+              <morpheme class="stem">
+                <t>afge</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>sluit</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="affix">
+                <t>en</t>
+                <feat class="participle" subset="inflection"/>
+                <feat class="past-tense" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.1.s.1.w.3" class="WORD">
+          <t>na</t>
+          <pos class="VZ(init)" confidence="0.867182" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="na"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>na</t>
+              <feat class="[na]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>na</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.1.s.1.w.4" class="WORD">
+          <t>gekantelde</t>
+          <pos class="WW(vd,prenom,met-e)" confidence="0.995296" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="vd" subset="wvorm"/>
+            <feat class="prenom" subset="positie"/>
+            <feat class="met-e" subset="buiging"/>
+          </pos>
+          <lemma class="kantelen"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>gekantelde</t>
+              <feat class="[[ge]/participle/past-tense[kantel]verb[de]/participle/past-tense]verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="affix">
+                <t>ge</t>
+                <feat class="participle" subset="inflection"/>
+                <feat class="past-tense" subset="inflection"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>kantel</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="affix">
+                <t>de</t>
+                <feat class="participle" subset="inflection"/>
+                <feat class="past-tense" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.1.s.1.w.5" class="WORD">
+          <t>vrachtwagen</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.999295" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="vrachtwagen"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>vrachtwagen</t>
+              <feat class="[[vracht]noun[wagen]noun]noun/singular" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="NN" subset="compound"/>
+              </pos>
+              <morpheme class="complex">
+                <feat class="[[vracht]noun[wagen]noun]noun" subset="structure"/>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                  <feat class="NN" subset="compound"/>
+                </pos>
+                <morpheme class="stem">
+                  <t>vracht</t>
+                  <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+                <morpheme class="stem">
+                  <t>wagen</t>
+                  <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.1.s.1.w.6" class="WORD">
+          <t>met</t>
+          <pos class="VZ(init)" confidence="0.999728" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="met"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>met</t>
+              <feat class="[met]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>met</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.1.s.1.w.7" class="WORD">
+          <t>potgrond</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.997691" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="potgrond"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>potgrond</t>
+              <feat class="[[pot]verb[grond]noun/singular]noun" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="VN" subset="compound"/>
+              </pos>
+              <morpheme class="stem">
+                <t>pot</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>grond</t>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <chunking xml:id="potgrond.p.1.s.1.chunking.1">
+          <chunk xml:id="potgrond.p.1.s.1.chunking.1.chunk.1" class="NP" confidence="0.833333">
+            <wref id="potgrond.p.1.s.1.w.1" t="A50"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.1.s.1.chunking.1.chunk.2" class="VP" confidence="0.875">
+            <wref id="potgrond.p.1.s.1.w.2" t="afgesloten"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.1.s.1.chunking.1.chunk.3" class="PP" confidence="0.958333">
+            <wref id="potgrond.p.1.s.1.w.3" t="na"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.1.s.1.chunking.1.chunk.4" class="NP" confidence="0.815432">
+            <wref id="potgrond.p.1.s.1.w.4" t="gekantelde"/>
+            <wref id="potgrond.p.1.s.1.w.5" t="vrachtwagen"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.1.s.1.chunking.1.chunk.5" class="PP" confidence="0.993899">
+            <wref id="potgrond.p.1.s.1.w.6" t="met"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.1.s.1.chunking.1.chunk.6" class="NP" confidence="1">
+            <wref id="potgrond.p.1.s.1.w.7" t="potgrond"/>
+          </chunk>
+        </chunking>
+        <entities xml:id="potgrond.p.1.s.1.entities.1">
+          <entity xml:id="potgrond.p.1.s.1.entities.1.entity.1" class="loc" confidence="0" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.1.s.1.w.1" t="A50"/>
+          </entity>
+        </entities>
+        <dependencies xml:id="potgrond.p.1.s.1.dependencies.1">
+          <dependency xml:id="potgrond.p.1.s.1.dependencies.1.dependency.1" class="pc">
+            <hd>
+              <wref id="potgrond.p.1.s.1.w.2" t="afgesloten"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.1.s.1.w.3" t="na"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.1.s.1.dependencies.1.dependency.2" class="mod">
+            <hd>
+              <wref id="potgrond.p.1.s.1.w.5" t="vrachtwagen"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.1.s.1.w.4" t="gekantelde"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.1.s.1.dependencies.1.dependency.3" class="obj1">
+            <hd>
+              <wref id="potgrond.p.1.s.1.w.3" t="na"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.1.s.1.w.5" t="vrachtwagen"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.1.s.1.dependencies.1.dependency.4" class="mod">
+            <hd>
+              <wref id="potgrond.p.1.s.1.w.5" t="vrachtwagen"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.1.s.1.w.6" t="met"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.1.s.1.dependencies.1.dependency.5" class="obj1">
+            <hd>
+              <wref id="potgrond.p.1.s.1.w.6" t="met"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.1.s.1.w.7" t="potgrond"/>
+            </dep>
+          </dependency>
+        </dependencies>
+      </s>
+    </p>
+    <p xml:id="potgrond.p.2">
+      <t>Op de A50 van Apeldoorn naar Arnhem is bij Hoenderloo vrijdagochtend een vrachtwagen met potgrond of mest is gekanteld. De A50 is daarop afgesloten.</t>
+      <s xml:id="potgrond.p.2.s.1">
+        <t>Op de A50 van Apeldoorn naar Arnhem is bij Hoenderloo vrijdagochtend een vrachtwagen met potgrond of mest is gekanteld.</t>
+        <w xml:id="potgrond.p.2.s.1.w.1" class="WORD">
+          <t>Op</t>
+          <pos class="VZ(init)" confidence="0.998182" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="op"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>op</t>
+              <feat class="[op]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>op</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.2" class="WORD">
+          <t>de</t>
+          <pos class="LID(bep,stan,rest)" confidence="0.979361" head="LID" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="bep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="rest" subset="npagr"/>
+          </pos>
+          <lemma class="de"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>de</t>
+              <feat class="[de]article" subset="structure"/>
+              <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>de</t>
+                <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.3" class="STRING-NUMBER">
+          <t>A50</t>
+          <pos class="SPEC(deeleigen)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="deeleigen" subset="spectype"/>
+          </pos>
+          <morphology>
+            <morpheme class="stem">
+              <t>A50</t>
+              <feat class="[A50]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="A50"/>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.4" class="WORD">
+          <t>van</t>
+          <pos class="VZ(init)" confidence="0.641234" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="van"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>van</t>
+              <feat class="[van]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>van</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.5" class="WORD">
+          <t>Apeldoorn</t>
+          <pos class="SPEC(deeleigen)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="deeleigen" subset="spectype"/>
+          </pos>
+          <lemma class="Apeldoorn"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>Apeldoorn</t>
+              <feat class="[Apeldoorn]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.6" class="WORD">
+          <t>naar</t>
+          <pos class="VZ(init)" confidence="0.999197" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="naar"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>naar</t>
+              <feat class="[naar]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>naar</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.7" class="WORD">
+          <t>Arnhem</t>
+          <pos class="SPEC(deeleigen)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="deeleigen" subset="spectype"/>
+          </pos>
+          <morphology>
+            <morpheme class="stem">
+              <t>Arnhem</t>
+              <feat class="[Arnhem]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="Arnhem"/>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.8" class="WORD">
+          <t>is</t>
+          <pos class="WW(pv,tgw,ev)" confidence="0.999407" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="pv" subset="wvorm"/>
+            <feat class="tgw" subset="pvtijd"/>
+            <feat class="ev" subset="pvagr"/>
+          </pos>
+          <lemma class="zijn"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>is</t>
+              <feat class="[zijn]verb/present-tense/singular/3rd-person-verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>zijn</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="present-tense" subset="inflection"/>
+                <feat class="singular" subset="inflection"/>
+                <feat class="3rd-person-verb" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.9" class="WORD">
+          <t>bij</t>
+          <pos class="VZ(init)" confidence="0.993108" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="bij"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>bij</t>
+              <feat class="[bij]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>bij</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.10" class="WORD">
+          <t>Hoenderloo</t>
+          <pos class="SPEC(deeleigen)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="deeleigen" subset="spectype"/>
+          </pos>
+          <morphology>
+            <morpheme class="stem">
+              <t>Hoenderloo</t>
+              <feat class="[Hoenderloo]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="Hoenderloo"/>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.11" class="WORD">
+          <t>vrijdagochtend</t>
+          <pos class="BW()" confidence="0.5" head="BW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <lemma class="vrijdagochtend"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>vrijdagochtend</t>
+              <feat class="[vrijdagochtend]adverb" subset="structure"/>
+              <pos class="B" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.12" class="WORD">
+          <t>een</t>
+          <pos class="LID(onbep,stan,agr)" confidence="0.998962" head="LID" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="onbep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="agr" subset="npagr"/>
+          </pos>
+          <lemma class="een"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>een</t>
+              <feat class="[een]article" subset="structure"/>
+              <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>een</t>
+                <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.13" class="WORD">
+          <t>vrachtwagen</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.999295" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="vrachtwagen"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>vrachtwagen</t>
+              <feat class="[[vracht]noun[wagen]noun]noun/singular" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="NN" subset="compound"/>
+              </pos>
+              <morpheme class="complex">
+                <feat class="[[vracht]noun[wagen]noun]noun" subset="structure"/>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                  <feat class="NN" subset="compound"/>
+                </pos>
+                <morpheme class="stem">
+                  <t>vracht</t>
+                  <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+                <morpheme class="stem">
+                  <t>wagen</t>
+                  <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.14" class="WORD">
+          <t>met</t>
+          <pos class="VZ(init)" confidence="0.999728" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="met"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>met</t>
+              <feat class="[met]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>met</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.15" class="WORD">
+          <t>potgrond</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.997024" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="potgrond"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>potgrond</t>
+              <feat class="[[pot]verb[grond]noun/singular]noun" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="VN" subset="compound"/>
+              </pos>
+              <morpheme class="stem">
+                <t>pot</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>grond</t>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.16" class="WORD">
+          <t>of</t>
+          <pos class="VG(neven)" confidence="0.99878" head="VG" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="neven" subset="conjtype"/>
+          </pos>
+          <lemma class="of"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>of</t>
+              <feat class="[of]conjunction" subset="structure"/>
+              <pos class="C" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>of</t>
+                <pos class="C" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.17" class="WORD">
+          <t>mest</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.998006" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="mest"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>mest</t>
+              <feat class="[mest]noun/singular" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>mest</t>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.18" class="WORD">
+          <t>is</t>
+          <pos class="WW(pv,tgw,ev)" confidence="0.999447" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="pv" subset="wvorm"/>
+            <feat class="tgw" subset="pvtijd"/>
+            <feat class="ev" subset="pvagr"/>
+          </pos>
+          <lemma class="zijn"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>is</t>
+              <feat class="[zijn]verb/present-tense/singular/3rd-person-verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>zijn</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="present-tense" subset="inflection"/>
+                <feat class="singular" subset="inflection"/>
+                <feat class="3rd-person-verb" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.19" class="WORD" space="no">
+          <t>gekanteld</t>
+          <pos class="WW(vd,vrij,zonder)" confidence="0.997947" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="vd" subset="wvorm"/>
+            <feat class="vrij" subset="positie"/>
+            <feat class="zonder" subset="buiging"/>
+          </pos>
+          <lemma class="kantelen"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>gekanteld</t>
+              <feat class="[[ge]/participle/past-tense[kantel]verb[d]/participle/past-tense]verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="affix">
+                <t>ge</t>
+                <feat class="participle" subset="inflection"/>
+                <feat class="past-tense" subset="inflection"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>kantel</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="affix">
+                <t>d</t>
+                <feat class="participle" subset="inflection"/>
+                <feat class="past-tense" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.1.w.20" class="PUNCTUATION">
+          <t>.</t>
+          <pos class="LET()" confidence="1" head="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>.</t>
+              <feat class="[.]" subset="structure"/>
+              <pos class="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="."/>
+        </w>
+        <chunking xml:id="potgrond.p.2.s.1.chunking.1">
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.1" class="PP" confidence="0.986762">
+            <wref id="potgrond.p.2.s.1.w.1" t="Op"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.2" class="NP" confidence="0.982437">
+            <wref id="potgrond.p.2.s.1.w.2" t="de"/>
+            <wref id="potgrond.p.2.s.1.w.3" t="A50"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.3" class="PP" confidence="0.918605">
+            <wref id="potgrond.p.2.s.1.w.4" t="van"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.4" class="NP" confidence="0.999565">
+            <wref id="potgrond.p.2.s.1.w.5" t="Apeldoorn"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.5" class="PP" confidence="0.984848">
+            <wref id="potgrond.p.2.s.1.w.6" t="naar"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.6" class="NP" confidence="0.996262">
+            <wref id="potgrond.p.2.s.1.w.7" t="Arnhem"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.7" class="VP" confidence="0.993895">
+            <wref id="potgrond.p.2.s.1.w.8" t="is"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.8" class="PP" confidence="0.973941">
+            <wref id="potgrond.p.2.s.1.w.9" t="bij"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.9" class="NP" confidence="1">
+            <wref id="potgrond.p.2.s.1.w.10" t="Hoenderloo"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.10" class="NP" confidence="0.661605">
+            <wref id="potgrond.p.2.s.1.w.11" t="vrijdagochtend"/>
+            <wref id="potgrond.p.2.s.1.w.12" t="een"/>
+            <wref id="potgrond.p.2.s.1.w.13" t="vrachtwagen"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.11" class="PP" confidence="0.993899">
+            <wref id="potgrond.p.2.s.1.w.14" t="met"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.12" class="NP" confidence="1">
+            <wref id="potgrond.p.2.s.1.w.15" t="potgrond"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.13" class="CONJP" confidence="0.9875">
+            <wref id="potgrond.p.2.s.1.w.16" t="of"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.14" class="NP" confidence="0.999255">
+            <wref id="potgrond.p.2.s.1.w.17" t="mest"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.1.chunking.1.chunk.15" class="VP" confidence="0.853145">
+            <wref id="potgrond.p.2.s.1.w.18" t="is"/>
+            <wref id="potgrond.p.2.s.1.w.19" t="gekanteld"/>
+          </chunk>
+        </chunking>
+        <entities xml:id="potgrond.p.2.s.1.entities.1">
+          <entity xml:id="potgrond.p.2.s.1.entities.1.entity.1" class="loc" confidence="0" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.2.s.1.w.3" t="A50"/>
+          </entity>
+          <entity xml:id="potgrond.p.2.s.1.entities.1.entity.2" class="loc" confidence="0" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.2.s.1.w.5" t="Apeldoorn"/>
+          </entity>
+          <entity xml:id="potgrond.p.2.s.1.entities.1.entity.3" class="loc" confidence="1" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.2.s.1.w.7" t="Arnhem"/>
+          </entity>
+          <entity xml:id="potgrond.p.2.s.1.entities.1.entity.4" class="loc" confidence="0.841495" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.2.s.1.w.10" t="Hoenderloo"/>
+          </entity>
+        </entities>
+        <dependencies xml:id="potgrond.p.2.s.1.dependencies.1">
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.1" class="mod">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.8" t="is"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.1" t="Op"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.2" class="det">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.3" t="A50"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.2" t="de"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.3" class="obj1">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.1" t="Op"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.3" t="A50"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.4" class="mod">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.3" t="A50"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.4" t="van"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.5" class="obj1">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.4" t="van"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.5" t="Apeldoorn"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.6" class="mod">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.3" t="A50"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.6" t="naar"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.7" class="obj1">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.6" t="naar"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.7" t="Arnhem"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.8" class="mod">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.8" t="is"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.9" t="bij"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.9" class="obj1">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.9" t="bij"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.10" t="Hoenderloo"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.10" class="mod">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.13" t="vrachtwagen"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.11" t="vrijdagochtend"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.11" class="det">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.13" t="vrachtwagen"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.12" t="een"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.12" class="predc">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.8" t="is"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.13" t="vrachtwagen"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.13" class="mod">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.13" t="vrachtwagen"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.14" t="met"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.14" class="cnj">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.16" t="of"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.15" t="potgrond"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.15" class="obj1">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.14" t="met"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.16" t="of"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.16" class="cnj">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.16" t="of"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.17" t="mest"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.17" class="body">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.16" t="of"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.18" t="is"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.18" class="vc">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.18" t="is"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.19" t="gekanteld"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.1.dependencies.1.dependency.19" class="punct">
+            <hd>
+              <wref id="potgrond.p.2.s.1.w.19" t="gekanteld"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.1.w.20" t="."/>
+            </dep>
+          </dependency>
+        </dependencies>
+      </s>
+      <s xml:id="potgrond.p.2.s.2">
+        <t>De A50 is daarop afgesloten.</t>
+        <w xml:id="potgrond.p.2.s.2.w.1" class="WORD">
+          <t>De</t>
+          <pos class="LID(bep,stan,rest)" confidence="1" head="LID" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="bep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="rest" subset="npagr"/>
+          </pos>
+          <lemma class="de"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>de</t>
+              <feat class="[de]article" subset="structure"/>
+              <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>de</t>
+                <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.2.w.2" class="STRING-NUMBER">
+          <t>A50</t>
+          <pos class="SPEC(deeleigen)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="deeleigen" subset="spectype"/>
+          </pos>
+          <morphology>
+            <morpheme class="stem">
+              <t>A50</t>
+              <feat class="[A50]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="A50"/>
+        </w>
+        <w xml:id="potgrond.p.2.s.2.w.3" class="WORD">
+          <t>is</t>
+          <pos class="WW(pv,tgw,ev)" confidence="0.999966" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="pv" subset="wvorm"/>
+            <feat class="tgw" subset="pvtijd"/>
+            <feat class="ev" subset="pvagr"/>
+          </pos>
+          <lemma class="zijn"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>is</t>
+              <feat class="[zijn]verb/present-tense/singular/3rd-person-verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>zijn</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="present-tense" subset="inflection"/>
+                <feat class="singular" subset="inflection"/>
+                <feat class="3rd-person-verb" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.2.w.4" class="WORD">
+          <t>daarop</t>
+          <pos class="BW()" confidence="0.997264" head="BW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <lemma class="daarop"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>daarop</t>
+              <feat class="[[daar]adverb[op]preposition]adverb" subset="structure"/>
+              <pos class="B" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="BP" subset="compound"/>
+              </pos>
+              <morpheme class="stem">
+                <t>daar</t>
+                <pos class="B" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>op</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.2.w.5" class="WORD" space="no">
+          <t>afgesloten</t>
+          <pos class="WW(vd,vrij,zonder)" confidence="0.994275" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="vd" subset="wvorm"/>
+            <feat class="vrij" subset="positie"/>
+            <feat class="zonder" subset="buiging"/>
+          </pos>
+          <lemma class="afsluiten"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>afgesloten</t>
+              <feat class="[[afge]preposition[sluit]verb[en]/participle/past-tense]verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="PV" subset="compound"/>
+              </pos>
+              <morpheme class="stem">
+                <t>afge</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>sluit</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="affix">
+                <t>en</t>
+                <feat class="participle" subset="inflection"/>
+                <feat class="past-tense" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.2.s.2.w.6" class="PUNCTUATION">
+          <t>.</t>
+          <pos class="LET()" confidence="1" head="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>.</t>
+              <feat class="[.]" subset="structure"/>
+              <pos class="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="."/>
+        </w>
+        <entities xml:id="potgrond.p.2.s.2.entities.1">
+          <entity xml:id="potgrond.p.2.s.2.entities.1.entity.1" class="loc" confidence="0" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.2.s.2.w.2" t="A50"/>
+          </entity>
+        </entities>
+        <chunking xml:id="potgrond.p.2.s.2.chunking.1">
+          <chunk xml:id="potgrond.p.2.s.2.chunking.1.chunk.1" class="NP" confidence="0.964706">
+            <wref id="potgrond.p.2.s.2.w.1" t="De"/>
+            <wref id="potgrond.p.2.s.2.w.2" t="A50"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.2.chunking.1.chunk.2" class="VP" confidence="0.992355">
+            <wref id="potgrond.p.2.s.2.w.3" t="is"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.2.chunking.1.chunk.3" class="PP" confidence="0.8125">
+            <wref id="potgrond.p.2.s.2.w.4" t="daarop"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.2.s.2.chunking.1.chunk.4" class="ADJP" confidence="1">
+            <wref id="potgrond.p.2.s.2.w.5" t="afgesloten"/>
+          </chunk>
+        </chunking>
+        <dependencies xml:id="potgrond.p.2.s.2.dependencies.1">
+          <dependency xml:id="potgrond.p.2.s.2.dependencies.1.dependency.1" class="det">
+            <hd>
+              <wref id="potgrond.p.2.s.2.w.2" t="A50"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.2.w.1" t="De"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.2.dependencies.1.dependency.2" class="su">
+            <hd>
+              <wref id="potgrond.p.2.s.2.w.3" t="is"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.2.w.2" t="A50"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.2.dependencies.1.dependency.3" class="mod">
+            <hd>
+              <wref id="potgrond.p.2.s.2.w.5" t="afgesloten"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.2.w.4" t="daarop"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.2.dependencies.1.dependency.4" class="vc">
+            <hd>
+              <wref id="potgrond.p.2.s.2.w.3" t="is"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.2.w.5" t="afgesloten"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.2.s.2.dependencies.1.dependency.5" class="punct">
+            <hd>
+              <wref id="potgrond.p.2.s.2.w.5" t="afgesloten"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.2.s.2.w.6" t="."/>
+            </dep>
+          </dependency>
+        </dependencies>
+      </s>
+    </p>
+    <p xml:id="potgrond.p.3">
+      <t>De substantie kwam terecht op de weg en in de middenberm en de vrachtwagen zelf ligt op de linkerrijstrook.</t>
+      <s xml:id="potgrond.p.3.s.1">
+        <t>De substantie kwam terecht op de weg en in de middenberm en de vrachtwagen zelf ligt op de linkerrijstrook.</t>
+        <w xml:id="potgrond.p.3.s.1.w.1" class="WORD">
+          <t>De</t>
+          <pos class="LID(bep,stan,rest)" confidence="0.999701" head="LID" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="bep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="rest" subset="npagr"/>
+          </pos>
+          <lemma class="de"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>de</t>
+              <feat class="[de]article" subset="structure"/>
+              <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>de</t>
+                <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.2" class="WORD">
+          <t>substantie</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.998211" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="substantie"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>substantie</t>
+              <feat class="[substantie]noun/singular" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>substantie</t>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.3" class="WORD">
+          <t>kwam</t>
+          <pos class="WW(pv,verl,ev)" confidence="0.999622" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="pv" subset="wvorm"/>
+            <feat class="verl" subset="pvtijd"/>
+            <feat class="ev" subset="pvagr"/>
+          </pos>
+          <lemma class="komen"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>kwam</t>
+              <feat class="[kom]verb/past-tense/singular" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>kom</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="past-tense" subset="inflection"/>
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.4" class="WORD">
+          <t>terecht</t>
+          <pos class="ADJ(vrij,basis,zonder)" confidence="0.995192" head="ADJ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="vrij" subset="positie"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zonder" subset="buiging"/>
+          </pos>
+          <lemma class="terecht"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>terecht</t>
+              <feat class="[terecht]adjective" subset="structure"/>
+              <pos class="A" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.5" class="WORD">
+          <t>op</t>
+          <pos class="VZ(init)" confidence="0.998783" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="op"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>op</t>
+              <feat class="[op]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>op</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.6" class="WORD">
+          <t>de</t>
+          <pos class="LID(bep,stan,rest)" confidence="0.992366" head="LID" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="bep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="rest" subset="npagr"/>
+          </pos>
+          <lemma class="de"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>de</t>
+              <feat class="[de]article" subset="structure"/>
+              <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>de</t>
+                <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.7" class="WORD">
+          <t>weg</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="1" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="weg"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>weg</t>
+              <feat class="[weg]noun/singular" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>weg</t>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.8" class="WORD">
+          <t>en</t>
+          <pos class="VG(neven)" confidence="0.998891" head="VG" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="neven" subset="conjtype"/>
+          </pos>
+          <lemma class="en"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>en</t>
+              <feat class="[en]conjunction" subset="structure"/>
+              <pos class="C" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>en</t>
+                <pos class="C" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.9" class="WORD">
+          <t>in</t>
+          <pos class="VZ(init)" confidence="0.99935" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="in"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>in</t>
+              <feat class="[in]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>in</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.10" class="WORD">
+          <t>de</t>
+          <pos class="LID(bep,stan,rest)" confidence="0.999964" head="LID" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="bep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="rest" subset="npagr"/>
+          </pos>
+          <lemma class="de"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>de</t>
+              <feat class="[de]article" subset="structure"/>
+              <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>de</t>
+                <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.11" class="WORD">
+          <t>middenberm</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.999461" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="middenberm"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>middenberm</t>
+              <feat class="[[midden]adverb[berm]noun/singular]noun" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="BN" subset="compound"/>
+              </pos>
+              <morpheme class="stem">
+                <t>midden</t>
+                <pos class="B" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>berm</t>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.12" class="WORD">
+          <t>en</t>
+          <pos class="VG(neven)" confidence="0.999727" head="VG" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="neven" subset="conjtype"/>
+          </pos>
+          <lemma class="en"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>en</t>
+              <feat class="[en]conjunction" subset="structure"/>
+              <pos class="C" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>en</t>
+                <pos class="C" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.13" class="WORD">
+          <t>de</t>
+          <pos class="LID(bep,stan,rest)" confidence="0.999665" head="LID" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="bep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="rest" subset="npagr"/>
+          </pos>
+          <lemma class="de"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>de</t>
+              <feat class="[de]article" subset="structure"/>
+              <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>de</t>
+                <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.14" class="WORD">
+          <t>vrachtwagen</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.996386" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="vrachtwagen"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>vrachtwagen</t>
+              <feat class="[[vracht]noun[wagen]noun]noun/singular" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="NN" subset="compound"/>
+              </pos>
+              <morpheme class="complex">
+                <feat class="[[vracht]noun[wagen]noun]noun" subset="structure"/>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                  <feat class="NN" subset="compound"/>
+                </pos>
+                <morpheme class="stem">
+                  <t>vracht</t>
+                  <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+                <morpheme class="stem">
+                  <t>wagen</t>
+                  <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.15" class="WORD">
+          <t>zelf</t>
+          <pos class="BW()" confidence="0.998917" head="BW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <lemma class="zelf"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>zelf</t>
+              <feat class="[zelf]adverb" subset="structure"/>
+              <pos class="B" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.16" class="WORD">
+          <t>ligt</t>
+          <pos class="WW(pv,tgw,met-t)" confidence="0.999122" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="pv" subset="wvorm"/>
+            <feat class="tgw" subset="pvtijd"/>
+            <feat class="met-t" subset="pvagr"/>
+          </pos>
+          <lemma class="liggen"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>ligt</t>
+              <feat class="[[lig]verb[t]/present-tense/singular/2nd-person-verb]verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>lig</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="affix">
+                <t>t</t>
+                <feat class="present-tense" subset="inflection"/>
+                <feat class="singular" subset="inflection"/>
+                <feat class="2nd-person-verb" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+          <alt xml:id="potgrond.p.3.s.1.w.16.alt-mor.1" auth="no">
+            <morphology>
+              <morpheme class="complex">
+                <t>ligt</t>
+                <feat class="[[lig]verb[t]/present-tense/singular/3rd-person-verb]verb" subset="structure"/>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                <morpheme class="stem">
+                  <t>lig</t>
+                  <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+                <morpheme class="affix">
+                  <t>t</t>
+                  <feat class="present-tense" subset="inflection"/>
+                  <feat class="singular" subset="inflection"/>
+                  <feat class="3rd-person-verb" subset="inflection"/>
+                </morpheme>
+              </morpheme>
+            </morphology>
+          </alt>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.17" class="WORD">
+          <t>op</t>
+          <pos class="VZ(init)" confidence="0.99776" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="op"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>op</t>
+              <feat class="[op]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>op</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.18" class="WORD">
+          <t>de</t>
+          <pos class="LID(bep,stan,rest)" confidence="0.999964" head="LID" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="bep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="rest" subset="npagr"/>
+          </pos>
+          <lemma class="de"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>de</t>
+              <feat class="[de]article" subset="structure"/>
+              <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>de</t>
+                <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.19" class="WORD" space="no">
+          <t>linkerrijstrook</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.998077" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="linkerrijstrook"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>linkerrijstrook</t>
+              <feat class="[[link]adjective[er][rijd]verb[strook]noun/singular]noun" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>link</t>
+                <pos class="A" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="derivational">
+                <t>er</t>
+                <feat class="[er]" subset="structure"/>
+                <pos class="N_V*" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>rijd</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>strook</t>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.3.s.1.w.20" class="PUNCTUATION">
+          <t>.</t>
+          <pos class="LET()" confidence="1" head="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>.</t>
+              <feat class="[.]" subset="structure"/>
+              <pos class="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="."/>
+        </w>
+        <chunking xml:id="potgrond.p.3.s.1.chunking.1">
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.1" class="NP" confidence="0.972185">
+            <wref id="potgrond.p.3.s.1.w.1" t="De"/>
+            <wref id="potgrond.p.3.s.1.w.2" t="substantie"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.2" class="VP" confidence="0.986692">
+            <wref id="potgrond.p.3.s.1.w.3" t="kwam"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.3" class="PP" confidence="0.841544">
+            <wref id="potgrond.p.3.s.1.w.5" t="op"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.4" class="NP" confidence="0.433511">
+            <wref id="potgrond.p.3.s.1.w.6" t="de"/>
+            <wref id="potgrond.p.3.s.1.w.7" t="weg"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.5" class="CONJP" confidence="0.996324">
+            <wref id="potgrond.p.3.s.1.w.8" t="en"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.6" class="PP" confidence="0.980932">
+            <wref id="potgrond.p.3.s.1.w.9" t="in"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.7" class="NP" confidence="0.982437">
+            <wref id="potgrond.p.3.s.1.w.10" t="de"/>
+            <wref id="potgrond.p.3.s.1.w.11" t="middenberm"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.8" class="CONJP" confidence="0.993665">
+            <wref id="potgrond.p.3.s.1.w.12" t="en"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.9" class="NP" confidence="0.976098">
+            <wref id="potgrond.p.3.s.1.w.13" t="de"/>
+            <wref id="potgrond.p.3.s.1.w.14" t="vrachtwagen"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.10" class="ADVP" confidence="0.96319">
+            <wref id="potgrond.p.3.s.1.w.15" t="zelf"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.11" class="VP" confidence="0.984848">
+            <wref id="potgrond.p.3.s.1.w.16" t="ligt"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.12" class="PP" confidence="0.983707">
+            <wref id="potgrond.p.3.s.1.w.17" t="op"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.3.s.1.chunking.1.chunk.13" class="NP" confidence="0.982344">
+            <wref id="potgrond.p.3.s.1.w.18" t="de"/>
+            <wref id="potgrond.p.3.s.1.w.19" t="linkerrijstrook"/>
+          </chunk>
+        </chunking>
+        <dependencies xml:id="potgrond.p.3.s.1.dependencies.1">
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.1" class="det">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.2" t="substantie"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.1" t="De"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.2" class="su">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.3" t="kwam"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.2" t="substantie"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.3" class="svp">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.3" t="kwam"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.4" t="terecht"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.4" class="cnj">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.8" t="en"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.5" t="op"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.5" class="det">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.7" t="weg"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.6" t="de"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.6" class="obj1">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.5" t="op"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.7" t="weg"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.7" class="cnj">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.8" t="en"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.9" t="in"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.8" class="det">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.11" t="middenberm"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.10" t="de"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.9" class="cnj">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.12" t="en"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.11" t="middenberm"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.10" class="obj1">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.9" t="in"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.12" t="en"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.11" class="det">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.14" t="vrachtwagen"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.13" t="de"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.12" class="su">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.16" t="ligt"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.14" t="vrachtwagen"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.13" class="mod">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.14" t="vrachtwagen"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.15" t="zelf"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.14" class="cnj">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.12" t="en"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.16" t="ligt"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.15" class="ld">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.16" t="ligt"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.17" t="op"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.16" class="det">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.19" t="linkerrijstrook"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.18" t="de"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.17" class="obj1">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.17" t="op"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.19" t="linkerrijstrook"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.3.s.1.dependencies.1.dependency.18" class="punct">
+            <hd>
+              <wref id="potgrond.p.3.s.1.w.19" t="linkerrijstrook"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.3.s.1.w.20" t="."/>
+            </dep>
+          </dependency>
+        </dependencies>
+      </s>
+    </p>
+    <p xml:id="potgrond.p.4">
+      <t>Verwacht wordt dat de berging en opruimwerkzaamheden nog tot 15.00 uur zullen duren. Verkeer richting Arnhem kan beter omrijden via Barneveld (A1, A30, A12).</t>
+      <s xml:id="potgrond.p.4.s.1">
+        <t>Verwacht wordt dat de berging en opruimwerkzaamheden nog tot 15.00 uur zullen duren.</t>
+        <w xml:id="potgrond.p.4.s.1.w.1" class="WORD">
+          <t>Verwacht</t>
+          <pos class="WW(vd,vrij,zonder)" confidence="0.575758" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="vd" subset="wvorm"/>
+            <feat class="vrij" subset="positie"/>
+            <feat class="zonder" subset="buiging"/>
+          </pos>
+          <lemma class="verwachten"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>verwacht</t>
+              <feat class="[[ver][wacht]noun/singular]verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="derivational">
+                <t>ver</t>
+                <feat class="[ver]" subset="structure"/>
+                <pos class="V_*V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>wacht</t>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.2" class="WORD">
+          <t>wordt</t>
+          <pos class="WW(pv,tgw,met-t)" confidence="0.999676" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="pv" subset="wvorm"/>
+            <feat class="tgw" subset="pvtijd"/>
+            <feat class="met-t" subset="pvagr"/>
+          </pos>
+          <lemma class="worden"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>wordt</t>
+              <feat class="[[word]verb[t]/present-tense/singular/2nd-person-verb]verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>word</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="affix">
+                <t>t</t>
+                <feat class="present-tense" subset="inflection"/>
+                <feat class="singular" subset="inflection"/>
+                <feat class="2nd-person-verb" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+          <alt xml:id="potgrond.p.4.s.1.w.2.alt-mor.1" auth="no">
+            <morphology>
+              <morpheme class="complex">
+                <t>wordt</t>
+                <feat class="[[word]verb[t]/present-tense/singular/3rd-person-verb]verb" subset="structure"/>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                <morpheme class="stem">
+                  <t>word</t>
+                  <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+                <morpheme class="affix">
+                  <t>t</t>
+                  <feat class="present-tense" subset="inflection"/>
+                  <feat class="singular" subset="inflection"/>
+                  <feat class="3rd-person-verb" subset="inflection"/>
+                </morpheme>
+              </morpheme>
+            </morphology>
+          </alt>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.3" class="WORD">
+          <t>dat</t>
+          <pos class="VG(onder)" confidence="0.971751" head="VG" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="onder" subset="conjtype"/>
+          </pos>
+          <lemma class="dat"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>dat</t>
+              <feat class="[dat]conjunction" subset="structure"/>
+              <pos class="C" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>dat</t>
+                <pos class="C" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.4" class="WORD">
+          <t>de</t>
+          <pos class="LID(bep,stan,rest)" confidence="0.999279" head="LID" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="bep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="rest" subset="npagr"/>
+          </pos>
+          <morphology>
+            <morpheme class="complex">
+              <t>de</t>
+              <feat class="[de]article" subset="structure"/>
+              <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>de</t>
+                <pos class="D" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+          <lemma class="de"/>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.5" class="WORD">
+          <t>berging</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.999461" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="berging"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>berging</t>
+              <feat class="[[berg]verb[ing]]noun/singular" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="complex">
+                <feat class="[[berg]verb[ing]]noun" subset="structure"/>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                <morpheme class="stem">
+                  <t>berg</t>
+                  <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+                <morpheme class="derivational">
+                  <t>ing</t>
+                  <feat class="[ing]" subset="structure"/>
+                  <pos class="N_V*" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.6" class="WORD">
+          <t>en</t>
+          <pos class="VG(neven)" confidence="0.999194" head="VG" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="neven" subset="conjtype"/>
+          </pos>
+          <lemma class="en"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>en</t>
+              <feat class="[en]conjunction" subset="structure"/>
+              <pos class="C" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>en</t>
+                <pos class="C" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.7" class="WORD">
+          <t>opruimwerkzaamheden</t>
+          <pos class="N(soort,mv,basis)" confidence="0.560586" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="mv" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+          </pos>
+          <lemma class="opruimwerkzaamheid"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>opruimwerkzaamheden</t>
+              <feat class="[[op]preposition[ruim]verb[werk]noun[[zaam][heid]]noun[en]/plural]noun" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>op</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>ruim</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>werk</t>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="complex">
+                <feat class="[[zaam][heid]]noun" subset="structure"/>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                <morpheme class="derivational">
+                  <t>zaam</t>
+                  <feat class="[zaam]" subset="structure"/>
+                  <pos class="A_V*" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+                <morpheme class="derivational">
+                  <t>heid</t>
+                  <feat class="[heid]" subset="structure"/>
+                  <pos class="N_A*" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+              </morpheme>
+              <morpheme class="affix">
+                <t>en</t>
+                <feat class="plural" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.8" class="WORD">
+          <t>nog</t>
+          <pos class="BW()" confidence="0.99993" head="BW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <lemma class="nog"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>nog</t>
+              <feat class="[nog]adverb" subset="structure"/>
+              <pos class="B" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>nog</t>
+                <pos class="B" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.9" class="WORD">
+          <t>tot</t>
+          <pos class="VZ(init)" confidence="0.998379" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="tot"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>tot</t>
+              <feat class="[tot]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>tot</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.10" class="NUMBER">
+          <t>15.00</t>
+          <pos class="SPEC(symb)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="symb" subset="spectype"/>
+          </pos>
+          <morphology>
+            <morpheme class="stem">
+              <t>15.00</t>
+              <feat class="[15.00]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="15.00"/>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.11" class="WORD">
+          <t>uur</t>
+          <pos class="N(soort,ev,basis,onz,stan)" confidence="0.999731" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="onz" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="uur"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>uur</t>
+              <feat class="[uur]noun/singular" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>uur</t>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.12" class="WORD">
+          <t>zullen</t>
+          <pos class="WW(pv,tgw,mv)" confidence="0.842105" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="pv" subset="wvorm"/>
+            <feat class="tgw" subset="pvtijd"/>
+            <feat class="mv" subset="pvagr"/>
+          </pos>
+          <lemma class="zullen"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>zullen</t>
+              <feat class="[[zal]verb[en]/present-tense/plural]verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>zal</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="affix">
+                <t>en</t>
+                <feat class="present-tense" subset="inflection"/>
+                <feat class="plural" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.13" class="WORD" space="no">
+          <t>duren</t>
+          <pos class="WW(inf,vrij,zonder)" confidence="0.988801" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="inf" subset="wvorm"/>
+            <feat class="vrij" subset="positie"/>
+            <feat class="zonder" subset="buiging"/>
+          </pos>
+          <lemma class="duren"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>duren</t>
+              <feat class="[[duur]verb[en]/infinitive]verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>duur</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="affix">
+                <t>en</t>
+                <feat class="infinitive" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.1.w.14" class="PUNCTUATION">
+          <t>.</t>
+          <pos class="LET()" confidence="1" head="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>.</t>
+              <feat class="[.]" subset="structure"/>
+              <pos class="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="."/>
+        </w>
+        <chunking xml:id="potgrond.p.4.s.1.chunking.1">
+          <chunk xml:id="potgrond.p.4.s.1.chunking.1.chunk.1" class="VP" confidence="0.91624">
+            <wref id="potgrond.p.4.s.1.w.1" t="Verwacht"/>
+            <wref id="potgrond.p.4.s.1.w.2" t="wordt"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.1.chunking.1.chunk.2" class="SBAR" confidence="0.979381">
+            <wref id="potgrond.p.4.s.1.w.3" t="dat"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.1.chunking.1.chunk.3" class="NP" confidence="0.983969">
+            <wref id="potgrond.p.4.s.1.w.4" t="de"/>
+            <wref id="potgrond.p.4.s.1.w.5" t="berging"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.1.chunking.1.chunk.4" class="CONJP" confidence="0.993665">
+            <wref id="potgrond.p.4.s.1.w.6" t="en"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.1.chunking.1.chunk.5" class="VP" confidence="0.597812">
+            <wref id="potgrond.p.4.s.1.w.7" t="opruimwerkzaamheden"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.1.chunking.1.chunk.6" class="ADVP" confidence="0.770035">
+            <wref id="potgrond.p.4.s.1.w.8" t="nog"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.1.chunking.1.chunk.7" class="PP" confidence="0.9375">
+            <wref id="potgrond.p.4.s.1.w.9" t="tot"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.1.chunking.1.chunk.8" class="NP" confidence="0.916849">
+            <wref id="potgrond.p.4.s.1.w.10" t="15.00"/>
+            <wref id="potgrond.p.4.s.1.w.11" t="uur"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.1.chunking.1.chunk.9" class="VP" confidence="0.937029">
+            <wref id="potgrond.p.4.s.1.w.12" t="zullen"/>
+            <wref id="potgrond.p.4.s.1.w.13" t="duren"/>
+          </chunk>
+        </chunking>
+        <dependencies xml:id="potgrond.p.4.s.1.dependencies.1">
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.1" class="vc">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.2" t="wordt"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.1" t="Verwacht"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.2" class="su">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.2" t="wordt"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.3" t="dat"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.3" class="det">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.5" t="berging"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.4" t="de"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.4" class="cnj">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.6" t="en"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.5" t="berging"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.5" class="su">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.12" t="zullen"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.6" t="en"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.6" class="cnj">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.6" t="en"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.7" t="opruimwerkzaamheden"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.7" class="mod">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.9" t="tot"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.8" t="nog"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.8" class="mod">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.7" t="opruimwerkzaamheden"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.9" t="tot"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.9" class="mod">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.11" t="uur"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.10" t="15.00"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.10" class="obj1">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.9" t="tot"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.11" t="uur"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.11" class="body">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.3" t="dat"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.12" t="zullen"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.12" class="vc">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.12" t="zullen"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.13" t="duren"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.1.dependencies.1.dependency.13" class="punct">
+            <hd>
+              <wref id="potgrond.p.4.s.1.w.13" t="duren"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.1.w.14" t="."/>
+            </dep>
+          </dependency>
+        </dependencies>
+      </s>
+      <s xml:id="potgrond.p.4.s.2">
+        <t>Verkeer richting Arnhem kan beter omrijden via Barneveld (A1, A30, A12).</t>
+        <w xml:id="potgrond.p.4.s.2.w.1" class="WORD">
+          <t>Verkeer</t>
+          <pos class="N(soort,ev,basis,onz,stan)" confidence="0.75" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="onz" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="verkeer"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>verkeer</t>
+              <feat class="[[ver][keer]noun]noun/singular" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="NN" subset="compound"/>
+              </pos>
+              <morpheme class="complex">
+                <feat class="[[ver][keer]noun]noun" subset="structure"/>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                  <feat class="NN" subset="compound"/>
+                </pos>
+                <morpheme class="particle">
+                  <t>ver</t>
+                  <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+                <morpheme class="stem">
+                  <t>keer</t>
+                  <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+          <alt xml:id="potgrond.p.4.s.2.w.1.alt-mor.1" auth="no">
+            <morphology>
+              <morpheme class="complex">
+                <t>verkeer</t>
+                <feat class="[verkeer]noun/singular" subset="structure"/>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                <morpheme class="stem">
+                  <t>verkeer</t>
+                  <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+                <morpheme class="inflection">
+                  <feat class="singular" subset="inflection"/>
+                </morpheme>
+              </morpheme>
+            </morphology>
+          </alt>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.2" class="WORD">
+          <t>richting</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.998952" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="richting"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>richting</t>
+              <feat class="[[richt]verb[ing]]noun/singular" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="complex">
+                <feat class="[[richt]verb[ing]]noun" subset="structure"/>
+                <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                <morpheme class="stem">
+                  <t>richt</t>
+                  <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+                <morpheme class="derivational">
+                  <t>ing</t>
+                  <feat class="[ing]" subset="structure"/>
+                  <pos class="N_V*" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+                </morpheme>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="singular" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.3" class="WORD">
+          <t>Arnhem</t>
+          <pos class="SPEC(deeleigen)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="deeleigen" subset="spectype"/>
+          </pos>
+          <morphology>
+            <morpheme class="stem">
+              <t>Arnhem</t>
+              <feat class="[Arnhem]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="Arnhem"/>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.4" class="WORD">
+          <t>kan</t>
+          <pos class="WW(pv,tgw,ev)" confidence="0.998017" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="pv" subset="wvorm"/>
+            <feat class="tgw" subset="pvtijd"/>
+            <feat class="ev" subset="pvagr"/>
+          </pos>
+          <lemma class="kunnen"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>kan</t>
+              <feat class="[kan]verb/present-tense/singular/1st-person-verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>kan</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="inflection">
+                <feat class="present-tense" subset="inflection"/>
+                <feat class="singular" subset="inflection"/>
+                <feat class="1st-person-verb" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.5" class="WORD">
+          <t>beter</t>
+          <pos class="ADJ(vrij,comp,zonder)" confidence="0.959388" head="ADJ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="vrij" subset="positie"/>
+            <feat class="comp" subset="graad"/>
+            <feat class="zonder" subset="buiging"/>
+          </pos>
+          <lemma class="goed"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>beter</t>
+              <feat class="[[goed]adjective[er]/comparative]adjective" subset="structure"/>
+              <pos class="A" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              <morpheme class="stem">
+                <t>goed</t>
+                <pos class="A" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="affix">
+                <t>er</t>
+                <feat class="comparative" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.6" class="WORD">
+          <t>omrijden</t>
+          <pos class="WW(inf,vrij,zonder)" confidence="0.918135" head="WW" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="inf" subset="wvorm"/>
+            <feat class="vrij" subset="positie"/>
+            <feat class="zonder" subset="buiging"/>
+          </pos>
+          <lemma class="omrijden"/>
+          <morphology>
+            <morpheme class="complex">
+              <t>omrijden</t>
+              <feat class="[[om]preposition[rijd]verb[en]/infinitive]verb" subset="structure"/>
+              <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex">
+                <feat class="PV" subset="compound"/>
+              </pos>
+              <morpheme class="stem">
+                <t>om</t>
+                <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="stem">
+                <t>rijd</t>
+                <pos class="V" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+              </morpheme>
+              <morpheme class="affix">
+                <t>en</t>
+                <feat class="infinitive" subset="inflection"/>
+              </morpheme>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.7" class="WORD">
+          <t>via</t>
+          <pos class="VZ(init)" confidence="0.972946" head="VZ" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="init" subset="vztype"/>
+          </pos>
+          <lemma class="via"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>via</t>
+              <feat class="[via]preposition" subset="structure"/>
+              <pos class="P" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.8" class="WORD">
+          <t>Barneveld</t>
+          <pos class="N(soort,ev,basis,onz,stan)" confidence="0.589041" head="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="onz" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="barneveld"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>barneveld</t>
+              <feat class="[barneveld]noun" subset="structure"/>
+              <pos class="N" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.9" class="PUNCTUATION" space="no">
+          <t>(</t>
+          <pos class="LET()" confidence="1" head="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>(</t>
+              <feat class="[(]" subset="structure"/>
+              <pos class="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="("/>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.10" class="STRING-NUMBER" space="no">
+          <t>A1</t>
+          <pos class="SPEC(deeleigen)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="deeleigen" subset="spectype"/>
+          </pos>
+          <morphology>
+            <morpheme class="stem">
+              <t>A1</t>
+              <feat class="[A1]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="A1"/>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.11" class="PUNCTUATION">
+          <t>,</t>
+          <pos class="LET()" confidence="1" head="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>,</t>
+              <feat class="[,]" subset="structure"/>
+              <pos class="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class=","/>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.12" class="STRING-NUMBER" space="no">
+          <t>A30</t>
+          <pos class="SPEC(deeleigen)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="deeleigen" subset="spectype"/>
+          </pos>
+          <morphology>
+            <morpheme class="stem">
+              <t>A30</t>
+              <feat class="[A30]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="A30"/>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.13" class="PUNCTUATION">
+          <t>,</t>
+          <pos class="LET()" confidence="1" head="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>,</t>
+              <feat class="[,]" subset="structure"/>
+              <pos class="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class=","/>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.14" class="STRING-NUMBER" space="no">
+          <t>A12</t>
+          <pos class="SPEC(deeleigen)" confidence="1" head="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+            <feat class="deeleigen" subset="spectype"/>
+          </pos>
+          <morphology>
+            <morpheme class="stem">
+              <t>A12</t>
+              <feat class="[A12]" subset="structure"/>
+              <pos class="SPEC" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="A12"/>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.15" class="PUNCTUATION" space="no">
+          <t>)</t>
+          <pos class="LET()" confidence="1" head="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>)</t>
+              <feat class="[)]" subset="structure"/>
+              <pos class="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class=")"/>
+        </w>
+        <w xml:id="potgrond.p.4.s.2.w.16" class="PUNCTUATION">
+          <t>.</t>
+          <pos class="LET()" confidence="1" head="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn"/>
+          <morphology>
+            <morpheme class="stem">
+              <t>.</t>
+              <feat class="[.]" subset="structure"/>
+              <pos class="LET" set="http://ilk.uvt.nl/folia/sets/frog-mbpos-clex"/>
+            </morpheme>
+          </morphology>
+          <lemma class="."/>
+        </w>
+        <chunking xml:id="potgrond.p.4.s.2.chunking.1">
+          <chunk xml:id="potgrond.p.4.s.2.chunking.1.chunk.1" class="NP" confidence="0.995357">
+            <wref id="potgrond.p.4.s.2.w.1" t="Verkeer"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.2.chunking.1.chunk.2" class="PP" confidence="1">
+            <wref id="potgrond.p.4.s.2.w.2" t="richting"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.2.chunking.1.chunk.3" class="NP" confidence="0.760742">
+            <wref id="potgrond.p.4.s.2.w.3" t="Arnhem"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.2.chunking.1.chunk.4" class="VP" confidence="0.982759">
+            <wref id="potgrond.p.4.s.2.w.4" t="kan"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.2.chunking.1.chunk.5" class="ADVP" confidence="0.521739">
+            <wref id="potgrond.p.4.s.2.w.5" t="beter"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.2.chunking.1.chunk.6" class="VP" confidence="0.662843">
+            <wref id="potgrond.p.4.s.2.w.6" t="omrijden"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.2.chunking.1.chunk.7" class="PP" confidence="0.989691">
+            <wref id="potgrond.p.4.s.2.w.7" t="via"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.2.chunking.1.chunk.8" class="NP" confidence="0.995202">
+            <wref id="potgrond.p.4.s.2.w.8" t="Barneveld"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.2.chunking.1.chunk.9" class="NP" confidence="0.994199">
+            <wref id="potgrond.p.4.s.2.w.10" t="A1"/>
+          </chunk>
+          <chunk xml:id="potgrond.p.4.s.2.chunking.1.chunk.10" class="NP" confidence="0.41861">
+            <wref id="potgrond.p.4.s.2.w.12" t="A30"/>
+            <wref id="potgrond.p.4.s.2.w.13" t=","/>
+            <wref id="potgrond.p.4.s.2.w.14" t="A12"/>
+          </chunk>
+        </chunking>
+        <entities xml:id="potgrond.p.4.s.2.entities.1">
+          <entity xml:id="potgrond.p.4.s.2.entities.1.entity.1" class="loc" confidence="0" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.4.s.2.w.3" t="Arnhem"/>
+          </entity>
+          <entity xml:id="potgrond.p.4.s.2.entities.1.entity.2" class="loc" confidence="0" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.4.s.2.w.8" t="Barneveld"/>
+          </entity>
+          <entity xml:id="potgrond.p.4.s.2.entities.1.entity.3" class="loc" confidence="0" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.4.s.2.w.10" t="A1"/>
+          </entity>
+          <entity xml:id="potgrond.p.4.s.2.entities.1.entity.4" class="loc" confidence="1" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.4.s.2.w.12" t="A30"/>
+          </entity>
+          <entity xml:id="potgrond.p.4.s.2.entities.1.entity.5" class="loc" confidence="0" set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+            <wref id="potgrond.p.4.s.2.w.14" t="A12"/>
+          </entity>
+        </entities>
+        <dependencies xml:id="potgrond.p.4.s.2.dependencies.1">
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.1" class="su">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.4" t="kan"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.2" t="richting"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.2" class="obj1">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.2" t="richting"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.3" t="Arnhem"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.3" class="mod">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.6" t="omrijden"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.5" t="beter"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.4" class="vc">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.4" t="kan"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.6" t="omrijden"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.5" class="mod">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.6" t="omrijden"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.7" t="via"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.6" class="obj1">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.7" t="via"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.8" t="Barneveld"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.7" class="punct">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.8" t="Barneveld"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.9" t="("/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.8" class="mod">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.8" t="Barneveld"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.10" t="A1"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.9" class="punct">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.10" t="A1"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.11" t=","/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.10" class="app">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.8" t="Barneveld"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.12" t="A30"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.11" class="punct">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.12" t="A30"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.13" t=","/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.12" class="cnj">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.12" t="A30"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.14" t="A12"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.13" class="punct">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.14" t="A12"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.15" t=")"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="potgrond.p.4.s.2.dependencies.1.dependency.14" class="punct">
+            <hd>
+              <wref id="potgrond.p.4.s.2.w.14" t="A12"/>
+            </hd>
+            <dep>
+              <wref id="potgrond.p.4.s.2.w.16" t="."/>
+            </dep>
+          </dependency>
+        </dependencies>
+      </s>
+    </p>
+  </text>
+</FoLiA>
