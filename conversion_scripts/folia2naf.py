@@ -118,7 +118,7 @@ def convert_file_to_naf(inputfolia, outputnaf=None):
     nafObj.dump(outputnaf)
 
     header_to_header_layer(foliaObj, nafObj)
-
+    print(foliaObj.version)
 
 
 def main(argv=None):
