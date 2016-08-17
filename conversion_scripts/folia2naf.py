@@ -58,20 +58,50 @@ def text_to_text_layer(foliaObj, nafObj):
     :return: None
     '''
     #FoLiA does not provide offset, length; setting it ourselves
-    #More complex word ids, for now not taken over in NAF; flipping back and forth..
+    #More complex word ids, for now not taken over in NAF; flipping back and forth,
+    #i.e. conversion to NAF will generate NAF ids, conversion to FoLiA will generate FoLiA ids
+    offset = 0
+    naf_sent=0
+    naf_para=0
+    word_count = 0
+    for para in foliaObj.paragraphs():
+        naf_para += 1
+        for sent in para.sentences():
+            sent_nr = str(naf_sent)
+            for word in sent.words():
+                naf_word = Cwf()
+                offset = set_word_info(naf_word, word, offset)
+                word_count += 1
+                naf_word.set_id('w' + str(word_count))
+                naf_word.set_sent(sent_nr)
+                naf_word.set_para(str(naf_para))
+                nafObj.add_wf(naf_word)
+            naf_sent += 1
+
+def text_to_text_layer_bak(foliaObj, nafObj):
+    '''
+    Goes through folia's text and adds all tokens to NAF token layer
+    :param foliaobj: folia input object
+    :param nafobj: naf output object
+    :return: None
+    '''
+    #FoLiA does not provide offset, length; setting it ourselves
+    #More complex word ids, for now not taken over in NAF; flipping back and forth,
+    #i.e. conversion to NAF will generate NAF ids, conversion to FoLiA will generate FoLiA ids
     offset = 0
     naf_sent=0
     word_count = 0
     for sent in foliaObj.sentences():
         sent_nr = str(naf_sent)
         for word in sent.words():
-            nafWord = Cwf()
-            offset = set_word_info(nafWord, word, offset)
+            naf_word = Cwf()
+            offset = set_word_info(naf_word, word, offset)
             word_count += 1
-            nafWord.set_id('w' + str(word_count))
-            nafWord.set_sent(sent_nr)
-            nafObj.add_wf(nafWord)
+            naf_word.set_id('w' + str(word_count))
+            naf_word.set_sent(sent_nr)
+            nafObj.add_wf(naf_word)
         naf_sent += 1
+
 
 def add_raw_from_text_layer(nafObj):
     '''
@@ -81,11 +111,16 @@ def add_raw_from_text_layer(nafObj):
     '''
     raw = ''
     offset = 0
+    paragraph = '1'
     for tok in nafObj.get_tokens():
         #add space and update offset if there was a space
         if tok.get_offset() != str(offset):
             raw += ' '
             offset += 1
+        #add double new line for now paragraph
+        if tok.get_para() != paragraph:
+            raw += '\n\n'
+            paragraph = tok.get_para()
         token = tok.get_text()
         raw += token
         offset += len(token)
@@ -97,7 +132,11 @@ def check_overall_info(foliaObj):
     :param foliaObj:
     :return:
     '''
-    print('Problems')
+    if foliaObj.version is None:
+        print('[WARNING] FoLiA input did not have a version indicated.', file=sys.stderr)
+
+    #print('Problems')
+
 
 def convert_file_to_naf(inputfolia, outputnaf=None):
     '''
@@ -110,7 +149,9 @@ def convert_file_to_naf(inputfolia, outputnaf=None):
         outputnaf = "".join([inputfolia, '.naf'])
 
     foliaObj = folia.Document(file=inputfolia)
+    check_overall_info(foliaObj)
     #check what information is present and print warnings if not all can be handled (yet)
+
 
     nafObj = KafNafParser(type='NAF')
     text_to_text_layer(foliaObj, nafObj)
@@ -118,7 +159,7 @@ def convert_file_to_naf(inputfolia, outputnaf=None):
     nafObj.dump(outputnaf)
 
     header_to_header_layer(foliaObj, nafObj)
-    print(foliaObj.version)
+    #print(foliaObj.version)
 
 
 def main(argv=None):
