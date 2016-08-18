@@ -78,29 +78,6 @@ def text_to_text_layer(foliaObj, nafObj):
                 nafObj.add_wf(naf_word)
             naf_sent += 1
 
-def text_to_text_layer_bak(foliaObj, nafObj):
-    '''
-    Goes through folia's text and adds all tokens to NAF token layer
-    :param foliaobj: folia input object
-    :param nafobj: naf output object
-    :return: None
-    '''
-    #FoLiA does not provide offset, length; setting it ourselves
-    #More complex word ids, for now not taken over in NAF; flipping back and forth,
-    #i.e. conversion to NAF will generate NAF ids, conversion to FoLiA will generate FoLiA ids
-    offset = 0
-    naf_sent=0
-    word_count = 0
-    for sent in foliaObj.sentences():
-        sent_nr = str(naf_sent)
-        for word in sent.words():
-            naf_word = Cwf()
-            offset = set_word_info(naf_word, word, offset)
-            word_count += 1
-            naf_word.set_id('w' + str(word_count))
-            naf_word.set_sent(sent_nr)
-            nafObj.add_wf(naf_word)
-        naf_sent += 1
 
 
 def add_raw_from_text_layer(nafObj):
