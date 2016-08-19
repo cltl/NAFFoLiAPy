@@ -159,6 +159,27 @@ def convert_entities(nafparser, foliadoc):
             layer = sentence.add(folia.EntitiesLayer, set=entityset)
         layer.add(folia.Entity, *span,  id=foliadoc.id + '.' + naf_entity.get_id(), set=entityset, cls=naf_entity.get_type())
 
+def convert_chunks(nafparser, foliadoc):
+    chunkset =  "https://raw.githubusercontent.com/cltl/NAFFoLiAPy/setdefinitions/naf_entities.foliaset.xml"
+    first = True
+    for naf_chunk in nafparser.get_chunks():
+        if first:
+            foliadoc.declare(folia.Chunk, chunkset)
+            first = False
+        naf_references = list(naf_chunk.get_references())
+        if len(naf_references) > 1:
+            raise Exception("Chunk has multiple references, this was unexpected...",file=sys.stderr)
+        span = []
+        for target in naf_references[0].get_span():
+            naf_term = nafparser.get_term(target.get_id())
+            span += [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+        sentence = span[0].sentence()
+        try:
+            layer = sentence.annotation(folia.ChunkingLayer, chunkset)
+        except folia.NoSuchAnnotation:
+            layer = sentence.add(folia.ChunkingLayer, set=chunkset)
+        layer.add(folia.Chunk, *span,  id=foliadoc.id + '.' + naf_chunk.get_id(), set=chunkset, cls=naf_chunk.get_type())
+
 def convert_coreferences(nafparser, foliadoc):
     textbody = foliadoc.data[0]
     corefset = {
@@ -211,6 +232,7 @@ def naf2folia(naffile, docid=None):
     textbody = convert_text_layer(nafparser,foliadoc)
     convert_terms(nafparser, foliadoc)
     convert_entities(nafparser, foliadoc)
+    #convert_chunks(nafparser, foliadoc)
     convert_coreferences(nafparser, foliadoc)
 
     return foliadoc
