@@ -23,4 +23,16 @@ Anything not listed is not yet supported.
 
 ### FoLiA to NAF
 
+The following conversions are currently supported:
+
+ * Raw text (created from tokens)
+ * Words to text and terms
+    * NAF's possibility of capturing multi-tokens not taken into account
+    * offset and length are derived from string and space information
+  * Part-of-speech:
+    * taken from pos element: NAF's morphofeat = FoLiA's pos class, NAF's pos = FoLiA's pos head
+  * Lemmas
+
+  
+Anything not listed is not yet supported
 
