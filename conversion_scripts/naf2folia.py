@@ -232,7 +232,7 @@ def naf2folia(naffile, docid=None):
     textbody = convert_text_layer(nafparser,foliadoc)
     convert_terms(nafparser, foliadoc)
     convert_entities(nafparser, foliadoc)
-    #convert_chunks(nafparser, foliadoc)
+    convert_chunks(nafparser, foliadoc)
     convert_coreferences(nafparser, foliadoc)
 
     return foliadoc
