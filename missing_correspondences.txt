@@ -19,6 +19,11 @@ Missing information:
 		=> not clear if the current modules producing NAF actually do this; to be examined once examples have been found.
 
 
+2. Chunk layer:
+
+Missing information:
+	* the attribute 'head' indicating the head of the chunk. This is obligatory in NAF.
+		=> conversion folia2naf adds the head if singleton; as soon as dependencies are covered, they will be used for larger chunks.
 
 #########################################################################################
 #											#
@@ -44,3 +49,14 @@ NAF uses 'externalReferences' as a generic way to link mentions to interpretatio
 It has been discussed previously whether we can also use this mechanism to capture (e.g.) alternative analyses by PoS-taggers, etc.
 We are currently looking into this. Possibly, this will become a variation of externalReferences (since the PoS is a grammatical property, 
 rather than a meaning representation).
+
+
+2. Chunk layer:
+
+Missing information:
+	* confidence attribute for chunks. This can be added, but we need to know what the confidence in FoLiA represents.
+
+3. Entity layer:
+
+Missing information:
+	* confidence attribute for entity. This can be added for external references. Also possible to adapt NAF, but we need to clarify whether FoLiA confidence is about the label or identification+label.
