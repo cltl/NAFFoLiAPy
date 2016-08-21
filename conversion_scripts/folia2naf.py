@@ -65,6 +65,33 @@ def create_span(idList):
     return my_span
 
 
+def create_span_from_folia_words(folia_word_list):
+    '''
+    Goes through list of folia words and identifies corresponding term id for each
+    :param folia_word_list: list of FoLiA word objects
+    :return: list of term ids
+    '''
+
+    global fid2tid
+    naf_span = []
+    for word in folia_word_list:
+        naf_term_id = fid2tid.get(word.id)
+        naf_span.append(naf_term_id)
+    return naf_span
+
+
+def add_span_to_elem(naf_elem, span_ids):
+    '''
+    Creates a NAF span object from a list of ids and adds this to the naf element
+    :param naf_elem: a naf element
+    :param span_ids: a list of ids that composes the span
+    :return: None
+    '''
+    span = create_span(span_ids)
+    naf_elem.set_span(span)
+
+
+
 def set_folia_info(folia_word, term):
     '''
     Retrieves information from folia_word and adds this to term
@@ -155,32 +182,26 @@ def add_raw_from_text_layer(naf_obj):
     naf_obj.set_raw(raw)
 
 
-def create_span_from_folia_words(folia_word_list):
+def dependencies_to_dependency_layer(folia_obj, naf_obj):
     '''
-    Goes through list of folia words and identifies corresponding term id for each
-    :param folia_word_list: list of FoLiA word objects
-    :return: list of term ids
+    Retrieves all dependencies from a folia document, turns them into NAF dep elements and adds them to NAF object
+    :param folia_obj: folia object
+    :param naf_obj: naf object
+    :return: dictionary of (NAF) head id to all its (NAF) dependents ids
     '''
+    for folia_dep in folia_obj.select(folia.Dependency):
+        head_span = create_span_from_folia_words(folia_dep.head().wrefs())
+        if len(head_span) > 1:
+            print('[WARNING] Unknown situation: head consists of more than one tokens', file=sys.stderr)
+        dep_span = create_span_from_folia_words(folia_dep.dependent().wrefs())
+        if len(dep_span) > 1:
+            print('[WARNING] Situation not captured: dependent consists of more than one token', file=sys.stderr)
+        naf_dep = Cdependency()
+        naf_dep.set_from(head_span[0])
+        naf_dep.set_to(dep_span[0])
+        naf_dep.set_function(folia_dep.cls)
+        naf_obj.add_dependency(naf_dep)
 
-    global fid2tid
-    naf_span = []
-    for word in folia_word_list:
-        naf_term_id = fid2tid.get(word.id)
-        naf_span.append(naf_term_id)
-    return naf_span
-
-
-def add_span_to_elem(naf_elem, span_ids):
-    '''
-    Creates a NAF span object from a list of ids and adds this to the naf element
-    :param naf_elem: a naf element
-    :param span_ids: a list of ids that composes the span
-    :return: None
-    '''
-
-    span = Cspan()
-    span.create_from_ids(span_ids)
-    naf_elem.set_span(span)
 
 def chunking_to_chunks_layer(folia_obj, naf_obj):
     '''
@@ -251,6 +272,7 @@ def convert_file_to_naf(inputfolia, outputnaf=None):
     naf_obj = KafNafParser(type='NAF')
     text_to_text_layer(folia_obj, naf_obj)
     add_raw_from_text_layer(naf_obj)
+    dependencies_to_dependency_layer(folia_obj, naf_obj)
     chunking_to_chunks_layer(folia_obj, naf_obj)
     entities_to_entity_layer(folia_obj, naf_obj)
     naf_obj.dump(outputnaf)
