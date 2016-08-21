@@ -25,6 +25,14 @@ Missing information:
 	* the attribute 'head' indicating the head of the chunk. This is obligatory in NAF.
 		=> conversion folia2naf uses dependencies to identify head for multiword chunks (warning printed if not found)
 
+
+5. Header/metadata:
+
+Missing information:
+	* begintime, endtime in addition to timestamp (to avoid some tools giving begintime, others endtime as stamp)
+	* hostname
+	* version of the tool
+
 #########################################################################################
 #											#
 #			In FoLiA, but not in NAF					#
@@ -65,3 +73,9 @@ Missing information:
 
 Missing information:
 	* possibly none, but NAF dependencies map terms and FoLiA dependencies are defined as heads with spans and dependents with spans. If spans always consist of single words, there is no problem. Otherwise we need to design a more sophisticated solution.
+
+5. Header/metadata:
+
+Missing information:
+	* annotatortype (can be added, request to NAF co-developers will be made)
+	* set (already on the list to be added; planned as 'default' for layer)
