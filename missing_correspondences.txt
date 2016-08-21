@@ -23,7 +23,7 @@ Missing information:
 
 Missing information:
 	* the attribute 'head' indicating the head of the chunk. This is obligatory in NAF.
-		=> conversion folia2naf adds the head if singleton; as soon as dependencies are covered, they will be used for larger chunks.
+		=> conversion folia2naf uses dependencies to identify head for multiword chunks (warning printed if not found)
 
 #########################################################################################
 #											#
@@ -60,3 +60,8 @@ Missing information:
 
 Missing information:
 	* confidence attribute for entity. This can be added for external references. Also possible to adapt NAF, but we need to clarify whether FoLiA confidence is about the label or identification+label.
+
+4. Dependencies:
+
+Missing information:
+	* possibly none, but NAF dependencies map terms and FoLiA dependencies are defined as heads with spans and dependents with spans. If spans always consist of single words, there is no problem. Otherwise we need to design a more sophisticated solution.
