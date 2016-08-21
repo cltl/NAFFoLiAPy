@@ -5,6 +5,7 @@ from __future__ import print_function, unicode_literals, division, absolute_impo
 
 from KafNafParserPy import *
 from pynlpl.formats import folia
+from collections import defaultdict
 
 import sys
 
@@ -189,6 +190,7 @@ def dependencies_to_dependency_layer(folia_obj, naf_obj):
     :param naf_obj: naf object
     :return: dictionary of (NAF) head id to all its (NAF) dependents ids
     '''
+    head2deps = defaultdict(list)
     for folia_dep in folia_obj.select(folia.Dependency):
         head_span = create_span_from_folia_words(folia_dep.head().wrefs())
         if len(head_span) > 1:
@@ -197,17 +199,39 @@ def dependencies_to_dependency_layer(folia_obj, naf_obj):
         if len(dep_span) > 1:
             print('[WARNING] Situation not captured: dependent consists of more than one token', file=sys.stderr)
         naf_dep = Cdependency()
-        naf_dep.set_from(head_span[0])
-        naf_dep.set_to(dep_span[0])
+        naf_head = head_span[0]
+        naf_dep.set_from(naf_head)
+        n_dep = dep_span[0]
+        naf_dep.set_to(n_dep)
         naf_dep.set_function(folia_dep.cls)
         naf_obj.add_dependency(naf_dep)
+        head2deps[naf_head].append(n_dep)
+    return head2deps
 
 
-def chunking_to_chunks_layer(folia_obj, naf_obj):
+def identify_head_id(span, head2deps):
+    '''
+    Goes through span and identifies which term is the syntactic head
+    :param span: list of term ids
+    :param head2deps: list of heads mapped to their dependents
+    :return:
+    '''
+    if len(span) == 1:
+        return span[0]
+    for term in span:
+        if term in head2deps:
+            deps = head2deps.get(term)
+            if len(set(deps) & set(span)) > 0:
+                return term
+    print('[WARNING]: no information found to identify head of', span, file=sys.stderr)
+
+
+def chunking_to_chunks_layer(folia_obj, naf_obj, head2deps):
     '''
     Extract chunks from FoLiA object and add to NAF's chunk layer
     :param folia_obj: folia object
     :param naf_obj: naf object
+    :param head2deps: dictionary mapping heads to their dependents
     :return: None
     '''
     chunk_id = 1
@@ -218,9 +242,9 @@ def chunking_to_chunks_layer(folia_obj, naf_obj):
         naf_span = create_span_from_folia_words(chunk.wrefs())
         add_span_to_elem(naf_chunk, naf_span)
         naf_chunk.set_phrase(chunk.cls)
-        #add phrase, head (when possible)
-        if len(naf_span) == 1:
-            naf_chunk.set_head(naf_span[0])
+        chunk_head = identify_head_id(naf_span, head2deps)
+        if chunk_head is not None:
+            naf_chunk.set_head(chunk_head)
         naf_obj.add_chunk(naf_chunk)
 
 
@@ -272,8 +296,8 @@ def convert_file_to_naf(inputfolia, outputnaf=None):
     naf_obj = KafNafParser(type='NAF')
     text_to_text_layer(folia_obj, naf_obj)
     add_raw_from_text_layer(naf_obj)
-    dependencies_to_dependency_layer(folia_obj, naf_obj)
-    chunking_to_chunks_layer(folia_obj, naf_obj)
+    head2deps = dependencies_to_dependency_layer(folia_obj, naf_obj)
+    chunking_to_chunks_layer(folia_obj, naf_obj, head2deps)
     entities_to_entity_layer(folia_obj, naf_obj)
     naf_obj.dump(outputnaf)
 
