@@ -8,27 +8,83 @@ from pynlpl.formats import folia
 from collections import defaultdict
 
 import sys
+import time
 
+version='0.1'
 
 #global dictionary that maps folia token ids to NAF term ids
 fid2tid = {}
 
+#global dictionaries of found annotators for each layer (to be changed)
+text_header = {}
+term_header = {}
+chunk_header = {}
+dep_header = {}
+entity_header = {}
 
-def header_to_header_layer(foliaObj, nafObj):
+
+def set_public_information(folia_obj, naf_header):
+    '''
+
+    :param folia_obj:
+    :param naf_header:
+    :return:
+    '''
+
+    naf_public = Cpublic()
+    naf_public.set_publicid(folia_obj.id)
+
+    if 'http' in folia_obj.id:
+        naf_public.set_uri(folia_obj.id)
+    naf_header.set_publicId(naf_public)
+
+
+def add_lps_to_header(naf_obj, tooldict, layername):
+    '''
+    Function that adds lp elements to NAF header based on identified tools in FoLiA
+    :param naf_obj: naf object that receives header
+    :param tooldict: dictionary of toolname and original data
+    :param layername: name of layer to which it should be added
+    :return:
+    '''
+
+    #conversion only applied if original had annotations
+    if len(tooldict) > 0:
+        currenttime = time.strftime('%Y-%m-%dT%H:%M:%S%Z')
+        lp = Clp(name='NAFFoLiAPy/folia2naf.py', version=version, btimestamp=currenttime, timestamp=currenttime)
+        naf_obj.add_linguistic_processor(layername, lp)
+        for toolname, timestamp in tooldict.items():
+            if timestamp is not None:
+                original_time = timestamp.strftime('%Y-%m-%dT%H:%M:%S%Z')
+            else:
+                original_time = 'unknown'
+            lp = Clp(name=toolname, timestamp=original_time, btimestamp=original_time, etimestamp=original_time, hostname='unknown')
+            naf_obj.add_linguistic_processor(layername, lp)
+
+def create_processes_header(naf_obj):
+    '''
+    Function that adds all processors to NAF header
+    :return: None
+    '''
+    global text_header, term_header, entity_header, chunk_header, dep_header
+
+    add_lps_to_header(naf_obj, text_header, 'text')
+    add_lps_to_header(naf_obj, term_header, 'terms')
+    add_lps_to_header(naf_obj, dep_header, 'deps')
+    add_lps_to_header(naf_obj, chunk_header, 'chunks')
+    add_lps_to_header(naf_obj, entity_header, 'entities')
+
+
+def header_to_header_layer(folia_obj, naf_obj):
     '''
     :param foliaobj:
     :param nafobj:
     :return:
     '''
-    myPublic = Cpublic()
-    myPublic.set_publicid(foliaObj.id)
-
-    if 'http' in foliaObj.id:
-        myPublic.set_uri(foliaObj.id)
-
-    myHeader = CHeader()
-    myHeader.set_publicId(myPublic)
-    nafObj.set_header(myHeader)
+    naf_header = CHeader()
+    set_public_information(folia_obj, naf_header)
+    naf_obj.set_header(naf_header)
+    create_processes_header(naf_obj)
 
     # TODO: add annotation information (as linguistic processes)
 
@@ -100,11 +156,17 @@ def set_folia_info(folia_word, term):
     :param term: naf term object
     :return: None
     '''
-    #FoLiA pos class is NAF morphofeat
+    global term_header
+
     term.set_morphofeat(folia_word.pos())
     term.set_lemma(folia_word.lemma())
+    if not folia_word.annotation(folia.PosAnnotation).annotator in term_header:
+        term_header[folia_word.annotation(folia.PosAnnotation).annotator] = folia_word.annotation(folia.PosAnnotation).datetime
+    if not folia_word.annotation(folia.LemmaAnnotation).annotator in term_header:
+        term_header[folia_word.annotation(folia.LemmaAnnotation).annotator] = folia_word.annotation(folia.LemmaAnnotation).datetime
     #NAF pos tag corresponds to head (attribute's value) of pos element in FoLiA
-    naf_pos = folia_word.xml().find('{http://ilk.uvt.nl/folia}pos').get('head')
+    #naf_pos = folia_word.xml().find('{http://ilk.uvt.nl/folia}pos').get('head')
+    naf_pos = folia_word.annotation(folia.PosAnnotation).feat('head')
     term.set_pos(naf_pos)
 
 
@@ -128,6 +190,8 @@ def get_and_add_term_information(folia_word, word_count):
     set_folia_info(folia_word, naf_term)
     return naf_term
 
+
+
 def text_to_text_layer(folia_obj, naf_obj):
     '''
     Goes through folia's text and adds all tokens to NAF token layer
@@ -135,9 +199,8 @@ def text_to_text_layer(folia_obj, naf_obj):
     :param naf_obj: naf output object
     :return: None
     '''
-    # FoLiA does not provide offset, length; setting it ourselves
-    # More complex word ids, for now not taken over in NAF; flipping back and forth,
-    # i.e. conversion to NAF will generate NAF ids, conversion to FoLiA will generate FoLiA ids
+    global text_header
+
     offset = 0
     naf_sent = 0
     naf_para = 0
@@ -147,6 +210,9 @@ def text_to_text_layer(folia_obj, naf_obj):
         for sent in para.sentences():
             sent_nr = str(naf_sent)
             for word in sent.words():
+                #for now (we can only capture tool and date any way)
+                if not word.annotator in text_header:
+                    text_header[word.annotator] = word.datetime
                 naf_word = Cwf()
                 offset = set_word_info(naf_word, word, offset)
                 word_count += 1
@@ -157,7 +223,6 @@ def text_to_text_layer(folia_obj, naf_obj):
                 naf_term = get_and_add_term_information(word, word_count)
                 naf_obj.add_term(naf_term)
             naf_sent += 1
-
 
 def add_raw_from_text_layer(naf_obj):
     '''
@@ -190,8 +255,11 @@ def dependencies_to_dependency_layer(folia_obj, naf_obj):
     :param naf_obj: naf object
     :return: dictionary of (NAF) head id to all its (NAF) dependents ids
     '''
+    global dep_header
     head2deps = defaultdict(list)
     for folia_dep in folia_obj.select(folia.Dependency):
+        if not folia_dep.annotator in dep_header:
+            dep_header[folia_dep.annotator] = folia_dep.datetime
         head_span = create_span_from_folia_words(folia_dep.head().wrefs())
         if len(head_span) > 1:
             print('[WARNING] Unknown situation: head consists of more than one tokens', file=sys.stderr)
@@ -234,8 +302,11 @@ def chunking_to_chunks_layer(folia_obj, naf_obj, head2deps):
     :param head2deps: dictionary mapping heads to their dependents
     :return: None
     '''
+    global chunk_header
     chunk_id = 1
     for chunk in folia_obj.select(folia.Chunk):
+        if not chunk.annotator in chunk_header:
+            chunk_header[chunk.annotator] = chunk.datetime
         naf_chunk = Cchunk()
         naf_chunk.set_id('c' + str(chunk_id))
         chunk_id += 1
@@ -255,8 +326,11 @@ def entities_to_entity_layer(folia_obj, naf_obj):
     :param naf_obj: naf object
     :return: None
     '''
+    global entity_header
     entity_id = 1
     for entity in folia_obj.select(folia.Entity):
+        if not entity.annotator in entity_header:
+            entity_header[entity.annotator] = entity.datetime
         naf_entity = Centity()
         naf_entity.set_id('e' + str(entity_id))
         entity_id += 1
@@ -278,6 +352,7 @@ def check_overall_info(folia_obj):
         # print('Problems')
 
 
+
 def convert_file_to_naf(inputfolia, outputnaf=None):
     '''
     :param inputfolia: file
@@ -294,18 +369,19 @@ def convert_file_to_naf(inputfolia, outputnaf=None):
 
 
     naf_obj = KafNafParser(type='NAF')
+    if folia_obj.language() is not None:
+        naf_obj.set_language(folia_obj.language())
     text_to_text_layer(folia_obj, naf_obj)
     add_raw_from_text_layer(naf_obj)
     head2deps = dependencies_to_dependency_layer(folia_obj, naf_obj)
     chunking_to_chunks_layer(folia_obj, naf_obj, head2deps)
     entities_to_entity_layer(folia_obj, naf_obj)
+    header_to_header_layer(folia_obj, naf_obj)
     naf_obj.dump(outputnaf)
 
-    header_to_header_layer(folia_obj, naf_obj)
 
 def main(argv=None):
     # option to add: keep original identifiers...
-    # option to add: language
 
     if argv == None:
         argv = sys.argv
