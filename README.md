@@ -32,6 +32,9 @@ The following conversions are currently supported:
   * Part-of-speech:
     * taken from pos element: NAF's morphofeat = FoLiA's pos class, NAF's pos = FoLiA's pos head
   * Lemmas
+  * Chunks
+  * Entities
+  * Dependencies
 
   
 Anything not listed is not yet supported
