@@ -10,7 +10,11 @@ from collections import defaultdict
 import sys
 import time
 
+#version of this code
 version='0.1'
+
+# FoLiA versions this code has been tested on
+tested_versions = ['1.2.0']
 
 #global dictionary that maps folia token ids to NAF term ids
 fid2tid = {}
@@ -343,14 +347,16 @@ def entities_to_entity_layer(folia_obj, naf_obj):
 
 def check_overall_info(folia_obj):
     '''
-    :param folia_obj:
-    :return:
+    Prints information about possible mismatches and problems in conversion
+    :param folia_obj: input file
+    :return: None
     '''
     if folia_obj.version is None:
         print('[WARNING] FoLiA input did not have a version indicated.', file=sys.stderr)
+    elif not folia_obj.version in tested_versions:
+        print('[WARNING] FoLiA version not represented in testset; unknown errors may have occurred.', file=sys.stderr)
 
-        # print('Problems')
-
+    #TODO: create online documentation about missing correspondences; point to them in warnings.
 
 
 def convert_file_to_naf(inputfolia, outputnaf=None):
