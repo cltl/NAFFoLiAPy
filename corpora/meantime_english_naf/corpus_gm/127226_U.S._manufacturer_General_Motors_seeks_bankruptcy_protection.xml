@@ -1,0 +1,4281 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NAF version="v3" xml:lang="en">
+  <nafHeader>
+    <linguisticProcessors layer="srl">
+      <lp beginTimestamp="2016-08-30T01:27:33+0200" endTimestamp="2016-08-30T01:27:36+0200" hostname="r8n8.lisa.surfsara.nl" name="ixa-pipe-srl-en" version="1.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="topics">
+      <lp beginTimestamp="2016-08-30T01:26:19+0200" endTimestamp="2016-08-30T01:26:23+0200" hostname="r8n8.lisa.surfsara.nl" name="ixa-pipe-topic-en" version="1.0.3-40be8debb88093b426ae3520d60df60161968e27"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="text">
+      <lp beginTimestamp="2016-08-30T01:26:18+0200" endTimestamp="2016-08-30T01:26:18+0200" hostname="r8n8.lisa.surfsara.nl" name="ixa-pipe-tok-en" version="1.8.0-56f83ce4b61680346f15e5d4e6de6293764f7383"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="causalRelations">
+      <lp beginTimestamp="2016-08-30T01:27:56+0200" endTimestamp="2016-08-30T01:28:01+0200" hostname="r8n8.lisa.surfsara.nl" name="CausalRelPro-FBK" version="2.0.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="coreferences">
+      <lp beginTimestamp="2016-08-29T23:27:26Z" endTimestamp="2016-08-29T23:27:30Z" hostname="r8n8.lisa.surfsara.nl" name="corefgraph-en" version="0.8"/>
+      <lp beginTimestamp="2016-08-30T01:28:07+0200" endTimestamp="2016-08-30T01:28:07+0200" hostname="r8n8.lisa.surfsara.nl" name="vua-event-coref-intradoc-wn-sim" timestamp="2016-08-30T01:28:07+0200" version="3.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="constituency">
+      <lp beginTimestamp="2016-08-30T01:26:28+0200" endTimestamp="2016-08-30T01:26:37+0200" hostname="r8n8.lisa.surfsara.nl" name="ixa-pipe-parse-en-parser-chunking" version="1.1.1-f4c6e03b9afd8b70d8cf403f43055d28e3b0e874"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="terms">
+      <lp beginTimestamp="2016-08-30T01:26:26+0200" endTimestamp="2016-08-30T01:26:27+0200" hostname="r8n8.lisa.surfsara.nl" name="ixa-pipe-pos-en-maxent-100-c5-baseline-dict-penn" version="1.4.3-192b8ca8980904d09e8d9f7343621174b6b98978"/>
+      <lp beginTimestamp="2016-08-29T23:27:16Z" endTimestamp="2016-08-29T23:27:19Z" hostname="r8n8.lisa.surfsara.nl" name="ukb" version="2.0.22.g0edc5ba"/>
+      <lp beginTimestamp="2016-08-30T01:27:25CEST" endTimestamp="2016-08-30T01:27:25CEST" hostname="r8n8.lisa.surfsara.nl" name="It_Makes_Sense_WSD" timestamp="2016-08-30T01:27:25CEST" version="0.4"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="markables">
+      <lp beginTimestamp="2016-08-30T01:27:15+0200" endTimestamp="2016-08-30T01:27:16+0200" hostname="r8n8.lisa.surfsara.nl" name="ixa-pipe-wikify-en" version="1.2.1-b2d597d79cc928549bf6df6e13894a183be99dcf"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="deps">
+      <lp beginTimestamp="2016-08-30T01:27:33+0200" endTimestamp="2016-08-30T01:27:34+0200" hostname="r8n8.lisa.surfsara.nl" name="ixa-pipe-srl-en" version="1.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="temporalRelations">
+      <lp beginTimestamp="2016-08-30T01:27:44+0200" endTimestamp="2016-08-30T01:27:48+0200" hostname="r8n8.lisa.surfsara.nl" name="TempRelPro-FBK" version="2.5.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="entities">
+      <lp beginTimestamp="2016-08-30T01:26:38+0200" endTimestamp="2016-08-30T01:27:07+0200" hostname="r8n8.lisa.surfsara.nl" name="ixa-pipe-nerc-en-best-clusters-conll03" version="1.5.4-ca02c931bc0b200ccdb8b5795a7552e4cc0d4802"/>
+      <lp beginTimestamp="2016-08-30T01:27:08+0200" endTimestamp="2016-08-30T01:27:09+0200" hostname="r8n8.lisa.surfsara.nl" name="ixa-pipe-ned-en" version="1.1.1-d35d4df5cb71940bf642bb1a83e2b5b7584010df"/>
+      <lp beginTimestamp="2016-08-30T01:27:13CEST" endTimestamp="2016-08-30T01:27:13CEST" hostname="r8n8.lisa.surfsara.nl" name="VUA-popen-ned-reranker" timestamp="2016-08-30T01:27:13CEST" version="1.0"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="timeExpressions">
+      <lp beginTimestamp="2016-08-30T01:27:36+0200" endTimestamp="2016-08-30T01:27:42+0200" hostname="r8n8.lisa.surfsara.nl" name="TimePro-FBK" version="v1.5, based on Yamcha"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="factualities">
+      <lp name="vua-perspectives_factuality" version="1.0" timestamp="2016-08-30T01:28:08CEST" beginTimestamp="2016-08-30T01:28:07CEST" endTimestamp="2016-08-30T01:28:08CEST" hostname="r8n8.lisa.surfsara.nl"/>
+    </linguisticProcessors>
+    <linguisticProcessors layer="opinions">
+      <lp name="Opinion Miner Deluxe" version="7jan2016_3.0" timestamp="2016-08-30T01:28:09CEST" beginTimestamp="2016-08-30T01:28:09CEST" endTimestamp="2016-08-30T01:28:09CEST" hostname="r8n8.lisa.surfsara.nl"/>
+    </linguisticProcessors>
+  </nafHeader>
+  <text>
+    <wf id="w1" length="4" offset="1" sent="0">U.S.</wf>
+    <wf id="w2" length="12" offset="6" sent="0">manufacturer</wf>
+    <wf id="w3" length="7" offset="19" sent="0">General</wf>
+    <wf id="w4" length="6" offset="27" sent="0">Motors</wf>
+    <wf id="w5" length="5" offset="34" sent="0">seeks</wf>
+    <wf id="w6" length="10" offset="40" sent="0">bankruptcy</wf>
+    <wf id="w7" length="10" offset="51" sent="0">protection</wf>
+    <wf id="w8" length="4" offset="62" sent="1">June</wf>
+    <wf id="w9" length="2" offset="67" sent="1">01</wf>
+    <wf id="w10" length="1" offset="69" sent="1">,</wf>
+    <wf id="w11" length="4" offset="71" sent="1">2009</wf>
+    <wf id="w12" length="6" offset="76" sent="2">United</wf>
+    <wf id="w13" length="6" offset="83" sent="2">States</wf>
+    <wf id="w14" length="10" offset="90" sent="2">automobile</wf>
+    <wf id="w15" length="13" offset="101" sent="2">manufacturing</wf>
+    <wf id="w16" length="4" offset="115" sent="2">firm</wf>
+    <wf id="w17" length="7" offset="120" sent="2">General</wf>
+    <wf id="w18" length="6" offset="128" sent="2">Motors</wf>
+    <wf id="w19" length="5" offset="135" sent="2">filed</wf>
+    <wf id="w20" length="3" offset="141" sent="2">for</wf>
+    <wf id="w21" length="10" offset="145" sent="2">bankruptcy</wf>
+    <wf id="w22" length="3" offset="156" sent="2">and</wf>
+    <wf id="w23" length="7" offset="160" sent="2">Chapter</wf>
+    <wf id="w24" length="2" offset="168" sent="2">11</wf>
+    <wf id="w25" length="10" offset="171" sent="2">protection</wf>
+    <wf id="w26" length="4" offset="182" sent="2">from</wf>
+    <wf id="w27" length="3" offset="187" sent="2">its</wf>
+    <wf id="w28" length="9" offset="191" sent="2">creditors</wf>
+    <wf id="w29" length="2" offset="201" sent="2">at</wf>
+    <wf id="w30" length="5" offset="204" sent="2">12:00</wf>
+    <wf id="w31" length="3" offset="210" sent="2">UTC</wf>
+    <wf id="w32" length="6" offset="214" sent="2">Monday</wf>
+    <wf id="w33" length="1" offset="220" sent="2">,</wf>
+    <wf id="w34" length="2" offset="222" sent="2">in</wf>
+    <wf id="w35" length="1" offset="225" sent="2">a</wf>
+    <wf id="w36" length="9" offset="227" sent="2">Manhattan</wf>
+    <wf id="w37" length="1" offset="236" sent="2">,</wf>
+    <wf id="w38" length="3" offset="238" sent="2">New</wf>
+    <wf id="w39" length="4" offset="242" sent="2">York</wf>
+    <wf id="w40" length="7" offset="247" sent="2">federal</wf>
+    <wf id="w41" length="10" offset="255" sent="2">bankruptcy</wf>
+    <wf id="w42" length="5" offset="266" sent="2">court</wf>
+    <wf id="w43" length="1" offset="271" sent="2">.</wf>
+    <wf id="w44" length="4" offset="273" sent="3">This</wf>
+    <wf id="w45" length="3" offset="278" sent="3">was</wf>
+    <wf id="w46" length="3" offset="282" sent="3">the</wf>
+    <wf id="w47" length="7" offset="286" sent="3">largest</wf>
+    <wf id="w48" length="10" offset="294" sent="3">bankruptcy</wf>
+    <wf id="w49" length="6" offset="305" sent="3">filing</wf>
+    <wf id="w50" length="3" offset="312" sent="3">for</wf>
+    <wf id="w51" length="1" offset="316" sent="3">a</wf>
+    <wf id="w52" length="4" offset="318" sent="3">U.S.</wf>
+    <wf id="w53" length="13" offset="323" sent="3">manufacturing</wf>
+    <wf id="w54" length="7" offset="337" sent="3">company</wf>
+    <wf id="w55" length="1" offset="344" sent="3">,</wf>
+    <wf id="w56" length="3" offset="346" sent="3">and</wf>
+    <wf id="w57" length="4" offset="350" sent="3">with</wf>
+    <wf id="w58" length="8" offset="355" sent="3">declared</wf>
+    <wf id="w59" length="6" offset="364" sent="3">assets</wf>
+    <wf id="w60" length="2" offset="371" sent="3">of</wf>
+    <wf id="w61" length="1" offset="374" sent="3">$</wf>
+    <wf id="w62" length="5" offset="376" sent="3">82.29</wf>
+    <wf id="w63" length="7" offset="382" sent="3">billion</wf>
+    <wf id="w64" length="3" offset="390" sent="3">and</wf>
+    <wf id="w65" length="1" offset="394" sent="3">a</wf>
+    <wf id="w66" length="4" offset="396" sent="3">debt</wf>
+    <wf id="w67" length="2" offset="401" sent="3">of</wf>
+    <wf id="w68" length="1" offset="404" sent="3">$</wf>
+    <wf id="w69" length="6" offset="406" sent="3">172.81</wf>
+    <wf id="w70" length="7" offset="413" sent="3">billion</wf>
+    <wf id="w71" length="1" offset="420" sent="3">,</wf>
+    <wf id="w72" length="3" offset="422" sent="3">and</wf>
+    <wf id="w73" length="3" offset="426" sent="3">the</wf>
+    <wf id="w74" length="6" offset="430" sent="3">fourth</wf>
+    <wf id="w75" length="7" offset="437" sent="3">largest</wf>
+    <wf id="w76" length="10" offset="445" sent="3">bankruptcy</wf>
+    <wf id="w77" length="6" offset="456" sent="3">filing</wf>
+    <wf id="w78" length="2" offset="463" sent="3">in</wf>
+    <wf id="w79" length="6" offset="466" sent="3">recent</wf>
+    <wf id="w80" length="4" offset="473" sent="3">U.S.</wf>
+    <wf id="w81" length="7" offset="478" sent="3">history</wf>
+    <wf id="w82" length="2" offset="486" sent="3">--</wf>
+    <wf id="w83" length="5" offset="489" sent="3">after</wf>
+    <wf id="w84" length="3" offset="495" sent="3">the</wf>
+    <wf id="w85" length="12" offset="499" sent="3">bankruptcies</wf>
+    <wf id="w86" length="2" offset="512" sent="3">of</wf>
+    <wf id="w87" length="6" offset="515" sent="3">Lehman</wf>
+    <wf id="w88" length="8" offset="522" sent="3">Brothers</wf>
+    <wf id="w89" length="1" offset="531" sent="3">(</wf>
+    <wf id="w90" length="1" offset="532" sent="3">$</wf>
+    <wf id="w91" length="6" offset="534" sent="3">691.06</wf>
+    <wf id="w92" length="7" offset="541" sent="3">billion</wf>
+    <wf id="w93" length="1" offset="548" sent="3">)</wf>
+    <wf id="w94" length="1" offset="549" sent="3">,</wf>
+    <wf id="w95" length="10" offset="551" sent="3">Washington</wf>
+    <wf id="w96" length="6" offset="562" sent="3">Mutual</wf>
+    <wf id="w97" length="1" offset="569" sent="3">(</wf>
+    <wf id="w98" length="1" offset="570" sent="3">$</wf>
+    <wf id="w99" length="6" offset="572" sent="3">327.91</wf>
+    <wf id="w100" length="7" offset="579" sent="3">billion</wf>
+    <wf id="w101" length="1" offset="586" sent="3">)</wf>
+    <wf id="w102" length="1" offset="587" sent="3">,</wf>
+    <wf id="w103" length="3" offset="589" sent="3">and</wf>
+    <wf id="w104" length="8" offset="593" sent="3">WorldCom</wf>
+    <wf id="w105" length="1" offset="602" sent="3">(</wf>
+    <wf id="w106" length="1" offset="603" sent="3">$</wf>
+    <wf id="w107" length="6" offset="605" sent="3">103.91</wf>
+    <wf id="w108" length="7" offset="612" sent="3">billion</wf>
+    <wf id="w109" length="1" offset="619" sent="3">)</wf>
+    <wf id="w110" length="1" offset="620" sent="3">.</wf>
+  </text>
+  <terms>
+    <term id="t1" lemma="U.S." morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--U.S.-->
+        <target id="w1"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-09044862-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t2" lemma="manufacturer" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--manufacturer-->
+        <target id="w2"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.585046" reference="ili-30-08060446-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.414954" reference="ili-30-10292316-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.60609984" reference="ili-30-08060446-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.39390016" reference="ili-30-10292316-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t3" lemma="General" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--General-->
+        <target id="w3"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-10123844-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-05818388-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t4" lemma="motors" morphofeat="NNPS" pos="R" type="close">
+      <span>
+        <!--Motors-->
+        <target id="w4"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-03789946-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t5" lemma="seek" morphofeat="VBZ" pos="V" type="open">
+      <span>
+        <!--seeks-->
+        <target id="w5"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.332655" reference="ili-30-01315613-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.325635" reference="ili-30-02240481-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.295685" reference="ili-30-02530167-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0356304" reference="ili-30-01069989-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0103954" reference="ili-30-01839170-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.3991406" reference="ili-30-02240481-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.2971812" reference="ili-30-02530167-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.3036782" reference="ili-30-01315613-v" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01839170-v" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01069989-v" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t6" lemma="bankruptcy" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--bankruptcy-->
+        <target id="w6"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.2409210000000002" reference="ili-30-14478433-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.7988339999999999" reference="ili-30-01186397-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.960242" reference="ili-30-14478684-n" resource="wn30g.bin64"/>
+        <externalRef confidence="1.5034168399999999" reference="ili-30-14478684-n" resource="WordNet-3.0"/>
+        <externalRef confidence="1.49658307" reference="ili-30-14478433-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01186397-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t7" lemma="protection" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--protection-->
+        <target id="w7"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.8080989999999999" reference="ili-30-00817680-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.387084" reference="ili-30-13344071-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.346362" reference="ili-30-04014297-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.19562000000000002" reference="ili-30-14539960-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0922511" reference="ili-30-00784755-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.10649929999999999" reference="ili-30-01127874-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0640841" reference="ili-30-01214863-n" resource="wn30g.bin64"/>
+        <externalRef confidence="1.04867059" reference="ili-30-00817680-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.46407986999999995" reference="ili-30-04014297-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.48724952" reference="ili-30-13344071-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-14539960-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01127874-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01214863-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-00784755-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t8" lemma="June" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--June-->
+        <target id="w8"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-15211806-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t9" lemma="01" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--01-->
+        <target id="w9"/>
+      </span>
+    </term>
+    <term id="t10" lemma="," morphofeat="," pos="O" type="close">
+      <span>
+        <!--,-->
+        <target id="w10"/>
+      </span>
+    </term>
+    <term id="t11" lemma="2009" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--2009-->
+        <target id="w11"/>
+      </span>
+    </term>
+    <term id="t12" lemma="United" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--United-->
+        <target id="w12"/>
+      </span>
+    </term>
+    <term id="t13" lemma="states" morphofeat="NNPS" pos="R" type="close">
+      <span>
+        <!--States-->
+        <target id="w13"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.20204337" reference="ili-30-08178547-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.16569792" reference="ili-30-00024720-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.4258819" reference="ili-30-08654360-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.20637684" reference="ili-30-08168978-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-13988498-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-08137738-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-14479615-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-08544813-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t14" lemma="automobile" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--automobile-->
+        <target id="w14"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-02958343-n" resource="wn30g.bin64"/>
+        <externalRef confidence="1.0" reference="ili-30-02958343-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t15" lemma="manufacturing" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--manufacturing-->
+        <target id="w15"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-00924825-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.5023228" reference="ili-30-01653442-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.4976772" reference="ili-30-01634424-v" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t16" lemma="firm" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--firm-->
+        <target id="w16"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-08059870-n" resource="wn30g.bin64"/>
+        <externalRef confidence="1.0" reference="ili-30-08059870-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t17" lemma="General" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--General-->
+        <target id="w17"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-10123844-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-05818388-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t18" lemma="Motors" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--Motors-->
+        <target id="w18"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-03789946-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t19" lemma="file" morphofeat="VBD" pos="V" type="open">
+      <span>
+        <!--filed-->
+        <target id="w19"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.7614070000000002" reference="ili-30-01001857-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.370131" reference="ili-30-00869931-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.451576" reference="ili-30-01387022-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.2515013" reference="ili-30-01001643-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.1653853" reference="ili-30-01920048-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.96870272" reference="ili-30-01001857-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.52203126" reference="ili-30-00869931-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.49493012999999997" reference="ili-30-01920048-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.51024591" reference="ili-30-01387022-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.50408999" reference="ili-30-01001643-v" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t20" lemma="for" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--for-->
+        <target id="w20"/>
+      </span>
+    </term>
+    <term id="t21" lemma="bankruptcy" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--bankruptcy-->
+        <target id="w21"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.357676" reference="ili-30-14478433-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.355057" reference="ili-30-01186397-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.287267" reference="ili-30-14478684-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.48940328" reference="ili-30-14478684-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.51059675" reference="ili-30-14478433-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01186397-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t22" lemma="and" morphofeat="CC" pos="C" type="close">
+      <span>
+        <!--and-->
+        <target id="w22"/>
+      </span>
+    </term>
+    <term id="t23" lemma="Chapter" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--Chapter-->
+        <target id="w23"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.2829453" reference="ili-30-08228665-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.3124839" reference="ili-30-15252907-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.4045708" reference="ili-30-06396142-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-08228838-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-07307172-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t24" lemma="11" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--11-->
+        <target id="w24"/>
+      </span>
+    </term>
+    <term id="t25" lemma="protection" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--protection-->
+        <target id="w25"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.415305" reference="ili-30-00817680-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.18287" reference="ili-30-13344071-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.16379" reference="ili-30-04014297-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0996413" reference="ili-30-14539960-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0593054" reference="ili-30-01127874-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0446397" reference="ili-30-00784755-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0344486" reference="ili-30-01214863-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.52737546" reference="ili-30-00817680-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.22917743" reference="ili-30-04014297-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.24344711" reference="ili-30-13344071-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-14539960-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01127874-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01214863-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-00784755-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t26" lemma="from" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--from-->
+        <target id="w26"/>
+      </span>
+    </term>
+    <term id="t27" lemma="its" morphofeat="PRP$" pos="Q" type="close">
+      <span>
+        <!--its-->
+        <target id="w27"/>
+      </span>
+    </term>
+    <term id="t28" lemma="creditor" morphofeat="NNS" pos="N" type="open">
+      <span>
+        <!--creditors-->
+        <target id="w28"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-09976728-n" resource="wn30g.bin64"/>
+        <externalRef confidence="1.0" reference="ili-30-09976728-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t29" lemma="at" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--at-->
+        <target id="w29"/>
+      </span>
+    </term>
+    <term id="t30" lemma="12:00" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--12:00-->
+        <target id="w30"/>
+      </span>
+    </term>
+    <term id="t31" lemma="UTC" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--UTC-->
+        <target id="w31"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-15130434-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t32" lemma="Monday" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--Monday-->
+        <target id="w32"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-15163979-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t33" lemma="," morphofeat="," pos="O" type="close">
+      <span>
+        <!--,-->
+        <target id="w33"/>
+      </span>
+    </term>
+    <term id="t34" lemma="in" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--in-->
+        <target id="w34"/>
+      </span>
+    </term>
+    <term id="t35" lemma="a" morphofeat="DT" pos="D" type="close">
+      <span>
+        <!--a-->
+        <target id="w35"/>
+      </span>
+    </term>
+    <term id="t36" lemma="Manhattan" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--Manhattan-->
+        <target id="w36"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-09120594-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-07915618-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t37" lemma="," morphofeat="," pos="O" type="close">
+      <span>
+        <!--,-->
+        <target id="w37"/>
+      </span>
+    </term>
+    <term id="t38" lemma="New" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--New-->
+        <target id="w38"/>
+      </span>
+    </term>
+    <term id="t39" lemma="York" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--York-->
+        <target id="w39"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-08159924-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t40" lemma="federal" morphofeat="JJ" pos="G" type="open">
+      <span>
+        <!--federal-->
+        <target id="w40"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.669038" reference="ili-30-01106129-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.128308" reference="ili-30-02725829-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.125133" reference="ili-30-01606214-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0775205" reference="ili-30-01107206-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.56962377" reference="ili-30-01106129-a" resource="WordNet-3.0"/>
+        <externalRef confidence="0.22370456" reference="ili-30-02725829-a" resource="WordNet-3.0"/>
+        <externalRef confidence="0.20667167" reference="ili-30-01606214-a" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01107206-a" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t41" lemma="bankruptcy" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--bankruptcy-->
+        <target id="w41"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.357676" reference="ili-30-14478433-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.355057" reference="ili-30-01186397-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.287267" reference="ili-30-14478684-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.5042874" reference="ili-30-14478684-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.4957126" reference="ili-30-14478433-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01186397-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t42" lemma="court" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--court-->
+        <target id="w42"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.465225" reference="ili-30-08329453-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.122851" reference="ili-30-03120778-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.113687" reference="ili-30-03649459-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0591728" reference="ili-30-08051946-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.051103" reference="ili-30-03120491-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0478774" reference="ili-30-03790755-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0325933" reference="ili-30-08329322-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0316605" reference="ili-30-10913355-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0300212" reference="ili-30-03120198-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.023643" reference="ili-30-01229223-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0221656" reference="ili-30-03121040-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.15598659" reference="ili-30-03120778-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.2371274" reference="ili-30-03120491-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.23796976" reference="ili-30-08051946-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.36891624" reference="ili-30-08329453-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-03120198-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-03788498-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-08329322-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01229223-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-10913355-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-03121040-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t43" lemma="." morphofeat="." pos="O" type="close">
+      <span>
+        <!--.-->
+        <target id="w43"/>
+      </span>
+    </term>
+    <term id="t44" lemma="this" morphofeat="DT" pos="D" type="close">
+      <span>
+        <!--This-->
+        <target id="w44"/>
+      </span>
+    </term>
+    <term id="t45" lemma="be" morphofeat="VBD" pos="V" type="open">
+      <span>
+        <!--was-->
+        <target id="w45"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.501022" reference="ili-30-02604760-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0912693" reference="ili-30-02616386-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0764088" reference="ili-30-02702508-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0756487" reference="ili-30-02620587-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0601116" reference="ili-30-02655135-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0574317" reference="ili-30-02603699-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0351658" reference="ili-30-02749904-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0270949" reference="ili-30-02744820-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0237775" reference="ili-30-02664769-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0203334" reference="ili-30-02697725-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0151212" reference="ili-30-02445925-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0133581" reference="ili-30-02614181-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.00325719" reference="ili-30-02268246-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.1996002" reference="ili-30-02604760-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.124413416" reference="ili-30-02616386-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.08308799" reference="ili-30-02603699-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.09922737" reference="ili-30-02445925-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.07742628" reference="ili-30-02655135-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.109652214" reference="ili-30-02664769-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.09995251" reference="ili-30-02620587-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.101391025" reference="ili-30-02749904-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.105248995" reference="ili-30-02697725-v" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-02268246-v" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-02744820-v" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-02614181-v" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-02702508-v" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t46" lemma="the" morphofeat="DT" pos="D" type="close">
+      <span>
+        <!--the-->
+        <target id="w46"/>
+      </span>
+    </term>
+    <term id="t47" lemma="large" morphofeat="JJS" pos="G" type="open">
+      <span>
+        <!--largest-->
+        <target id="w47"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.823465" reference="ili-30-01382086-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0846539" reference="ili-30-02163307-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0297024" reference="ili-30-00173391-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0274488" reference="ili-30-00579622-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0157401" reference="ili-30-02016881-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.010875" reference="ili-30-00527870-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.00811473" reference="ili-30-01114658-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.5445605" reference="ili-30-02343517-a" resource="WordNet-3.0"/>
+        <externalRef confidence="0.4554395" reference="ili-30-00948514-a" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t48" lemma="bankruptcy" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--bankruptcy-->
+        <target id="w48"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.427585" reference="ili-30-14478433-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.343681" reference="ili-30-14478684-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.228733" reference="ili-30-01186397-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.48940328" reference="ili-30-14478684-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.51059675" reference="ili-30-14478433-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01186397-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t49" lemma="file" morphofeat="VBG" pos="V" type="open">
+      <span>
+        <!--filing-->
+        <target id="w49"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.587158" reference="ili-30-01001857-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.15533" reference="ili-30-01387022-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.112775" reference="ili-30-00869931-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0887192" reference="ili-30-01001643-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0560181" reference="ili-30-01920048-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.33132082" reference="ili-30-01001857-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.17257039" reference="ili-30-00869931-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.16322558" reference="ili-30-01920048-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.16875328" reference="ili-30-01387022-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.16412993" reference="ili-30-01001643-v" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t50" lemma="for" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--for-->
+        <target id="w50"/>
+      </span>
+    </term>
+    <term id="t51" lemma="a" morphofeat="DT" pos="D" type="close">
+      <span>
+        <!--a-->
+        <target id="w51"/>
+      </span>
+    </term>
+    <term id="t52" lemma="U.S." morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--U.S.-->
+        <target id="w52"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-09044862-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t53" lemma="manufacturing" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--manufacturing-->
+        <target id="w53"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-00924825-n" resource="wn30g.bin64"/>
+      </externalReferences>
+    </term>
+    <term id="t54" lemma="company" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--company-->
+        <target id="w54"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.460674" reference="ili-30-08058098-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.188904" reference="ili-30-08214272-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.109516" reference="ili-30-13929588-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0595004" reference="ili-30-08187033-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0536655" reference="ili-30-08264897-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0478549" reference="ili-30-08184861-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.036098" reference="ili-30-08219059-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0274137" reference="ili-30-09887850-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.016374" reference="ili-30-08077711-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.27521354" reference="ili-30-08058098-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.1369546" reference="ili-30-13929588-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.13145457" reference="ili-30-08187033-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.12107487" reference="ili-30-08214272-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.10836856" reference="ili-30-08184861-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.11249572" reference="ili-30-09887850-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.11443813" reference="ili-30-08264897-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-08219059-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-08077711-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t55" lemma="," morphofeat="," pos="O" type="close">
+      <span>
+        <!--,-->
+        <target id="w55"/>
+      </span>
+    </term>
+    <term id="t56" lemma="and" morphofeat="CC" pos="C" type="close">
+      <span>
+        <!--and-->
+        <target id="w56"/>
+      </span>
+    </term>
+    <term id="t57" lemma="with" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--with-->
+        <target id="w57"/>
+      </span>
+    </term>
+    <term id="t58" lemma="declare" morphofeat="VBN" pos="V" type="open">
+      <span>
+        <!--declared-->
+        <target id="w58"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.371254" reference="ili-30-01010118-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.227188" reference="ili-30-00965871-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.160874" reference="ili-30-00822367-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.127834" reference="ili-30-00820801-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0361988" reference="ili-30-01010852-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0278139" reference="ili-30-02444555-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0269084" reference="ili-30-02300549-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0219292" reference="ili-30-00977689-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.21511891" reference="ili-30-01010118-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.22197501" reference="ili-30-00965871-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.16974619" reference="ili-30-00820801-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.21592414" reference="ili-30-00822367-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.17723574" reference="ili-30-02444555-v" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-02300549-v" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01010852-v" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-00977689-v" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t59" lemma="asset" morphofeat="NNS" pos="N" type="open">
+      <span>
+        <!--assets-->
+        <target id="w59"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-05154517-n" resource="wn30g.bin64"/>
+        <externalRef confidence="1.0" reference="ili-30-13329641-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t60" lemma="of" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--of-->
+        <target id="w60"/>
+      </span>
+    </term>
+    <term id="t61" lemma="$" morphofeat="$" pos="O" type="close">
+      <span>
+        <!--$-->
+        <target id="w61"/>
+      </span>
+    </term>
+    <term id="t62" lemma="82.29" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--82.29-->
+        <target id="w62"/>
+      </span>
+    </term>
+    <term id="t63" lemma="billion" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--billion-->
+        <target id="w63"/>
+      </span>
+    </term>
+    <term id="t64" lemma="and" morphofeat="CC" pos="C" type="close">
+      <span>
+        <!--and-->
+        <target id="w64"/>
+      </span>
+    </term>
+    <term id="t65" lemma="a" morphofeat="DT" pos="D" type="close">
+      <span>
+        <!--a-->
+        <target id="w65"/>
+      </span>
+    </term>
+    <term id="t66" lemma="debt" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--debt-->
+        <target id="w66"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.497139" reference="ili-30-13397174-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.342814" reference="ili-30-14490564-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.160047" reference="ili-30-06773347-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.4944226" reference="ili-30-13397174-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.5055774" reference="ili-30-14490564-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-06773347-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t67" lemma="of" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--of-->
+        <target id="w67"/>
+      </span>
+    </term>
+    <term id="t68" lemma="$" morphofeat="$" pos="O" type="close">
+      <span>
+        <!--$-->
+        <target id="w68"/>
+      </span>
+    </term>
+    <term id="t69" lemma="172.81" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--172.81-->
+        <target id="w69"/>
+      </span>
+    </term>
+    <term id="t70" lemma="billion" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--billion-->
+        <target id="w70"/>
+      </span>
+    </term>
+    <term id="t71" lemma="," morphofeat="," pos="O" type="close">
+      <span>
+        <!--,-->
+        <target id="w71"/>
+      </span>
+    </term>
+    <term id="t72" lemma="and" morphofeat="CC" pos="C" type="close">
+      <span>
+        <!--and-->
+        <target id="w72"/>
+      </span>
+    </term>
+    <term id="t73" lemma="the" morphofeat="DT" pos="D" type="close">
+      <span>
+        <!--the-->
+        <target id="w73"/>
+      </span>
+    </term>
+    <term id="t74" lemma="4" morphofeat="JJ" pos="G" type="open">
+      <span>
+        <!--fourth-->
+        <target id="w74"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-02186665-a" resource="wn30g.bin64"/>
+        <externalRef confidence="1.0" reference="ili-30-02202443-a" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t75" lemma="large" morphofeat="JJS" pos="G" type="open">
+      <span>
+        <!--largest-->
+        <target id="w75"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.823465" reference="ili-30-01382086-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0846539" reference="ili-30-02163307-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0297024" reference="ili-30-00173391-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0274488" reference="ili-30-00579622-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0157401" reference="ili-30-02016881-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.010875" reference="ili-30-00527870-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.00811473" reference="ili-30-01114658-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.5461027" reference="ili-30-02343517-a" resource="WordNet-3.0"/>
+        <externalRef confidence="0.4538973" reference="ili-30-00948514-a" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t76" lemma="bankruptcy" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--bankruptcy-->
+        <target id="w76"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.427585" reference="ili-30-14478433-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.343681" reference="ili-30-14478684-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.228733" reference="ili-30-01186397-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.49455652" reference="ili-30-14478684-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.50544345" reference="ili-30-14478433-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01186397-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t77" lemma="file" morphofeat="VBG" pos="V" type="open">
+      <span>
+        <!--filing-->
+        <target id="w77"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.587158" reference="ili-30-01001857-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.15533" reference="ili-30-01387022-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.112775" reference="ili-30-00869931-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0887192" reference="ili-30-01001643-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0560181" reference="ili-30-01920048-v" resource="wn30g.bin64"/>
+        <externalRef confidence="0.3139335" reference="ili-30-01001857-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.17892963" reference="ili-30-00869931-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.1649811" reference="ili-30-01920048-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.17283262" reference="ili-30-01387022-v" resource="WordNet-3.0"/>
+        <externalRef confidence="0.16932316" reference="ili-30-01001643-v" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t78" lemma="in" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--in-->
+        <target id="w78"/>
+      </span>
+    </term>
+    <term id="t79" lemma="recent" morphofeat="JJ" pos="G" type="open">
+      <span>
+        <!--recent-->
+        <target id="w79"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.656321" reference="ili-30-01642477-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.343679" reference="ili-30-01730444-a" resource="wn30g.bin64"/>
+        <externalRef confidence="0.3776567" reference="ili-30-01642477-a" resource="WordNet-3.0"/>
+        <externalRef confidence="0.3627973" reference="ili-30-01730444-a" resource="WordNet-3.0"/>
+        <externalRef confidence="0.259546" reference="ili-30-01642477-a" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t80" lemma="U.S." morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--U.S.-->
+        <target id="w80"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-09044862-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t81" lemma="history" morphofeat="NN" pos="N" type="open">
+      <span>
+        <!--history-->
+        <target id="w81"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.361394" reference="ili-30-15121406-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.220689" reference="ili-30-06514093-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.162583" reference="ili-30-06155567-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.161188" reference="ili-30-15123996-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.0941462" reference="ili-30-06156752-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.28510818" reference="ili-30-15121406-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.1839425" reference="ili-30-06155567-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.14353222" reference="ili-30-15123996-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.21250577" reference="ili-30-06514093-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.17491135" reference="ili-30-06156752-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t82" lemma="--" morphofeat=":" pos="O" type="close">
+      <span>
+        <!--- - -->
+        <target id="w82"/>
+      </span>
+    </term>
+    <term id="t83" lemma="after" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--after-->
+        <target id="w83"/>
+      </span>
+    </term>
+    <term id="t84" lemma="the" morphofeat="DT" pos="D" type="close">
+      <span>
+        <!--the-->
+        <target id="w84"/>
+      </span>
+    </term>
+    <term id="t85" lemma="bankruptcy" morphofeat="NNS" pos="N" type="open">
+      <span>
+        <!--bankruptcies-->
+        <target id="w85"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.427585" reference="ili-30-14478433-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.343681" reference="ili-30-14478684-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.228733" reference="ili-30-01186397-n" resource="wn30g.bin64"/>
+        <externalRef confidence="0.49455652" reference="ili-30-14478684-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.50544345" reference="ili-30-14478433-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-01186397-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t86" lemma="of" morphofeat="IN" pos="P" type="close">
+      <span>
+        <!--of-->
+        <target id="w86"/>
+      </span>
+    </term>
+    <term id="t87" lemma="Lehman" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--Lehman-->
+        <target id="w87"/>
+      </span>
+    </term>
+    <term id="t88" lemma="Brothers" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--Brothers-->
+        <target id="w88"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.4842089" reference="ili-30-09876892-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.51579106" reference="ili-30-09876454-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-09876701-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-09877951-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-09877124-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t89" lemma="(" morphofeat="-LRB-" pos="O" type="close">
+      <span>
+        <!--(-->
+        <target id="w89"/>
+      </span>
+    </term>
+    <term id="t90" lemma="$" morphofeat="$" pos="O" type="close">
+      <span>
+        <!--$-->
+        <target id="w90"/>
+      </span>
+    </term>
+    <term id="t91" lemma="691.06" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--691.06-->
+        <target id="w91"/>
+      </span>
+    </term>
+    <term id="t92" lemma="billion" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--billion-->
+        <target id="w92"/>
+      </span>
+    </term>
+    <term id="t93" lemma=")" morphofeat="-RRB-" pos="O" type="close">
+      <span>
+        <!--)-->
+        <target id="w93"/>
+      </span>
+    </term>
+    <term id="t94" lemma="," morphofeat="," pos="O" type="close">
+      <span>
+        <!--,-->
+        <target id="w94"/>
+      </span>
+    </term>
+    <term id="t95" lemma="Washington" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--Washington-->
+        <target id="w95"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.22945495" reference="ili-30-08357129-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.31681082" reference="ili-30-09070793-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.21860063" reference="ili-30-11375418-n" resource="WordNet-3.0"/>
+        <externalRef confidence="0.2351336" reference="ili-30-09152944-n" resource="WordNet-3.0"/>
+        <externalRef reference="ili-30-11375677-n" resource="WordNet-3.0"/>
+      </externalReferences>
+    </term>
+    <term id="t96" lemma="Mutual" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--Mutual-->
+        <target id="w96"/>
+      </span>
+    </term>
+    <term id="t97" lemma="(" morphofeat="-LRB-" pos="O" type="close">
+      <span>
+        <!--(-->
+        <target id="w97"/>
+      </span>
+    </term>
+    <term id="t98" lemma="$" morphofeat="$" pos="O" type="close">
+      <span>
+        <!--$-->
+        <target id="w98"/>
+      </span>
+    </term>
+    <term id="t99" lemma="327.91" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--327.91-->
+        <target id="w99"/>
+      </span>
+    </term>
+    <term id="t100" lemma="billion" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--billion-->
+        <target id="w100"/>
+      </span>
+    </term>
+    <term id="t101" lemma=")" morphofeat="-RRB-" pos="O" type="close">
+      <span>
+        <!--)-->
+        <target id="w101"/>
+      </span>
+    </term>
+    <term id="t102" lemma="," morphofeat="," pos="O" type="close">
+      <span>
+        <!--,-->
+        <target id="w102"/>
+      </span>
+    </term>
+    <term id="t103" lemma="and" morphofeat="CC" pos="C" type="close">
+      <span>
+        <!--and-->
+        <target id="w103"/>
+      </span>
+    </term>
+    <term id="t104" lemma="WorldCom" morphofeat="NNP" pos="R" type="close">
+      <span>
+        <!--WorldCom-->
+        <target id="w104"/>
+      </span>
+    </term>
+    <term id="t105" lemma="(" morphofeat="-LRB-" pos="O" type="close">
+      <span>
+        <!--(-->
+        <target id="w105"/>
+      </span>
+    </term>
+    <term id="t106" lemma="$" morphofeat="$" pos="O" type="close">
+      <span>
+        <!--$-->
+        <target id="w106"/>
+      </span>
+    </term>
+    <term id="t107" lemma="103.91" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--103.91-->
+        <target id="w107"/>
+      </span>
+    </term>
+    <term id="t108" lemma="billion" morphofeat="CD" pos="O" type="close">
+      <span>
+        <!--billion-->
+        <target id="w108"/>
+      </span>
+    </term>
+    <term id="t109" lemma=")" morphofeat="-RRB-" pos="O" type="close">
+      <span>
+        <!--)-->
+        <target id="w109"/>
+      </span>
+    </term>
+    <term id="t110" lemma="." morphofeat="." pos="O" type="close">
+      <span>
+        <!--.-->
+        <target id="w110"/>
+      </span>
+    </term>
+  </terms>
+  <deps>
+    <!--NAME(Motors,U.S.)-->
+    <dep from="t4" rfunc="NAME" to="t1"/>
+    <!--NAME(Motors,manufacturer)-->
+    <dep from="t4" rfunc="NAME" to="t2"/>
+    <!--NAME(Motors,General)-->
+    <dep from="t4" rfunc="NAME" to="t3"/>
+    <!--SBJ(seeks,Motors)-->
+    <dep from="t5" rfunc="SBJ" to="t4"/>
+    <!--NMOD(protection,bankruptcy)-->
+    <dep from="t7" rfunc="NMOD" to="t6"/>
+    <!--OBJ(seeks,protection)-->
+    <dep from="t5" rfunc="OBJ" to="t7"/>
+    <!--NMOD(June,01)-->
+    <dep from="t8" rfunc="NMOD" to="t9"/>
+    <!--P(June,,)-->
+    <dep from="t8" rfunc="P" to="t10"/>
+    <!--NMOD(June,2009)-->
+    <dep from="t8" rfunc="NMOD" to="t11"/>
+    <!--NAME(States,United)-->
+    <dep from="t13" rfunc="NAME" to="t12"/>
+    <!--NMOD(firm,States)-->
+    <dep from="t16" rfunc="NMOD" to="t13"/>
+    <!--NMOD(firm,automobile)-->
+    <dep from="t16" rfunc="NMOD" to="t14"/>
+    <!--NMOD(firm,manufacturing)-->
+    <dep from="t16" rfunc="NMOD" to="t15"/>
+    <!--SBJ(filed,firm)-->
+    <dep from="t19" rfunc="SBJ" to="t16"/>
+    <!--NAME(Motors,General)-->
+    <dep from="t18" rfunc="NAME" to="t17"/>
+    <!--APPO(firm,Motors)-->
+    <dep from="t16" rfunc="APPO" to="t18"/>
+    <!--ADV(filed,for)-->
+    <dep from="t19" rfunc="ADV" to="t20"/>
+    <!--PMOD(for,bankruptcy)-->
+    <dep from="t20" rfunc="PMOD" to="t21"/>
+    <!--COORD(bankruptcy,and)-->
+    <dep from="t21" rfunc="COORD" to="t22"/>
+    <!--NMOD(11,Chapter)-->
+    <dep from="t24" rfunc="NMOD" to="t23"/>
+    <!--NMOD(protection,11)-->
+    <dep from="t25" rfunc="NMOD" to="t24"/>
+    <!--CONJ(and,protection)-->
+    <dep from="t22" rfunc="CONJ" to="t25"/>
+    <!--NMOD(protection,from)-->
+    <dep from="t25" rfunc="NMOD" to="t26"/>
+    <!--NMOD(creditors,its)-->
+    <dep from="t28" rfunc="NMOD" to="t27"/>
+    <!--PMOD(from,creditors)-->
+    <dep from="t26" rfunc="PMOD" to="t28"/>
+    <!--ADV(filed,at)-->
+    <dep from="t19" rfunc="ADV" to="t29"/>
+    <!--NMOD(Monday,12:00)-->
+    <dep from="t32" rfunc="NMOD" to="t30"/>
+    <!--NAME(Monday,UTC)-->
+    <dep from="t32" rfunc="NAME" to="t31"/>
+    <!--PMOD(at,Monday)-->
+    <dep from="t29" rfunc="PMOD" to="t32"/>
+    <!--P(filed,,)-->
+    <dep from="t19" rfunc="P" to="t33"/>
+    <!--LOC(filed,in)-->
+    <dep from="t19" rfunc="LOC" to="t34"/>
+    <!--NMOD(court,a)-->
+    <dep from="t42" rfunc="NMOD" to="t35"/>
+    <!--NAME(York,Manhattan)-->
+    <dep from="t39" rfunc="NAME" to="t36"/>
+    <!--P(York,,)-->
+    <dep from="t39" rfunc="P" to="t37"/>
+    <!--NAME(York,New)-->
+    <dep from="t39" rfunc="NAME" to="t38"/>
+    <!--NMOD(court,York)-->
+    <dep from="t42" rfunc="NMOD" to="t39"/>
+    <!--NMOD(court,federal)-->
+    <dep from="t42" rfunc="NMOD" to="t40"/>
+    <!--NMOD(court,bankruptcy)-->
+    <dep from="t42" rfunc="NMOD" to="t41"/>
+    <!--PMOD(in,court)-->
+    <dep from="t34" rfunc="PMOD" to="t42"/>
+    <!--P(filed,.)-->
+    <dep from="t19" rfunc="P" to="t43"/>
+    <!--SBJ(was,This)-->
+    <dep from="t45" rfunc="SBJ" to="t44"/>
+    <!--NMOD(bankruptcy,the)-->
+    <dep from="t48" rfunc="NMOD" to="t46"/>
+    <!--NMOD(bankruptcy,largest)-->
+    <dep from="t48" rfunc="NMOD" to="t47"/>
+    <!--PRD(was,bankruptcy)-->
+    <dep from="t45" rfunc="PRD" to="t48"/>
+    <!--APPO(bankruptcy,filing)-->
+    <dep from="t48" rfunc="APPO" to="t49"/>
+    <!--ADV(filing,for)-->
+    <dep from="t49" rfunc="ADV" to="t50"/>
+    <!--NMOD(company,a)-->
+    <dep from="t54" rfunc="NMOD" to="t51"/>
+    <!--NMOD(company,U.S.)-->
+    <dep from="t54" rfunc="NMOD" to="t52"/>
+    <!--NMOD(company,manufacturing)-->
+    <dep from="t54" rfunc="NMOD" to="t53"/>
+    <!--PMOD(for,company)-->
+    <dep from="t50" rfunc="PMOD" to="t54"/>
+    <!--P(for,,)-->
+    <dep from="t50" rfunc="P" to="t55"/>
+    <!--COORD(for,and)-->
+    <dep from="t50" rfunc="COORD" to="t56"/>
+    <!--CONJ(and,with)-->
+    <dep from="t56" rfunc="CONJ" to="t57"/>
+    <!--NMOD(assets,declared)-->
+    <dep from="t59" rfunc="NMOD" to="t58"/>
+    <!--PMOD(with,assets)-->
+    <dep from="t57" rfunc="PMOD" to="t59"/>
+    <!--NMOD(assets,of)-->
+    <dep from="t59" rfunc="NMOD" to="t60"/>
+    <!--PMOD(of,$)-->
+    <dep from="t60" rfunc="PMOD" to="t61"/>
+    <!--DEP($,82.29)-->
+    <dep from="t61" rfunc="DEP" to="t62"/>
+    <!--DEP($,billion)-->
+    <dep from="t61" rfunc="DEP" to="t63"/>
+    <!--COORD(assets,and)-->
+    <dep from="t59" rfunc="COORD" to="t64"/>
+    <!--NMOD(debt,a)-->
+    <dep from="t66" rfunc="NMOD" to="t65"/>
+    <!--CONJ(and,debt)-->
+    <dep from="t64" rfunc="CONJ" to="t66"/>
+    <!--NMOD(debt,of)-->
+    <dep from="t66" rfunc="NMOD" to="t67"/>
+    <!--PMOD(of,$)-->
+    <dep from="t67" rfunc="PMOD" to="t68"/>
+    <!--DEP($,172.81)-->
+    <dep from="t68" rfunc="DEP" to="t69"/>
+    <!--DEP($,billion)-->
+    <dep from="t68" rfunc="DEP" to="t70"/>
+    <!--P($,,)-->
+    <dep from="t68" rfunc="P" to="t71"/>
+    <!--COORD($,and)-->
+    <dep from="t68" rfunc="COORD" to="t72"/>
+    <!--NMOD(bankruptcy,the)-->
+    <dep from="t76" rfunc="NMOD" to="t73"/>
+    <!--NMOD(bankruptcy,fourth)-->
+    <dep from="t76" rfunc="NMOD" to="t74"/>
+    <!--AMOD(fourth,largest)-->
+    <dep from="t74" rfunc="AMOD" to="t75"/>
+    <!--CONJ(and,bankruptcy)-->
+    <dep from="t72" rfunc="CONJ" to="t76"/>
+    <!--APPO(bankruptcy,filing)-->
+    <dep from="t76" rfunc="APPO" to="t77"/>
+    <!--LOC(filing,in)-->
+    <dep from="t77" rfunc="LOC" to="t78"/>
+    <!--NMOD(history,recent)-->
+    <dep from="t81" rfunc="NMOD" to="t79"/>
+    <!--NMOD(history,U.S.)-->
+    <dep from="t81" rfunc="NMOD" to="t80"/>
+    <!--PMOD(in,history)-->
+    <dep from="t78" rfunc="PMOD" to="t81"/>
+    <!--P(bankruptcy,- -)-->
+    <dep from="t76" rfunc="P" to="t82"/>
+    <!--TMP(bankruptcy,after)-->
+    <dep from="t76" rfunc="TMP" to="t83"/>
+    <!--NMOD(bankruptcies,the)-->
+    <dep from="t85" rfunc="NMOD" to="t84"/>
+    <!--PMOD(after,bankruptcies)-->
+    <dep from="t83" rfunc="PMOD" to="t85"/>
+    <!--NMOD(bankruptcies,of)-->
+    <dep from="t85" rfunc="NMOD" to="t86"/>
+    <!--NAME(Brothers,Lehman)-->
+    <dep from="t88" rfunc="NAME" to="t87"/>
+    <!--PMOD(of,Brothers)-->
+    <dep from="t86" rfunc="PMOD" to="t88"/>
+    <!--NMOD(Brothers,()-->
+    <dep from="t88" rfunc="NMOD" to="t89"/>
+    <!--NMOD(),$)-->
+    <dep from="t93" rfunc="NMOD" to="t90"/>
+    <!--DEP($,691.06)-->
+    <dep from="t90" rfunc="DEP" to="t91"/>
+    <!--DEP($,billion)-->
+    <dep from="t90" rfunc="DEP" to="t92"/>
+    <!--NMOD((,))-->
+    <dep from="t89" rfunc="NMOD" to="t93"/>
+    <!--P(Brothers,,)-->
+    <dep from="t88" rfunc="P" to="t94"/>
+    <!--NAME(Mutual,Washington)-->
+    <dep from="t96" rfunc="NAME" to="t95"/>
+    <!--COORD(Brothers,Mutual)-->
+    <dep from="t88" rfunc="COORD" to="t96"/>
+    <!--NMOD(Mutual,()-->
+    <dep from="t96" rfunc="NMOD" to="t97"/>
+    <!--NMOD(),$)-->
+    <dep from="t101" rfunc="NMOD" to="t98"/>
+    <!--DEP($,327.91)-->
+    <dep from="t98" rfunc="DEP" to="t99"/>
+    <!--DEP($,billion)-->
+    <dep from="t98" rfunc="DEP" to="t100"/>
+    <!--NMOD((,))-->
+    <dep from="t97" rfunc="NMOD" to="t101"/>
+    <!--P(Mutual,,)-->
+    <dep from="t96" rfunc="P" to="t102"/>
+    <!--COORD(Mutual,and)-->
+    <dep from="t96" rfunc="COORD" to="t103"/>
+    <!--CONJ(and,WorldCom)-->
+    <dep from="t103" rfunc="CONJ" to="t104"/>
+    <!--NMOD(Brothers,()-->
+    <dep from="t88" rfunc="NMOD" to="t105"/>
+    <!--NMOD(),$)-->
+    <dep from="t109" rfunc="NMOD" to="t106"/>
+    <!--DEP($,103.91)-->
+    <dep from="t106" rfunc="DEP" to="t107"/>
+    <!--DEP($,billion)-->
+    <dep from="t106" rfunc="DEP" to="t108"/>
+    <!--NMOD($,))-->
+    <dep from="t68" rfunc="NMOD" to="t109"/>
+    <!--P(was,.)-->
+    <dep from="t45" rfunc="P" to="t110"/>
+  </deps>
+  <entities>
+    <entity id="e1" type="LOC">
+      <references>
+        <span>
+          <!--U.S.-->
+          <target id="t1"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="0.9302127" reference="http://dbpedia.org/resource/United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="0.06080286" reference="http://dbpedia.org/resource/United_States_dollar" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="0.008940548" reference="http://dbpedia.org/resource/Federal_government_of_the_United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.9056468E-5" reference="http://dbpedia.org/resource/United_States_Armed_Forces" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="1.9056468E-5" reference="http://dbpedia.org/resource/United_States_Armed_Forces" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.4704521E-5" reference="http://dbpedia.org/resource/United_States_Army" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="1.4704521E-5" reference="http://dbpedia.org/resource/United_States_Army" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="9.449606E-6" reference="http://dbpedia.org/resource/United_States_Navy" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="9.449606E-6" reference="http://dbpedia.org/resource/United_States_Navy" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="6.736445E-7" reference="http://dbpedia.org/resource/United_States_Reports" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="8.274273E-9" reference="http://dbpedia.org/resource/United_States_men's_national_soccer_team" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="2.9360356E-10" reference="http://dbpedia.org/resource/Military_Assistance_Command,_Vietnam" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="8.1003295E-19" reference="http://dbpedia.org/resource/Fauna_of_the_United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/United_States" resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+    <entity id="e2" type="ORG">
+      <references>
+        <span>
+          <!--General Motors-->
+          <target id="t3"/>
+          <target id="t4"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="0.9999802" reference="http://dbpedia.org/resource/General_Motors" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="0.9999802" reference="http://dbpedia.org/resource/General_Motors" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.4843096E-5" reference="http://dbpedia.org/resource/General_Motors_Canada" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="4.96006E-6" reference="http://dbpedia.org/resource/General_Motors_Chapter_11_reorganization" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="6.029979E-10" reference="http://dbpedia.org/resource/GMC_(automobile)" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="4.044353E-10" reference="http://dbpedia.org/resource/General_Motors_India_Private_Limited" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.574477E-10" reference="http://dbpedia.org/resource/Motors_Liquidation_Company" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="8.216277E-11" reference="http://dbpedia.org/resource/Electro-Motive_Diesel" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="5.816358E-26" reference="http://dbpedia.org/resource/List_of_GM_transmissions" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/General_Motors" resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+    <entity id="e3" type="LOC">
+      <references>
+        <span>
+          <!--United States-->
+          <target id="t12"/>
+          <target id="t13"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="0.9976874" reference="http://dbpedia.org/resource/United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="0.0023126102" reference="http://dbpedia.org/resource/Federal_government_of_the_United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.5488046E-8" reference="http://dbpedia.org/resource/United_States_men's_national_soccer_team" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.1184811E-9" reference="http://dbpedia.org/resource/United_States_national_rugby_union_team" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="7.506364E-10" reference="http://dbpedia.org/resource/United_States_women's_national_soccer_team" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.4065266E-10" reference="http://dbpedia.org/resource/United_States_men's_national_ice_hockey_team" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.3288047E-10" reference="http://dbpedia.org/resource/Secondary_education_in_the_United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="2.101529E-11" reference="http://dbpedia.org/resource/United_States_men's_national_basketball_team" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="2.1914333E-20" reference="http://dbpedia.org/resource/United_States_Fed_Cup_team" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="3.9448033E-21" reference="http://dbpedia.org/resource/United_States_Davis_Cup_team" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/United_States" resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+    <entity id="e4" type="ORG">
+      <references>
+        <span>
+          <!--General Motors-->
+          <target id="t17"/>
+          <target id="t18"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="0.9999802" reference="http://dbpedia.org/resource/General_Motors" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="0.9999802" reference="http://dbpedia.org/resource/General_Motors" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.4843096E-5" reference="http://dbpedia.org/resource/General_Motors_Canada" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="4.96006E-6" reference="http://dbpedia.org/resource/General_Motors_Chapter_11_reorganization" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="6.029979E-10" reference="http://dbpedia.org/resource/GMC_(automobile)" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="4.044353E-10" reference="http://dbpedia.org/resource/General_Motors_India_Private_Limited" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.574477E-10" reference="http://dbpedia.org/resource/Motors_Liquidation_Company" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="8.216277E-11" reference="http://dbpedia.org/resource/Electro-Motive_Diesel" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="5.816358E-26" reference="http://dbpedia.org/resource/List_of_GM_transmissions" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/General_Motors" resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+    <entity id="e5" type="LOC">
+      <references>
+        <span>
+          <!--Manhattan-->
+          <target id="t36"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="0.99673194" reference="http://dbpedia.org/resource/Manhattan" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="0.99673194" reference="http://dbpedia.org/resource/Manhattan_(disambiguation)" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="0.0032018127" reference="http://dbpedia.org/resource/New_York_City" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="0.0032018127" reference="http://dbpedia.org/resource/New_York_City" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="6.4576E-5" reference="http://dbpedia.org/resource/Manhattan,_Kansas" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.5767432E-6" reference="http://dbpedia.org/resource/Manhattan_Bridge" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="1.5767432E-6" reference="http://dbpedia.org/resource/Manhattan_Bridge" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.01032164E-7" reference="http://dbpedia.org/resource/Chinatown,_Manhattan" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.214487E-18" reference="http://dbpedia.org/resource/Manhattan_(film)" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="1.214487E-18" reference="http://dbpedia.org/resource/Manhattan_(film)" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="2.8883648E-20" reference="http://dbpedia.org/resource/Manhattan_(song)" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.6309147E-20" reference="http://dbpedia.org/resource/Manhattan_Jaspers_and_Lady_Jaspers" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.4801256E-20" reference="http://dbpedia.org/resource/Manhattan_(cocktail)" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="1.4801256E-20" reference="http://dbpedia.org/resource/Manhattan_(cocktail)" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.1027999E-20" reference="http://dbpedia.org/resource/Manhattan,_Nevada" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Manhattan" resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+    <entity id="e6" type="LOC">
+      <references>
+        <span>
+          <!--New York-->
+          <target id="t38"/>
+          <target id="t39"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="0.71900535" reference="http://dbpedia.org/resource/New_York" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="0.71900535" reference="http://dbpedia.org/resource/New_York_(disambiguation)" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="0.27742612" reference="http://dbpedia.org/resource/New_York_City" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="0.27742612" reference="http://dbpedia.org/resource/New_York_City" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="0.0035517933" reference="http://dbpedia.org/resource/Manhattan" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="0.0035517933" reference="http://dbpedia.org/resource/Manhattan_(disambiguation)" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.621597E-5" reference="http://dbpedia.org/resource/New_York_(magazine)" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="5.5650946E-7" reference="http://dbpedia.org/resource/Province_of_New_York" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="8.137565E-9" reference="http://dbpedia.org/resource/New_York_Knicks" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="8.137565E-9" reference="http://dbpedia.org/resource/New_York_Knicks" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.1294084E-10" reference="http://dbpedia.org/resource/New_York_GAA" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.8641802E-17" reference="http://dbpedia.org/resource/United_States_congressional_delegations_from_New_York" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="5.110656E-20" reference="http://dbpedia.org/resource/Tiffany_Pollard" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="4.103666E-21" reference="http://dbpedia.org/resource/2012–13_New_York_Knicks_season" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/New_York" resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+    <entity id="e7" type="LOC">
+      <references>
+        <span>
+          <!--U.S.-->
+          <target id="t52"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="0.9302127" reference="http://dbpedia.org/resource/United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="0.06080286" reference="http://dbpedia.org/resource/United_States_dollar" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="0.008940548" reference="http://dbpedia.org/resource/Federal_government_of_the_United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.9056468E-5" reference="http://dbpedia.org/resource/United_States_Armed_Forces" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="1.9056468E-5" reference="http://dbpedia.org/resource/United_States_Armed_Forces" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.4704521E-5" reference="http://dbpedia.org/resource/United_States_Army" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="1.4704521E-5" reference="http://dbpedia.org/resource/United_States_Army" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="9.449606E-6" reference="http://dbpedia.org/resource/United_States_Navy" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="9.449606E-6" reference="http://dbpedia.org/resource/United_States_Navy" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="6.736445E-7" reference="http://dbpedia.org/resource/United_States_Reports" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="8.274273E-9" reference="http://dbpedia.org/resource/United_States_men's_national_soccer_team" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="2.9360356E-10" reference="http://dbpedia.org/resource/Military_Assistance_Command,_Vietnam" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="8.1003295E-19" reference="http://dbpedia.org/resource/Fauna_of_the_United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/United_States" resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+    <entity id="e8" type="LOC">
+      <references>
+        <span>
+          <!--U.S.-->
+          <target id="t80"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="0.9302127" reference="http://dbpedia.org/resource/United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="0.06080286" reference="http://dbpedia.org/resource/United_States_dollar" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="0.008940548" reference="http://dbpedia.org/resource/Federal_government_of_the_United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.9056468E-5" reference="http://dbpedia.org/resource/United_States_Armed_Forces" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="1.9056468E-5" reference="http://dbpedia.org/resource/United_States_Armed_Forces" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.4704521E-5" reference="http://dbpedia.org/resource/United_States_Army" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="1.4704521E-5" reference="http://dbpedia.org/resource/United_States_Army" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="9.449606E-6" reference="http://dbpedia.org/resource/United_States_Navy" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="9.449606E-6" reference="http://dbpedia.org/resource/United_States_Navy" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="6.736445E-7" reference="http://dbpedia.org/resource/United_States_Reports" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="8.274273E-9" reference="http://dbpedia.org/resource/United_States_men's_national_soccer_team" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="2.9360356E-10" reference="http://dbpedia.org/resource/Military_Assistance_Command,_Vietnam" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="8.1003295E-19" reference="http://dbpedia.org/resource/Fauna_of_the_United_States" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/United_States" resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+    <entity id="e9" type="ORG">
+      <references>
+        <span>
+          <!--Lehman Brothers-->
+          <target id="t87"/>
+          <target id="t88"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="0.99999875" reference="http://dbpedia.org/resource/Lehman_Brothers" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="0.99999875" reference="http://dbpedia.org/resource/Lehman_Brothers" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.2500516E-6" reference="http://dbpedia.org/resource/Bankruptcy_of_Lehman_Brothers" reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Lehman_Brothers" resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+    <entity id="e10" type="PER">
+      <references>
+        <span>
+          <!--Washington Mutual-->
+          <target id="t95"/>
+          <target id="t96"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Washington_Mutual" reftype="en" resource="spotlight_v1" source="en">
+          <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Washington_Mutual" reftype="en" resource="wikipedia-db-nlEn" source="en"/>
+        </externalRef>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Washington_Mutual" resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+    <entity id="e11" type="ORG">
+      <references>
+        <span>
+          <!--WorldCom-->
+          <target id="t104"/>
+        </span>
+      </references>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/MCI_Inc." reftype="en" resource="spotlight_v1" source="en"/>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/MCI_Inc." resource="dbp" source="POCUS"/>
+      </externalReferences>
+    </entity>
+  </entities>
+  <coreferences>
+    <coref id="co1">
+      <span>
+        <!--its-->
+        <target id="t27"/>
+      </span>
+      <span>
+        <!--New York federal bankruptcy court-->
+        <target id="t38"/>
+        <target id="t39"/>
+        <target id="t40"/>
+        <target id="t41"/>
+        <target id="t42"/>
+      </span>
+    </coref>
+    <coref id="coevent2" type="event">
+      <span>
+        <!--seeks-->
+        <target id="t5"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.8888638379101471" reference="ili-30-02530167-v" resource="WordNet-3.0" source="dominant_sense"/>
+        <externalRef confidence="1.0" reference="ili-30-01315613-v" resource="WordNet-3.0" source="dominant_sense"/>
+        <externalRef confidence="0.9894485277539794" reference="ili-30-02240481-v" resource="WordNet-3.0" source="dominant_sense"/>
+      </externalReferences>
+    </coref>
+    <coref id="coevent3" type="event">
+      <span>
+        <!--bankruptcy-->
+        <target id="t6"/>
+      </span>
+      <span>
+        <!--bankruptcy-->
+        <target id="t76"/>
+      </span>
+      <span>
+        <!--bankruptcies-->
+        <target id="t85"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-14478684-n" resource="WordNet-3.0" source="dominant_sense"/>
+        <externalRef confidence="0.9977272537402202" reference="ili-30-14478433-n" resource="WordNet-3.0" source="dominant_sense"/>
+      </externalReferences>
+    </coref>
+    <coref id="coevent4" type="event">
+      <span>
+        <!--protection-->
+        <target id="t7"/>
+      </span>
+      <span>
+        <!--protection-->
+        <target id="t25"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-00817680-n" resource="WordNet-3.0" source="dominant_sense"/>
+      </externalReferences>
+    </coref>
+    <coref id="coevent5" type="event">
+      <span>
+        <!--filed-->
+        <target id="t19"/>
+      </span>
+      <span>
+        <!--filing-->
+        <target id="t49"/>
+      </span>
+      <span>
+        <!--filing-->
+        <target id="t77"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-01001857-v" resource="WordNet-3.0" source="dominant_sense"/>
+      </externalReferences>
+    </coref>
+    <coref id="coevent6" type="event">
+      <span>
+        <!--creditors-->
+        <target id="t28"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-09976728-n" resource="WordNet-3.0" source="dominant_sense"/>
+      </externalReferences>
+    </coref>
+    <coref id="coevent7" type="event">
+      <span>
+        <!--declared-->
+        <target id="t58"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9727407603225245" reference="ili-30-00822367-v" resource="WordNet-3.0" source="dominant_sense"/>
+        <externalRef confidence="0.984556594906787" reference="ili-30-01010118-v" resource="WordNet-3.0" source="dominant_sense"/>
+        <externalRef confidence="1.0" reference="ili-30-00965871-v" resource="WordNet-3.0" source="dominant_sense"/>
+      </externalReferences>
+    </coref>
+    <coref id="coevent8" type="event">
+      <span>
+        <!--debt-->
+        <target id="t66"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9889682568880651" reference="ili-30-13397174-n" resource="WordNet-3.0" source="dominant_sense"/>
+        <externalRef confidence="1.0" reference="ili-30-14490564-n" resource="WordNet-3.0" source="dominant_sense"/>
+      </externalReferences>
+    </coref>
+    <coref id="coevent9" type="event">
+      <span>
+        <!--history-->
+        <target id="t81"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="ili-30-15121406-n" resource="WordNet-3.0" source="dominant_sense"/>
+      </externalReferences>
+    </coref>
+  </coreferences>
+  <constituency>
+    <tree>
+      <t id="ter1">
+        <!--U.S.-->
+        <span>
+          <target id="t1"/>
+        </span>
+      </t>
+      <t id="ter2">
+        <!--manufacturer-->
+        <span>
+          <target id="t2"/>
+        </span>
+      </t>
+      <t id="ter3">
+        <!--General-->
+        <span>
+          <target id="t3"/>
+        </span>
+      </t>
+      <t id="ter4">
+        <!--Motors-->
+        <span>
+          <target id="t4"/>
+        </span>
+      </t>
+      <t id="ter5">
+        <!--seeks-->
+        <span>
+          <target id="t5"/>
+        </span>
+      </t>
+      <t id="ter6">
+        <!--bankruptcy-->
+        <span>
+          <target id="t6"/>
+        </span>
+      </t>
+      <t id="ter7">
+        <!--protection-->
+        <span>
+          <target id="t7"/>
+        </span>
+      </t>
+      <nt id="nter1" label="TOP"/>
+      <nt id="nter2" label="S"/>
+      <nt id="nter3" label="NP"/>
+      <nt id="nter4" label="NNP"/>
+      <nt id="nter5" label="NN"/>
+      <nt id="nter6" label="NNP"/>
+      <nt id="nter7" label="NNPS"/>
+      <nt id="nter8" label="VP"/>
+      <nt id="nter9" label="VBZ"/>
+      <nt id="nter10" label="NP"/>
+      <nt id="nter11" label="NN"/>
+      <nt id="nter12" label="NN"/>
+      <edge from="nter2" head="yes" id="tre2" to="nter1"/>
+      <edge from="nter3" id="tre3" to="nter2"/>
+      <edge from="nter4" id="tre4" to="nter3"/>
+      <edge from="ter1" id="tre5" to="nter4"/>
+      <edge from="nter5" id="tre6" to="nter3"/>
+      <edge from="ter2" id="tre7" to="nter5"/>
+      <edge from="nter6" id="tre8" to="nter3"/>
+      <edge from="ter3" id="tre9" to="nter6"/>
+      <edge from="nter7" head="yes" id="tre10" to="nter3"/>
+      <edge from="ter4" id="tre11" to="nter7"/>
+      <edge from="nter8" head="yes" id="tre12" to="nter2"/>
+      <edge from="nter9" head="yes" id="tre13" to="nter8"/>
+      <edge from="ter5" id="tre14" to="nter9"/>
+      <edge from="nter10" id="tre15" to="nter8"/>
+      <edge from="nter11" id="tre16" to="nter10"/>
+      <edge from="ter6" id="tre17" to="nter11"/>
+      <edge from="nter12" head="yes" id="tre18" to="nter10"/>
+      <edge from="ter7" id="tre19" to="nter12"/>
+    </tree>
+    <tree>
+      <t id="ter8">
+        <!--June-->
+        <span>
+          <target id="t8"/>
+        </span>
+      </t>
+      <t id="ter9">
+        <!--01-->
+        <span>
+          <target id="t9"/>
+        </span>
+      </t>
+      <t id="ter10">
+        <!--,-->
+        <span>
+          <target id="t10"/>
+        </span>
+      </t>
+      <t id="ter11">
+        <!--2009-->
+        <span>
+          <target id="t11"/>
+        </span>
+      </t>
+      <nt id="nter13" label="TOP"/>
+      <nt id="nter14" label="NP"/>
+      <nt id="nter15" label="NNP"/>
+      <nt id="nter16" label="CD"/>
+      <nt id="nter17" label=","/>
+      <nt id="nter18" label="CD"/>
+      <edge from="nter14" head="yes" id="tre21" to="nter13"/>
+      <edge from="nter15" head="yes" id="tre22" to="nter14"/>
+      <edge from="ter8" id="tre23" to="nter15"/>
+      <edge from="nter16" id="tre24" to="nter14"/>
+      <edge from="ter9" id="tre25" to="nter16"/>
+      <edge from="nter17" id="tre26" to="nter14"/>
+      <edge from="ter10" id="tre27" to="nter17"/>
+      <edge from="nter18" id="tre28" to="nter14"/>
+      <edge from="ter11" id="tre29" to="nter18"/>
+    </tree>
+    <tree>
+      <t id="ter12">
+        <!--United-->
+        <span>
+          <target id="t12"/>
+        </span>
+      </t>
+      <t id="ter13">
+        <!--States-->
+        <span>
+          <target id="t13"/>
+        </span>
+      </t>
+      <t id="ter14">
+        <!--automobile-->
+        <span>
+          <target id="t14"/>
+        </span>
+      </t>
+      <t id="ter15">
+        <!--manufacturing-->
+        <span>
+          <target id="t15"/>
+        </span>
+      </t>
+      <t id="ter16">
+        <!--firm-->
+        <span>
+          <target id="t16"/>
+        </span>
+      </t>
+      <t id="ter17">
+        <!--General-->
+        <span>
+          <target id="t17"/>
+        </span>
+      </t>
+      <t id="ter18">
+        <!--Motors-->
+        <span>
+          <target id="t18"/>
+        </span>
+      </t>
+      <t id="ter19">
+        <!--filed-->
+        <span>
+          <target id="t19"/>
+        </span>
+      </t>
+      <t id="ter20">
+        <!--for-->
+        <span>
+          <target id="t20"/>
+        </span>
+      </t>
+      <t id="ter21">
+        <!--bankruptcy-->
+        <span>
+          <target id="t21"/>
+        </span>
+      </t>
+      <t id="ter22">
+        <!--and-->
+        <span>
+          <target id="t22"/>
+        </span>
+      </t>
+      <t id="ter23">
+        <!--Chapter-->
+        <span>
+          <target id="t23"/>
+        </span>
+      </t>
+      <t id="ter24">
+        <!--11-->
+        <span>
+          <target id="t24"/>
+        </span>
+      </t>
+      <t id="ter25">
+        <!--protection-->
+        <span>
+          <target id="t25"/>
+        </span>
+      </t>
+      <t id="ter26">
+        <!--from-->
+        <span>
+          <target id="t26"/>
+        </span>
+      </t>
+      <t id="ter27">
+        <!--its-->
+        <span>
+          <target id="t27"/>
+        </span>
+      </t>
+      <t id="ter28">
+        <!--creditors-->
+        <span>
+          <target id="t28"/>
+        </span>
+      </t>
+      <t id="ter29">
+        <!--at-->
+        <span>
+          <target id="t29"/>
+        </span>
+      </t>
+      <t id="ter30">
+        <!--12:00-->
+        <span>
+          <target id="t30"/>
+        </span>
+      </t>
+      <t id="ter31">
+        <!--UTC-->
+        <span>
+          <target id="t31"/>
+        </span>
+      </t>
+      <t id="ter32">
+        <!--Monday-->
+        <span>
+          <target id="t32"/>
+        </span>
+      </t>
+      <t id="ter33">
+        <!--,-->
+        <span>
+          <target id="t33"/>
+        </span>
+      </t>
+      <t id="ter34">
+        <!--in-->
+        <span>
+          <target id="t34"/>
+        </span>
+      </t>
+      <t id="ter35">
+        <!--a-->
+        <span>
+          <target id="t35"/>
+        </span>
+      </t>
+      <t id="ter36">
+        <!--Manhattan-->
+        <span>
+          <target id="t36"/>
+        </span>
+      </t>
+      <t id="ter37">
+        <!--,-->
+        <span>
+          <target id="t37"/>
+        </span>
+      </t>
+      <t id="ter38">
+        <!--New-->
+        <span>
+          <target id="t38"/>
+        </span>
+      </t>
+      <t id="ter39">
+        <!--York-->
+        <span>
+          <target id="t39"/>
+        </span>
+      </t>
+      <t id="ter40">
+        <!--federal-->
+        <span>
+          <target id="t40"/>
+        </span>
+      </t>
+      <t id="ter41">
+        <!--bankruptcy-->
+        <span>
+          <target id="t41"/>
+        </span>
+      </t>
+      <t id="ter42">
+        <!--court-->
+        <span>
+          <target id="t42"/>
+        </span>
+      </t>
+      <t id="ter43">
+        <!--.-->
+        <span>
+          <target id="t43"/>
+        </span>
+      </t>
+      <nt id="nter19" label="TOP"/>
+      <nt id="nter20" label="S"/>
+      <nt id="nter21" label="NP"/>
+      <nt id="nter22" label="NNP"/>
+      <nt id="nter23" label="NNP"/>
+      <nt id="nter24" label="NN"/>
+      <nt id="nter25" label="NN"/>
+      <nt id="nter26" label="NN"/>
+      <nt id="nter27" label="NNP"/>
+      <nt id="nter28" label="NNPS"/>
+      <nt id="nter29" label="VP"/>
+      <nt id="nter30" label="VBD"/>
+      <nt id="nter31" label="PP"/>
+      <nt id="nter32" label="IN"/>
+      <nt id="nter33" label="NP"/>
+      <nt id="nter34" label="NN"/>
+      <nt id="nter35" label="CC"/>
+      <nt id="nter36" label="NP"/>
+      <nt id="nter37" label="NP"/>
+      <nt id="nter38" label="NN"/>
+      <nt id="nter39" label="CD"/>
+      <nt id="nter40" label="NN"/>
+      <nt id="nter41" label="PP"/>
+      <nt id="nter42" label="IN"/>
+      <nt id="nter43" label="NP"/>
+      <nt id="nter44" label="PRP$"/>
+      <nt id="nter45" label="NNS"/>
+      <nt id="nter46" label="PP"/>
+      <nt id="nter47" label="IN"/>
+      <nt id="nter48" label="NP"/>
+      <nt id="nter49" label="CD"/>
+      <nt id="nter50" label="NNP"/>
+      <nt id="nter51" label="NNP"/>
+      <nt id="nter52" label=","/>
+      <nt id="nter53" label="PP"/>
+      <nt id="nter54" label="IN"/>
+      <nt id="nter55" label="NP"/>
+      <nt id="nter56" label="DT"/>
+      <nt id="nter57" label="NNP"/>
+      <nt id="nter58" label=","/>
+      <nt id="nter59" label="NP"/>
+      <nt id="nter60" label="NNP"/>
+      <nt id="nter61" label="NNP"/>
+      <nt id="nter62" label="JJ"/>
+      <nt id="nter63" label="NN"/>
+      <nt id="nter64" label="NN"/>
+      <nt id="nter65" label="."/>
+      <edge from="nter20" head="yes" id="tre31" to="nter19"/>
+      <edge from="nter21" id="tre32" to="nter20"/>
+      <edge from="nter22" id="tre33" to="nter21"/>
+      <edge from="ter12" id="tre34" to="nter22"/>
+      <edge from="nter23" id="tre35" to="nter21"/>
+      <edge from="ter13" id="tre36" to="nter23"/>
+      <edge from="nter24" id="tre37" to="nter21"/>
+      <edge from="ter14" id="tre38" to="nter24"/>
+      <edge from="nter25" id="tre39" to="nter21"/>
+      <edge from="ter15" id="tre40" to="nter25"/>
+      <edge from="nter26" id="tre41" to="nter21"/>
+      <edge from="ter16" id="tre42" to="nter26"/>
+      <edge from="nter27" id="tre43" to="nter21"/>
+      <edge from="ter17" id="tre44" to="nter27"/>
+      <edge from="nter28" head="yes" id="tre45" to="nter21"/>
+      <edge from="ter18" id="tre46" to="nter28"/>
+      <edge from="nter29" head="yes" id="tre47" to="nter20"/>
+      <edge from="nter30" head="yes" id="tre48" to="nter29"/>
+      <edge from="ter19" id="tre49" to="nter30"/>
+      <edge from="nter31" id="tre50" to="nter29"/>
+      <edge from="nter32" head="yes" id="tre51" to="nter31"/>
+      <edge from="ter20" id="tre52" to="nter32"/>
+      <edge from="nter33" id="tre53" to="nter31"/>
+      <edge from="nter34" head="yes" id="tre54" to="nter33"/>
+      <edge from="ter21" id="tre55" to="nter34"/>
+      <edge from="nter35" id="tre56" to="nter33"/>
+      <edge from="ter22" id="tre57" to="nter35"/>
+      <edge from="nter36" id="tre58" to="nter29"/>
+      <edge from="nter37" head="yes" id="tre59" to="nter36"/>
+      <edge from="nter38" id="tre60" to="nter37"/>
+      <edge from="ter23" id="tre61" to="nter38"/>
+      <edge from="nter39" id="tre62" to="nter37"/>
+      <edge from="ter24" id="tre63" to="nter39"/>
+      <edge from="nter40" head="yes" id="tre64" to="nter37"/>
+      <edge from="ter25" id="tre65" to="nter40"/>
+      <edge from="nter41" id="tre66" to="nter36"/>
+      <edge from="nter42" head="yes" id="tre67" to="nter41"/>
+      <edge from="ter26" id="tre68" to="nter42"/>
+      <edge from="nter43" id="tre69" to="nter41"/>
+      <edge from="nter44" id="tre70" to="nter43"/>
+      <edge from="ter27" id="tre71" to="nter44"/>
+      <edge from="nter45" head="yes" id="tre72" to="nter43"/>
+      <edge from="ter28" id="tre73" to="nter45"/>
+      <edge from="nter46" id="tre74" to="nter29"/>
+      <edge from="nter47" head="yes" id="tre75" to="nter46"/>
+      <edge from="ter29" id="tre76" to="nter47"/>
+      <edge from="nter48" id="tre77" to="nter46"/>
+      <edge from="nter49" id="tre78" to="nter48"/>
+      <edge from="ter30" id="tre79" to="nter49"/>
+      <edge from="nter50" id="tre80" to="nter48"/>
+      <edge from="ter31" id="tre81" to="nter50"/>
+      <edge from="nter51" head="yes" id="tre82" to="nter48"/>
+      <edge from="ter32" id="tre83" to="nter51"/>
+      <edge from="nter52" id="tre84" to="nter29"/>
+      <edge from="ter33" id="tre85" to="nter52"/>
+      <edge from="nter53" id="tre86" to="nter29"/>
+      <edge from="nter54" head="yes" id="tre87" to="nter53"/>
+      <edge from="ter34" id="tre88" to="nter54"/>
+      <edge from="nter55" id="tre89" to="nter53"/>
+      <edge from="nter56" id="tre90" to="nter55"/>
+      <edge from="ter35" id="tre91" to="nter56"/>
+      <edge from="nter57" head="yes" id="tre92" to="nter55"/>
+      <edge from="ter36" id="tre93" to="nter57"/>
+      <edge from="nter58" id="tre94" to="nter29"/>
+      <edge from="ter37" id="tre95" to="nter58"/>
+      <edge from="nter59" id="tre96" to="nter29"/>
+      <edge from="nter60" id="tre97" to="nter59"/>
+      <edge from="ter38" id="tre98" to="nter60"/>
+      <edge from="nter61" id="tre99" to="nter59"/>
+      <edge from="ter39" id="tre100" to="nter61"/>
+      <edge from="nter62" id="tre101" to="nter59"/>
+      <edge from="ter40" id="tre102" to="nter62"/>
+      <edge from="nter63" id="tre103" to="nter59"/>
+      <edge from="ter41" id="tre104" to="nter63"/>
+      <edge from="nter64" head="yes" id="tre105" to="nter59"/>
+      <edge from="ter42" id="tre106" to="nter64"/>
+      <edge from="nter65" id="tre107" to="nter20"/>
+      <edge from="ter43" id="tre108" to="nter65"/>
+    </tree>
+    <tree>
+      <t id="ter44">
+        <!--This-->
+        <span>
+          <target id="t44"/>
+        </span>
+      </t>
+      <t id="ter45">
+        <!--was-->
+        <span>
+          <target id="t45"/>
+        </span>
+      </t>
+      <t id="ter46">
+        <!--the-->
+        <span>
+          <target id="t46"/>
+        </span>
+      </t>
+      <t id="ter47">
+        <!--largest-->
+        <span>
+          <target id="t47"/>
+        </span>
+      </t>
+      <t id="ter48">
+        <!--bankruptcy-->
+        <span>
+          <target id="t48"/>
+        </span>
+      </t>
+      <t id="ter49">
+        <!--filing-->
+        <span>
+          <target id="t49"/>
+        </span>
+      </t>
+      <t id="ter50">
+        <!--for-->
+        <span>
+          <target id="t50"/>
+        </span>
+      </t>
+      <t id="ter51">
+        <!--a-->
+        <span>
+          <target id="t51"/>
+        </span>
+      </t>
+      <t id="ter52">
+        <!--U.S.-->
+        <span>
+          <target id="t52"/>
+        </span>
+      </t>
+      <t id="ter53">
+        <!--manufacturing-->
+        <span>
+          <target id="t53"/>
+        </span>
+      </t>
+      <t id="ter54">
+        <!--company-->
+        <span>
+          <target id="t54"/>
+        </span>
+      </t>
+      <t id="ter55">
+        <!--,-->
+        <span>
+          <target id="t55"/>
+        </span>
+      </t>
+      <t id="ter56">
+        <!--and-->
+        <span>
+          <target id="t56"/>
+        </span>
+      </t>
+      <t id="ter57">
+        <!--with-->
+        <span>
+          <target id="t57"/>
+        </span>
+      </t>
+      <t id="ter58">
+        <!--declared-->
+        <span>
+          <target id="t58"/>
+        </span>
+      </t>
+      <t id="ter59">
+        <!--assets-->
+        <span>
+          <target id="t59"/>
+        </span>
+      </t>
+      <t id="ter60">
+        <!--of-->
+        <span>
+          <target id="t60"/>
+        </span>
+      </t>
+      <t id="ter61">
+        <!--$-->
+        <span>
+          <target id="t61"/>
+        </span>
+      </t>
+      <t id="ter62">
+        <!--82.29-->
+        <span>
+          <target id="t62"/>
+        </span>
+      </t>
+      <t id="ter63">
+        <!--billion-->
+        <span>
+          <target id="t63"/>
+        </span>
+      </t>
+      <t id="ter64">
+        <!--and-->
+        <span>
+          <target id="t64"/>
+        </span>
+      </t>
+      <t id="ter65">
+        <!--a-->
+        <span>
+          <target id="t65"/>
+        </span>
+      </t>
+      <t id="ter66">
+        <!--debt-->
+        <span>
+          <target id="t66"/>
+        </span>
+      </t>
+      <t id="ter67">
+        <!--of-->
+        <span>
+          <target id="t67"/>
+        </span>
+      </t>
+      <t id="ter68">
+        <!--$-->
+        <span>
+          <target id="t68"/>
+        </span>
+      </t>
+      <t id="ter69">
+        <!--172.81-->
+        <span>
+          <target id="t69"/>
+        </span>
+      </t>
+      <t id="ter70">
+        <!--billion-->
+        <span>
+          <target id="t70"/>
+        </span>
+      </t>
+      <t id="ter71">
+        <!--,-->
+        <span>
+          <target id="t71"/>
+        </span>
+      </t>
+      <t id="ter72">
+        <!--and-->
+        <span>
+          <target id="t72"/>
+        </span>
+      </t>
+      <t id="ter73">
+        <!--the-->
+        <span>
+          <target id="t73"/>
+        </span>
+      </t>
+      <t id="ter74">
+        <!--fourth-->
+        <span>
+          <target id="t74"/>
+        </span>
+      </t>
+      <t id="ter75">
+        <!--largest-->
+        <span>
+          <target id="t75"/>
+        </span>
+      </t>
+      <t id="ter76">
+        <!--bankruptcy-->
+        <span>
+          <target id="t76"/>
+        </span>
+      </t>
+      <t id="ter77">
+        <!--filing-->
+        <span>
+          <target id="t77"/>
+        </span>
+      </t>
+      <t id="ter78">
+        <!--in-->
+        <span>
+          <target id="t78"/>
+        </span>
+      </t>
+      <t id="ter79">
+        <!--recent-->
+        <span>
+          <target id="t79"/>
+        </span>
+      </t>
+      <t id="ter80">
+        <!--U.S.-->
+        <span>
+          <target id="t80"/>
+        </span>
+      </t>
+      <t id="ter81">
+        <!--history-->
+        <span>
+          <target id="t81"/>
+        </span>
+      </t>
+      <t id="ter82">
+        <!--- - -->
+        <span>
+          <target id="t82"/>
+        </span>
+      </t>
+      <t id="ter83">
+        <!--after-->
+        <span>
+          <target id="t83"/>
+        </span>
+      </t>
+      <t id="ter84">
+        <!--the-->
+        <span>
+          <target id="t84"/>
+        </span>
+      </t>
+      <t id="ter85">
+        <!--bankruptcies-->
+        <span>
+          <target id="t85"/>
+        </span>
+      </t>
+      <t id="ter86">
+        <!--of-->
+        <span>
+          <target id="t86"/>
+        </span>
+      </t>
+      <t id="ter87">
+        <!--Lehman-->
+        <span>
+          <target id="t87"/>
+        </span>
+      </t>
+      <t id="ter88">
+        <!--Brothers-->
+        <span>
+          <target id="t88"/>
+        </span>
+      </t>
+      <t id="ter89">
+        <!--(-->
+        <span>
+          <target id="t89"/>
+        </span>
+      </t>
+      <t id="ter90">
+        <!--$-->
+        <span>
+          <target id="t90"/>
+        </span>
+      </t>
+      <t id="ter91">
+        <!--691.06-->
+        <span>
+          <target id="t91"/>
+        </span>
+      </t>
+      <t id="ter92">
+        <!--billion-->
+        <span>
+          <target id="t92"/>
+        </span>
+      </t>
+      <t id="ter93">
+        <!--)-->
+        <span>
+          <target id="t93"/>
+        </span>
+      </t>
+      <t id="ter94">
+        <!--,-->
+        <span>
+          <target id="t94"/>
+        </span>
+      </t>
+      <t id="ter95">
+        <!--Washington-->
+        <span>
+          <target id="t95"/>
+        </span>
+      </t>
+      <t id="ter96">
+        <!--Mutual-->
+        <span>
+          <target id="t96"/>
+        </span>
+      </t>
+      <t id="ter97">
+        <!--(-->
+        <span>
+          <target id="t97"/>
+        </span>
+      </t>
+      <t id="ter98">
+        <!--$-->
+        <span>
+          <target id="t98"/>
+        </span>
+      </t>
+      <t id="ter99">
+        <!--327.91-->
+        <span>
+          <target id="t99"/>
+        </span>
+      </t>
+      <t id="ter100">
+        <!--billion-->
+        <span>
+          <target id="t100"/>
+        </span>
+      </t>
+      <t id="ter101">
+        <!--)-->
+        <span>
+          <target id="t101"/>
+        </span>
+      </t>
+      <t id="ter102">
+        <!--,-->
+        <span>
+          <target id="t102"/>
+        </span>
+      </t>
+      <t id="ter103">
+        <!--and-->
+        <span>
+          <target id="t103"/>
+        </span>
+      </t>
+      <t id="ter104">
+        <!--WorldCom-->
+        <span>
+          <target id="t104"/>
+        </span>
+      </t>
+      <t id="ter105">
+        <!--(-->
+        <span>
+          <target id="t105"/>
+        </span>
+      </t>
+      <t id="ter106">
+        <!--$-->
+        <span>
+          <target id="t106"/>
+        </span>
+      </t>
+      <t id="ter107">
+        <!--103.91-->
+        <span>
+          <target id="t107"/>
+        </span>
+      </t>
+      <t id="ter108">
+        <!--billion-->
+        <span>
+          <target id="t108"/>
+        </span>
+      </t>
+      <t id="ter109">
+        <!--)-->
+        <span>
+          <target id="t109"/>
+        </span>
+      </t>
+      <t id="ter110">
+        <!--.-->
+        <span>
+          <target id="t110"/>
+        </span>
+      </t>
+      <nt id="nter66" label="TOP"/>
+      <nt id="nter67" label="S"/>
+      <nt id="nter68" label="S"/>
+      <nt id="nter69" label="NP"/>
+      <nt id="nter70" label="DT"/>
+      <nt id="nter71" label="VP"/>
+      <nt id="nter72" label="VBD"/>
+      <nt id="nter73" label="NP"/>
+      <nt id="nter74" label="NP"/>
+      <nt id="nter75" label="DT"/>
+      <nt id="nter76" label="JJS"/>
+      <nt id="nter77" label="NN"/>
+      <nt id="nter78" label="NN"/>
+      <nt id="nter79" label="PP"/>
+      <nt id="nter80" label="IN"/>
+      <nt id="nter81" label="NP"/>
+      <nt id="nter82" label="DT"/>
+      <nt id="nter83" label="NNP"/>
+      <nt id="nter84" label="NN"/>
+      <nt id="nter85" label="NN"/>
+      <nt id="nter86" label=","/>
+      <nt id="nter87" label="CC"/>
+      <nt id="nter88" label="S"/>
+      <nt id="nter89" label="PP"/>
+      <nt id="nter90" label="IN"/>
+      <nt id="nter91" label="NP"/>
+      <nt id="nter92" label="NP"/>
+      <nt id="nter93" label="NP"/>
+      <nt id="nter94" label="JJ"/>
+      <nt id="nter95" label="NNS"/>
+      <nt id="nter96" label="PP"/>
+      <nt id="nter97" label="IN"/>
+      <nt id="nter98" label="NP"/>
+      <nt id="nter99" label="QP"/>
+      <nt id="nter100" label="$"/>
+      <nt id="nter101" label="CD"/>
+      <nt id="nter102" label="CD"/>
+      <nt id="nter103" label="CC"/>
+      <nt id="nter104" label="NP"/>
+      <nt id="nter105" label="NP"/>
+      <nt id="nter106" label="DT"/>
+      <nt id="nter107" label="NN"/>
+      <nt id="nter108" label="PP"/>
+      <nt id="nter109" label="IN"/>
+      <nt id="nter110" label="NP"/>
+      <nt id="nter111" label="QP"/>
+      <nt id="nter112" label="$"/>
+      <nt id="nter113" label="CD"/>
+      <nt id="nter114" label="CD"/>
+      <nt id="nter115" label=","/>
+      <nt id="nter116" label="CC"/>
+      <nt id="nter117" label="S"/>
+      <nt id="nter118" label="NP"/>
+      <nt id="nter119" label="NP"/>
+      <nt id="nter120" label="DT"/>
+      <nt id="nter121" label="JJ"/>
+      <nt id="nter122" label="JJS"/>
+      <nt id="nter123" label="NN"/>
+      <nt id="nter124" label="NN"/>
+      <nt id="nter125" label="PP"/>
+      <nt id="nter126" label="IN"/>
+      <nt id="nter127" label="NP"/>
+      <nt id="nter128" label="JJ"/>
+      <nt id="nter129" label="NNP"/>
+      <nt id="nter130" label="NN"/>
+      <nt id="nter131" label="PRN"/>
+      <nt id="nter132" label=":"/>
+      <nt id="nter133" label="S"/>
+      <nt id="nter134" label="PP"/>
+      <nt id="nter135" label="IN"/>
+      <nt id="nter136" label="NP"/>
+      <nt id="nter137" label="NP"/>
+      <nt id="nter138" label="DT"/>
+      <nt id="nter139" label="NNS"/>
+      <nt id="nter140" label="PP"/>
+      <nt id="nter141" label="IN"/>
+      <nt id="nter142" label="NP"/>
+      <nt id="nter143" label="NP"/>
+      <nt id="nter144" label="NNP"/>
+      <nt id="nter145" label="NNP"/>
+      <nt id="nter146" label="PRN"/>
+      <nt id="nter147" label="-LRB-"/>
+      <nt id="nter148" label="NP"/>
+      <nt id="nter149" label="QP"/>
+      <nt id="nter150" label="$"/>
+      <nt id="nter151" label="CD"/>
+      <nt id="nter152" label="CD"/>
+      <nt id="nter153" label="-RRB-"/>
+      <nt id="nter154" label=","/>
+      <nt id="nter155" label="NP"/>
+      <nt id="nter156" label="NP"/>
+      <nt id="nter157" label="NP"/>
+      <nt id="nter158" label="NNP"/>
+      <nt id="nter159" label="NNP"/>
+      <nt id="nter160" label="PRN"/>
+      <nt id="nter161" label="-LRB-"/>
+      <nt id="nter162" label="NP"/>
+      <nt id="nter163" label="QP"/>
+      <nt id="nter164" label="$"/>
+      <nt id="nter165" label="CD"/>
+      <nt id="nter166" label="CD"/>
+      <nt id="nter167" label="-RRB-"/>
+      <nt id="nter168" label=","/>
+      <nt id="nter169" label="CC"/>
+      <nt id="nter170" label="NP"/>
+      <nt id="nter171" label="NP"/>
+      <nt id="nter172" label="NNP"/>
+      <nt id="nter173" label="PRN"/>
+      <nt id="nter174" label="-LRB-"/>
+      <nt id="nter175" label="NP"/>
+      <nt id="nter176" label="QP"/>
+      <nt id="nter177" label="$"/>
+      <nt id="nter178" label="CD"/>
+      <nt id="nter179" label="CD"/>
+      <nt id="nter180" label="-RRB-"/>
+      <nt id="nter181" label="."/>
+      <edge from="nter67" head="yes" id="tre110" to="nter66"/>
+      <edge from="nter68" id="tre111" to="nter67"/>
+      <edge from="nter69" id="tre112" to="nter68"/>
+      <edge from="nter70" head="yes" id="tre113" to="nter69"/>
+      <edge from="ter44" id="tre114" to="nter70"/>
+      <edge from="nter71" head="yes" id="tre115" to="nter68"/>
+      <edge from="nter72" head="yes" id="tre116" to="nter71"/>
+      <edge from="ter45" id="tre117" to="nter72"/>
+      <edge from="nter73" id="tre118" to="nter71"/>
+      <edge from="nter74" head="yes" id="tre119" to="nter73"/>
+      <edge from="nter75" id="tre120" to="nter74"/>
+      <edge from="ter46" id="tre121" to="nter75"/>
+      <edge from="nter76" id="tre122" to="nter74"/>
+      <edge from="ter47" id="tre123" to="nter76"/>
+      <edge from="nter77" id="tre124" to="nter74"/>
+      <edge from="ter48" id="tre125" to="nter77"/>
+      <edge from="nter78" head="yes" id="tre126" to="nter74"/>
+      <edge from="ter49" id="tre127" to="nter78"/>
+      <edge from="nter79" id="tre128" to="nter73"/>
+      <edge from="nter80" head="yes" id="tre129" to="nter79"/>
+      <edge from="ter50" id="tre130" to="nter80"/>
+      <edge from="nter81" id="tre131" to="nter79"/>
+      <edge from="nter82" id="tre132" to="nter81"/>
+      <edge from="ter51" id="tre133" to="nter82"/>
+      <edge from="nter83" id="tre134" to="nter81"/>
+      <edge from="ter52" id="tre135" to="nter83"/>
+      <edge from="nter84" id="tre136" to="nter81"/>
+      <edge from="ter53" id="tre137" to="nter84"/>
+      <edge from="nter85" head="yes" id="tre138" to="nter81"/>
+      <edge from="ter54" id="tre139" to="nter85"/>
+      <edge from="nter86" id="tre140" to="nter67"/>
+      <edge from="ter55" id="tre141" to="nter86"/>
+      <edge from="nter87" id="tre142" to="nter67"/>
+      <edge from="ter56" id="tre143" to="nter87"/>
+      <edge from="nter88" head="yes" id="tre144" to="nter67"/>
+      <edge from="nter89" id="tre145" to="nter88"/>
+      <edge from="nter90" head="yes" id="tre146" to="nter89"/>
+      <edge from="ter57" id="tre147" to="nter90"/>
+      <edge from="nter91" id="tre148" to="nter89"/>
+      <edge from="nter92" head="yes" id="tre149" to="nter91"/>
+      <edge from="nter93" head="yes" id="tre150" to="nter92"/>
+      <edge from="nter94" id="tre151" to="nter93"/>
+      <edge from="ter58" id="tre152" to="nter94"/>
+      <edge from="nter95" head="yes" id="tre153" to="nter93"/>
+      <edge from="ter59" id="tre154" to="nter95"/>
+      <edge from="nter96" id="tre155" to="nter92"/>
+      <edge from="nter97" head="yes" id="tre156" to="nter96"/>
+      <edge from="ter60" id="tre157" to="nter97"/>
+      <edge from="nter98" id="tre158" to="nter96"/>
+      <edge from="nter99" head="yes" id="tre159" to="nter98"/>
+      <edge from="nter100" head="yes" id="tre160" to="nter99"/>
+      <edge from="ter61" id="tre161" to="nter100"/>
+      <edge from="nter101" id="tre162" to="nter99"/>
+      <edge from="ter62" id="tre163" to="nter101"/>
+      <edge from="nter102" id="tre164" to="nter99"/>
+      <edge from="ter63" id="tre165" to="nter102"/>
+      <edge from="nter103" id="tre166" to="nter91"/>
+      <edge from="ter64" id="tre167" to="nter103"/>
+      <edge from="nter104" id="tre168" to="nter91"/>
+      <edge from="nter105" head="yes" id="tre169" to="nter104"/>
+      <edge from="nter106" id="tre170" to="nter105"/>
+      <edge from="ter65" id="tre171" to="nter106"/>
+      <edge from="nter107" head="yes" id="tre172" to="nter105"/>
+      <edge from="ter66" id="tre173" to="nter107"/>
+      <edge from="nter108" id="tre174" to="nter104"/>
+      <edge from="nter109" head="yes" id="tre175" to="nter108"/>
+      <edge from="ter67" id="tre176" to="nter109"/>
+      <edge from="nter110" id="tre177" to="nter108"/>
+      <edge from="nter111" head="yes" id="tre178" to="nter110"/>
+      <edge from="nter112" head="yes" id="tre179" to="nter111"/>
+      <edge from="ter68" id="tre180" to="nter112"/>
+      <edge from="nter113" id="tre181" to="nter111"/>
+      <edge from="ter69" id="tre182" to="nter113"/>
+      <edge from="nter114" id="tre183" to="nter111"/>
+      <edge from="ter70" id="tre184" to="nter114"/>
+      <edge from="nter115" id="tre185" to="nter88"/>
+      <edge from="ter71" id="tre186" to="nter115"/>
+      <edge from="nter116" id="tre187" to="nter88"/>
+      <edge from="ter72" id="tre188" to="nter116"/>
+      <edge from="nter117" head="yes" id="tre189" to="nter88"/>
+      <edge from="nter118" head="yes" id="tre190" to="nter117"/>
+      <edge from="nter119" head="yes" id="tre191" to="nter118"/>
+      <edge from="nter120" id="tre192" to="nter119"/>
+      <edge from="ter73" id="tre193" to="nter120"/>
+      <edge from="nter121" id="tre194" to="nter119"/>
+      <edge from="ter74" id="tre195" to="nter121"/>
+      <edge from="nter122" id="tre196" to="nter119"/>
+      <edge from="ter75" id="tre197" to="nter122"/>
+      <edge from="nter123" id="tre198" to="nter119"/>
+      <edge from="ter76" id="tre199" to="nter123"/>
+      <edge from="nter124" head="yes" id="tre200" to="nter119"/>
+      <edge from="ter77" id="tre201" to="nter124"/>
+      <edge from="nter125" id="tre202" to="nter118"/>
+      <edge from="nter126" head="yes" id="tre203" to="nter125"/>
+      <edge from="ter78" id="tre204" to="nter126"/>
+      <edge from="nter127" id="tre205" to="nter125"/>
+      <edge from="nter128" id="tre206" to="nter127"/>
+      <edge from="ter79" id="tre207" to="nter128"/>
+      <edge from="nter129" id="tre208" to="nter127"/>
+      <edge from="ter80" id="tre209" to="nter129"/>
+      <edge from="nter130" head="yes" id="tre210" to="nter127"/>
+      <edge from="ter81" id="tre211" to="nter130"/>
+      <edge from="nter131" id="tre212" to="nter117"/>
+      <edge from="nter132" id="tre213" to="nter131"/>
+      <edge from="ter82" id="tre214" to="nter132"/>
+      <edge from="nter133" head="yes" id="tre215" to="nter131"/>
+      <edge from="nter134" id="tre216" to="nter133"/>
+      <edge from="nter135" head="yes" id="tre217" to="nter134"/>
+      <edge from="ter83" id="tre218" to="nter135"/>
+      <edge from="nter136" id="tre219" to="nter134"/>
+      <edge from="nter137" head="yes" id="tre220" to="nter136"/>
+      <edge from="nter138" id="tre221" to="nter137"/>
+      <edge from="ter84" id="tre222" to="nter138"/>
+      <edge from="nter139" head="yes" id="tre223" to="nter137"/>
+      <edge from="ter85" id="tre224" to="nter139"/>
+      <edge from="nter140" id="tre225" to="nter136"/>
+      <edge from="nter141" head="yes" id="tre226" to="nter140"/>
+      <edge from="ter86" id="tre227" to="nter141"/>
+      <edge from="nter142" id="tre228" to="nter140"/>
+      <edge from="nter143" head="yes" id="tre229" to="nter142"/>
+      <edge from="nter144" id="tre230" to="nter143"/>
+      <edge from="ter87" id="tre231" to="nter144"/>
+      <edge from="nter145" head="yes" id="tre232" to="nter143"/>
+      <edge from="ter88" id="tre233" to="nter145"/>
+      <edge from="nter146" id="tre234" to="nter142"/>
+      <edge from="nter147" id="tre235" to="nter146"/>
+      <edge from="ter89" id="tre236" to="nter147"/>
+      <edge from="nter148" id="tre237" to="nter146"/>
+      <edge from="nter149" head="yes" id="tre238" to="nter148"/>
+      <edge from="nter150" head="yes" id="tre239" to="nter149"/>
+      <edge from="ter90" id="tre240" to="nter150"/>
+      <edge from="nter151" id="tre241" to="nter149"/>
+      <edge from="ter91" id="tre242" to="nter151"/>
+      <edge from="nter152" id="tre243" to="nter149"/>
+      <edge from="ter92" id="tre244" to="nter152"/>
+      <edge from="nter153" head="yes" id="tre245" to="nter146"/>
+      <edge from="ter93" id="tre246" to="nter153"/>
+      <edge from="nter154" id="tre247" to="nter133"/>
+      <edge from="ter94" id="tre248" to="nter154"/>
+      <edge from="nter155" head="yes" id="tre249" to="nter133"/>
+      <edge from="nter156" head="yes" id="tre250" to="nter155"/>
+      <edge from="nter157" head="yes" id="tre251" to="nter156"/>
+      <edge from="nter158" id="tre252" to="nter157"/>
+      <edge from="ter95" id="tre253" to="nter158"/>
+      <edge from="nter159" head="yes" id="tre254" to="nter157"/>
+      <edge from="ter96" id="tre255" to="nter159"/>
+      <edge from="nter160" id="tre256" to="nter156"/>
+      <edge from="nter161" id="tre257" to="nter160"/>
+      <edge from="ter97" id="tre258" to="nter161"/>
+      <edge from="nter162" id="tre259" to="nter160"/>
+      <edge from="nter163" head="yes" id="tre260" to="nter162"/>
+      <edge from="nter164" head="yes" id="tre261" to="nter163"/>
+      <edge from="ter98" id="tre262" to="nter164"/>
+      <edge from="nter165" id="tre263" to="nter163"/>
+      <edge from="ter99" id="tre264" to="nter165"/>
+      <edge from="nter166" id="tre265" to="nter163"/>
+      <edge from="ter100" id="tre266" to="nter166"/>
+      <edge from="nter167" head="yes" id="tre267" to="nter160"/>
+      <edge from="ter101" id="tre268" to="nter167"/>
+      <edge from="nter168" id="tre269" to="nter155"/>
+      <edge from="ter102" id="tre270" to="nter168"/>
+      <edge from="nter169" id="tre271" to="nter155"/>
+      <edge from="ter103" id="tre272" to="nter169"/>
+      <edge from="nter170" id="tre273" to="nter155"/>
+      <edge from="nter171" head="yes" id="tre274" to="nter170"/>
+      <edge from="nter172" head="yes" id="tre275" to="nter171"/>
+      <edge from="ter104" id="tre276" to="nter172"/>
+      <edge from="nter173" id="tre277" to="nter170"/>
+      <edge from="nter174" id="tre278" to="nter173"/>
+      <edge from="ter105" id="tre279" to="nter174"/>
+      <edge from="nter175" id="tre280" to="nter173"/>
+      <edge from="nter176" head="yes" id="tre281" to="nter175"/>
+      <edge from="nter177" head="yes" id="tre282" to="nter176"/>
+      <edge from="ter106" id="tre283" to="nter177"/>
+      <edge from="nter178" id="tre284" to="nter176"/>
+      <edge from="ter107" id="tre285" to="nter178"/>
+      <edge from="nter179" id="tre286" to="nter176"/>
+      <edge from="ter108" id="tre287" to="nter179"/>
+      <edge from="nter180" head="yes" id="tre288" to="nter173"/>
+      <edge from="ter109" id="tre289" to="nter180"/>
+      <edge from="nter181" id="tre290" to="nter67"/>
+      <edge from="ter110" id="tre291" to="nter181"/>
+    </tree>
+  </constituency>
+  <srl>
+    <predicate id="pr1">
+      <!--seeks-->
+      <externalReferences>
+        <externalRef reference="seek.01" resource="PropBank"/>
+        <externalRef reference="hunt-35.1" resource="VerbNet"/>
+        <externalRef reference="Seeking_to_achieve" resource="FrameNet"/>
+        <externalRef reference="seek.01" resource="PropBank"/>
+        <externalRef reference="grammatical" resource="EventType"/>
+        <externalRef reference="ili-30-01069989-v" resource="WordNet"/>
+        <externalRef reference="ili-30-02240481-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t5"/>
+      </span>
+      <role id="rl1" semRole="A0">
+        <!--U.S. manufacturer General Motors-->
+        <externalReferences>
+          <externalRef reference="hunt-35.1@Agent" resource="VerbNet"/>
+          <externalRef reference="Seeking_to_achieve@Agent" resource="FrameNet"/>
+          <externalRef reference="seek.01@0" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target id="t1"/>
+          <target id="t2"/>
+          <target id="t3"/>
+          <target head="yes" id="t4"/>
+        </span>
+      </role>
+      <role id="rl2" semRole="A1">
+        <!--bankruptcy protection-->
+        <externalReferences>
+          <externalRef reference="hunt-35.1@Theme" resource="VerbNet"/>
+          <externalRef reference="Seeking_to_achieve@Sought_entity" resource="FrameNet"/>
+          <externalRef reference="seek.01@1" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target id="t6"/>
+          <target head="yes" id="t7"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr2">
+      <!--bankruptcy-->
+      <externalReferences>
+        <externalRef reference="bankruptcy.01" resource="NomBank"/>
+        <externalRef reference="disappearance-48.2" resource="VerbNet"/>
+        <externalRef reference="Death" resource="FrameNet"/>
+        <externalRef reference="die.01" resource="PropBank"/>
+        <externalRef reference="contextual" resource="EventType"/>
+        <externalRef reference="ili-30-00358431-v" resource="WordNet"/>
+        <externalRef reference="ili-30-00354845-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t6"/>
+      </span>
+      <role id="rl3" semRole="A1">
+        <!--U.S. manufacturer General Motors-->
+        <externalReferences>
+          <externalRef reference="disappearance-48.2@Patient" resource="VerbNet"/>
+          <externalRef reference="Death@Protagonist" resource="FrameNet"/>
+          <externalRef reference="die.01@1" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target id="t1"/>
+          <target id="t2"/>
+          <target id="t3"/>
+          <target head="yes" id="t4"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr3">
+      <!--protection-->
+      <externalReferences>
+        <externalRef reference="protection.01" resource="NomBank"/>
+        <externalRef reference="defend-85" resource="VerbNet"/>
+        <externalRef reference="Protecting" resource="FrameNet"/>
+        <externalRef reference="protect.01" resource="PropBank"/>
+        <externalRef reference="contextual" resource="EventType"/>
+        <externalRef reference="ili-30-01128193-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t7"/>
+      </span>
+      <role id="rl4" semRole="A1">
+        <!--U.S. manufacturer General Motors-->
+        <externalReferences>
+          <externalRef reference="defend-85@Theme" resource="VerbNet"/>
+          <externalRef reference="Protecting@Asset" resource="FrameNet"/>
+          <externalRef reference="Protecting@Instrument" resource="FrameNet"/>
+          <externalRef reference="protect.01@1" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target id="t1"/>
+          <target id="t2"/>
+          <target id="t3"/>
+          <target head="yes" id="t4"/>
+        </span>
+      </role>
+      <role id="rl5" semRole="A0">
+        <!--bankruptcy-->
+        <externalReferences>
+          <externalRef reference="defend-85@Agent" resource="VerbNet"/>
+          <externalRef reference="Protecting@Protection" resource="FrameNet"/>
+          <externalRef reference="protect.01@0" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t6"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr4">
+      <!--filed-->
+      <externalReferences>
+        <externalRef reference="file.02" resource="PropBank"/>
+        <externalRef reference="Possession" resource="FrameNet"/>
+        <externalRef reference="Submitting_documents" resource="FrameNet"/>
+        <externalRef reference="file.02" resource="PropBank"/>
+        <externalRef reference="ili-30-01001857-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t19"/>
+      </span>
+      <role id="rl6" semRole="A0">
+        <!--United States automobile manufacturing firm General Motors-->
+        <externalReferences>
+          <externalRef reference="Submitting_documents@Submittor" resource="FrameNet"/>
+          <externalRef reference="file.02@0" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target id="t12"/>
+          <target id="t13"/>
+          <target id="t14"/>
+          <target id="t15"/>
+          <target head="yes" id="t16"/>
+          <target id="t17"/>
+          <target id="t18"/>
+        </span>
+      </role>
+      <role id="rl7" semRole="A1">
+        <!--for bankruptcy and Chapter 11 protection from its creditors-->
+        <externalReferences>
+          <externalRef reference="Submitting_documents@Documents" resource="FrameNet"/>
+          <externalRef reference="file.02@1" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t20"/>
+          <target id="t21"/>
+          <target id="t22"/>
+          <target id="t23"/>
+          <target id="t24"/>
+          <target id="t25"/>
+          <target id="t26"/>
+          <target id="t27"/>
+          <target id="t28"/>
+        </span>
+      </role>
+      <role id="rl8" semRole="AM-TMP">
+        <!--at 12:00 UTC Monday-->
+        <span>
+          <target head="yes" id="t29"/>
+          <target id="t30"/>
+          <target id="t31"/>
+          <target id="t32"/>
+        </span>
+      </role>
+      <role id="rl9" semRole="AM-LOC">
+        <!--in a Manhattan , New York federal bankruptcy court-->
+        <span>
+          <target head="yes" id="t34"/>
+          <target id="t35"/>
+          <target id="t36"/>
+          <target id="t37"/>
+          <target id="t38"/>
+          <target id="t39"/>
+          <target id="t40"/>
+          <target id="t41"/>
+          <target id="t42"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr5">
+      <!--protection-->
+      <externalReferences>
+        <externalRef reference="protection.01" resource="NomBank"/>
+        <externalRef reference="defend-85" resource="VerbNet"/>
+        <externalRef reference="Protecting" resource="FrameNet"/>
+        <externalRef reference="protect.01" resource="PropBank"/>
+        <externalRef reference="contextual" resource="EventType"/>
+        <externalRef reference="ili-30-01128193-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t25"/>
+      </span>
+      <role id="rl10" semRole="A0">
+        <!--United States automobile manufacturing firm General Motors-->
+        <externalReferences>
+          <externalRef reference="defend-85@Agent" resource="VerbNet"/>
+          <externalRef reference="Protecting@Protection" resource="FrameNet"/>
+          <externalRef reference="protect.01@0" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target id="t12"/>
+          <target id="t13"/>
+          <target id="t14"/>
+          <target id="t15"/>
+          <target head="yes" id="t16"/>
+          <target id="t17"/>
+          <target id="t18"/>
+        </span>
+      </role>
+      <role id="rl11" semRole="A0">
+        <!--Chapter 11-->
+        <externalReferences>
+          <externalRef reference="defend-85@Agent" resource="VerbNet"/>
+          <externalRef reference="Protecting@Protection" resource="FrameNet"/>
+          <externalRef reference="protect.01@0" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target id="t23"/>
+          <target head="yes" id="t24"/>
+        </span>
+      </role>
+      <role id="rl12" semRole="A2">
+        <!--from its creditors-->
+        <externalReferences>
+          <externalRef reference="defend-85@Co-Theme" resource="VerbNet"/>
+          <externalRef reference="Protecting@Danger" resource="FrameNet"/>
+          <externalRef reference="Protecting@Means" resource="FrameNet"/>
+          <externalRef reference="protect.01@2" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t26"/>
+          <target id="t27"/>
+          <target id="t28"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr6">
+      <!--creditors-->
+      <externalReferences>
+        <externalRef reference="creditor.01" resource="NomBank"/>
+      </externalReferences>
+      <span>
+        <target id="t28"/>
+      </span>
+      <role id="rl13" semRole="A2">
+        <!--its-->
+        <span>
+          <target head="yes" id="t27"/>
+        </span>
+      </role>
+      <role id="rl14" semRole="A0">
+        <!--its creditors-->
+        <span>
+          <target id="t27"/>
+          <target head="yes" id="t28"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr7">
+      <!--filing-->
+      <externalReferences>
+        <externalRef reference="file.02" resource="PropBank"/>
+        <externalRef reference="Possession" resource="FrameNet"/>
+        <externalRef reference="Submitting_documents" resource="FrameNet"/>
+        <externalRef reference="file.02" resource="PropBank"/>
+        <externalRef reference="ili-30-01001857-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t49"/>
+      </span>
+      <role id="rl15" semRole="A0">
+        <!--the largest bankruptcy filing for a U.S. manufacturing company , and with declared assets of $ 82.29 billion and a debt of $ 172.81 billion , and the fourth largest bankruptcy filing in recent U.S. history - - after the bankruptcies of Lehman Brothers ( $ 691.06 billion ) , Washington Mutual ( $ 327.91 billion ) , and WorldCom ( $ 103.91 billion )-->
+        <externalReferences>
+          <externalRef reference="Submitting_documents@Submittor" resource="FrameNet"/>
+          <externalRef reference="file.02@0" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target id="t46"/>
+          <target id="t47"/>
+          <target head="yes" id="t48"/>
+          <target id="t49"/>
+          <target id="t50"/>
+          <target id="t51"/>
+          <target id="t52"/>
+          <target id="t53"/>
+          <target id="t54"/>
+          <target id="t55"/>
+          <target id="t56"/>
+          <target id="t57"/>
+          <target id="t58"/>
+          <target id="t59"/>
+          <target id="t60"/>
+          <target id="t61"/>
+          <target id="t62"/>
+          <target id="t63"/>
+          <target id="t64"/>
+          <target id="t65"/>
+          <target id="t66"/>
+          <target id="t67"/>
+          <target id="t68"/>
+          <target id="t69"/>
+          <target id="t70"/>
+          <target id="t71"/>
+          <target id="t72"/>
+          <target id="t73"/>
+          <target id="t74"/>
+          <target id="t75"/>
+          <target id="t76"/>
+          <target id="t77"/>
+          <target id="t78"/>
+          <target id="t79"/>
+          <target id="t80"/>
+          <target id="t81"/>
+          <target id="t82"/>
+          <target id="t83"/>
+          <target id="t84"/>
+          <target id="t85"/>
+          <target id="t86"/>
+          <target id="t87"/>
+          <target id="t88"/>
+          <target id="t89"/>
+          <target id="t90"/>
+          <target id="t91"/>
+          <target id="t92"/>
+          <target id="t93"/>
+          <target id="t94"/>
+          <target id="t95"/>
+          <target id="t96"/>
+          <target id="t97"/>
+          <target id="t98"/>
+          <target id="t99"/>
+          <target id="t100"/>
+          <target id="t101"/>
+          <target id="t102"/>
+          <target id="t103"/>
+          <target id="t104"/>
+          <target id="t105"/>
+          <target id="t106"/>
+          <target id="t107"/>
+          <target id="t108"/>
+          <target id="t109"/>
+        </span>
+      </role>
+      <role id="rl16" semRole="A1">
+        <!--for a U.S. manufacturing company , and with declared assets of $ 82.29 billion and a debt of $ 172.81 billion , and the fourth largest bankruptcy filing in recent U.S. history - - after the bankruptcies of Lehman Brothers ( $ 691.06 billion ) , Washington Mutual ( $ 327.91 billion ) , and WorldCom ( $ 103.91 billion )-->
+        <externalReferences>
+          <externalRef reference="Submitting_documents@Documents" resource="FrameNet"/>
+          <externalRef reference="file.02@1" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t50"/>
+          <target id="t51"/>
+          <target id="t52"/>
+          <target id="t53"/>
+          <target id="t54"/>
+          <target id="t55"/>
+          <target id="t56"/>
+          <target id="t57"/>
+          <target id="t58"/>
+          <target id="t59"/>
+          <target id="t60"/>
+          <target id="t61"/>
+          <target id="t62"/>
+          <target id="t63"/>
+          <target id="t64"/>
+          <target id="t65"/>
+          <target id="t66"/>
+          <target id="t67"/>
+          <target id="t68"/>
+          <target id="t69"/>
+          <target id="t70"/>
+          <target id="t71"/>
+          <target id="t72"/>
+          <target id="t73"/>
+          <target id="t74"/>
+          <target id="t75"/>
+          <target id="t76"/>
+          <target id="t77"/>
+          <target id="t78"/>
+          <target id="t79"/>
+          <target id="t80"/>
+          <target id="t81"/>
+          <target id="t82"/>
+          <target id="t83"/>
+          <target id="t84"/>
+          <target id="t85"/>
+          <target id="t86"/>
+          <target id="t87"/>
+          <target id="t88"/>
+          <target id="t89"/>
+          <target id="t90"/>
+          <target id="t91"/>
+          <target id="t92"/>
+          <target id="t93"/>
+          <target id="t94"/>
+          <target id="t95"/>
+          <target id="t96"/>
+          <target id="t97"/>
+          <target id="t98"/>
+          <target id="t99"/>
+          <target id="t100"/>
+          <target id="t101"/>
+          <target id="t102"/>
+          <target id="t103"/>
+          <target id="t104"/>
+          <target id="t105"/>
+          <target id="t106"/>
+          <target id="t107"/>
+          <target id="t108"/>
+          <target id="t109"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr8">
+      <!--declared-->
+      <externalReferences>
+        <externalRef reference="declare.02" resource="PropBank"/>
+        <externalRef reference="reflexive_appearance-48.1.2" resource="VerbNet"/>
+        <externalRef reference="say-37.7" resource="VerbNet"/>
+        <externalRef reference="say-37.7-1" resource="VerbNet"/>
+        <externalRef reference="Statement" resource="FrameNet"/>
+        <externalRef reference="declare.02" resource="PropBank"/>
+        <externalRef reference="communication" resource="EventType"/>
+        <externalRef reference="ili-30-00820801-v" resource="WordNet"/>
+        <externalRef reference="ili-30-01010118-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t58"/>
+      </span>
+      <role id="rl17" semRole="A1">
+        <!--declared assets of $ 82.29 billion and a debt of $ 172.81 billion , and the fourth largest bankruptcy filing in recent U.S. history - - after the bankruptcies of Lehman Brothers ( $ 691.06 billion ) , Washington Mutual ( $ 327.91 billion ) , and WorldCom ( $ 103.91 billion )-->
+        <externalReferences>
+          <externalRef reference="reflexive_appearance-48.1.2@Theme" resource="VerbNet"/>
+          <externalRef reference="say-37.7@Topic" resource="VerbNet"/>
+          <externalRef reference="Statement@Message" resource="FrameNet"/>
+          <externalRef reference="Statement@Topic" resource="FrameNet"/>
+          <externalRef reference="declare.02@1" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target id="t58"/>
+          <target head="yes" id="t59"/>
+          <target id="t60"/>
+          <target id="t61"/>
+          <target id="t62"/>
+          <target id="t63"/>
+          <target id="t64"/>
+          <target id="t65"/>
+          <target id="t66"/>
+          <target id="t67"/>
+          <target id="t68"/>
+          <target id="t69"/>
+          <target id="t70"/>
+          <target id="t71"/>
+          <target id="t72"/>
+          <target id="t73"/>
+          <target id="t74"/>
+          <target id="t75"/>
+          <target id="t76"/>
+          <target id="t77"/>
+          <target id="t78"/>
+          <target id="t79"/>
+          <target id="t80"/>
+          <target id="t81"/>
+          <target id="t82"/>
+          <target id="t83"/>
+          <target id="t84"/>
+          <target id="t85"/>
+          <target id="t86"/>
+          <target id="t87"/>
+          <target id="t88"/>
+          <target id="t89"/>
+          <target id="t90"/>
+          <target id="t91"/>
+          <target id="t92"/>
+          <target id="t93"/>
+          <target id="t94"/>
+          <target id="t95"/>
+          <target id="t96"/>
+          <target id="t97"/>
+          <target id="t98"/>
+          <target id="t99"/>
+          <target id="t100"/>
+          <target id="t101"/>
+          <target id="t102"/>
+          <target id="t103"/>
+          <target id="t104"/>
+          <target id="t105"/>
+          <target id="t106"/>
+          <target id="t107"/>
+          <target id="t108"/>
+          <target id="t109"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr9">
+      <!--debt-->
+      <externalReferences>
+        <externalRef reference="debt.01" resource="NomBank"/>
+        <externalRef reference="give-13.1" resource="VerbNet"/>
+        <externalRef reference="Lending" resource="FrameNet"/>
+        <externalRef reference="loan.01" resource="PropBank"/>
+        <externalRef reference="Lending" resource="ESO"/>
+        <externalRef reference="contextual" resource="EventType"/>
+        <externalRef reference="ili-30-02324182-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t66"/>
+      </span>
+      <role id="rl18" semRole="A2">
+        <!--of $ 172.81 billion , and the fourth largest bankruptcy filing in recent U.S. history - - after the bankruptcies of Lehman Brothers ( $ 691.06 billion ) , Washington Mutual ( $ 327.91 billion ) , and WorldCom ( $ 103.91 billion )-->
+        <externalReferences>
+          <externalRef reference="give-13.1@Recipient" resource="VerbNet"/>
+          <externalRef reference="loan.01@2" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t67"/>
+          <target id="t68"/>
+          <target id="t69"/>
+          <target id="t70"/>
+          <target id="t71"/>
+          <target id="t72"/>
+          <target id="t73"/>
+          <target id="t74"/>
+          <target id="t75"/>
+          <target id="t76"/>
+          <target id="t77"/>
+          <target id="t78"/>
+          <target id="t79"/>
+          <target id="t80"/>
+          <target id="t81"/>
+          <target id="t82"/>
+          <target id="t83"/>
+          <target id="t84"/>
+          <target id="t85"/>
+          <target id="t86"/>
+          <target id="t87"/>
+          <target id="t88"/>
+          <target id="t89"/>
+          <target id="t90"/>
+          <target id="t91"/>
+          <target id="t92"/>
+          <target id="t93"/>
+          <target id="t94"/>
+          <target id="t95"/>
+          <target id="t96"/>
+          <target id="t97"/>
+          <target id="t98"/>
+          <target id="t99"/>
+          <target id="t100"/>
+          <target id="t101"/>
+          <target id="t102"/>
+          <target id="t103"/>
+          <target id="t104"/>
+          <target id="t105"/>
+          <target id="t106"/>
+          <target id="t107"/>
+          <target id="t108"/>
+          <target id="t109"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr10">
+      <!--filing-->
+      <externalReferences>
+        <externalRef reference="file.01" resource="PropBank"/>
+        <externalRef reference="pocket-9.10" resource="VerbNet"/>
+        <externalRef reference="Placing" resource="FrameNet"/>
+        <externalRef reference="Submitting_documents" resource="FrameNet"/>
+        <externalRef reference="Possession" resource="FrameNet"/>
+        <externalRef reference="file.01" resource="PropBank"/>
+        <externalRef reference="Placing" resource="ESO"/>
+        <externalRef reference="communication" resource="EventType"/>
+        <externalRef reference="ili-30-01001643-v" resource="WordNet"/>
+        <externalRef reference="ili-30-01001857-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t77"/>
+      </span>
+      <role id="rl19" semRole="A0">
+        <!--the fourth largest bankruptcy filing in recent U.S. history - - after the bankruptcies of Lehman Brothers ( $ 691.06 billion ) , Washington Mutual ( $ 327.91 billion ) , and WorldCom (-->
+        <externalReferences>
+          <externalRef reference="pocket-9.10@Agent" resource="VerbNet"/>
+          <externalRef reference="Placing@Agent" resource="FrameNet"/>
+          <externalRef reference="Placing@Cause" resource="FrameNet"/>
+          <externalRef reference="Submitting_documents@Submittor" resource="FrameNet"/>
+          <externalRef reference="file.01@0" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target id="t73"/>
+          <target id="t74"/>
+          <target id="t75"/>
+          <target head="yes" id="t76"/>
+          <target id="t77"/>
+          <target id="t78"/>
+          <target id="t79"/>
+          <target id="t80"/>
+          <target id="t81"/>
+          <target id="t82"/>
+          <target id="t83"/>
+          <target id="t84"/>
+          <target id="t85"/>
+          <target id="t86"/>
+          <target id="t87"/>
+          <target id="t88"/>
+          <target id="t89"/>
+          <target id="t90"/>
+          <target id="t91"/>
+          <target id="t92"/>
+          <target id="t93"/>
+          <target id="t94"/>
+          <target id="t95"/>
+          <target id="t96"/>
+          <target id="t97"/>
+          <target id="t98"/>
+          <target id="t99"/>
+          <target id="t100"/>
+          <target id="t101"/>
+          <target id="t102"/>
+          <target id="t103"/>
+          <target id="t104"/>
+          <target id="t105"/>
+        </span>
+      </role>
+      <role id="rl20" semRole="A2">
+        <!--in recent U.S. history-->
+        <externalReferences>
+          <externalRef reference="pocket-9.10@Destination" resource="VerbNet"/>
+          <externalRef reference="Placing@Goal" resource="FrameNet"/>
+          <externalRef reference="Submitting_documents@Authority" resource="FrameNet"/>
+          <externalRef reference="file.01@2" resource="PropBank"/>
+          <externalRef reference="Placing@translocation-goal" resource="ESO"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t78"/>
+          <target id="t79"/>
+          <target id="t80"/>
+          <target id="t81"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr11">
+      <!--history-->
+      <externalReferences>
+        <externalRef reference="history.01" resource="NomBank"/>
+        <externalRef reference="transcribe-25.4" resource="VerbNet"/>
+        <externalRef reference="Possession" resource="FrameNet"/>
+        <externalRef reference="Recording" resource="FrameNet"/>
+        <externalRef reference="record.01" resource="PropBank"/>
+        <externalRef reference="HavingInPossession" resource="ESO"/>
+        <externalRef reference="communication" resource="EventType"/>
+        <externalRef reference="ili-30-00998399-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t81"/>
+      </span>
+      <role id="rl21" semRole="A3">
+        <!--the fourth largest bankruptcy filing in recent U.S. history - - after the bankruptcies of Lehman Brothers ( $ 691.06 billion ) , Washington Mutual ( $ 327.91 billion ) , and WorldCom (-->
+        <span>
+          <target id="t73"/>
+          <target id="t74"/>
+          <target id="t75"/>
+          <target head="yes" id="t76"/>
+          <target id="t77"/>
+          <target id="t78"/>
+          <target id="t79"/>
+          <target id="t80"/>
+          <target id="t81"/>
+          <target id="t82"/>
+          <target id="t83"/>
+          <target id="t84"/>
+          <target id="t85"/>
+          <target id="t86"/>
+          <target id="t87"/>
+          <target id="t88"/>
+          <target id="t89"/>
+          <target id="t90"/>
+          <target id="t91"/>
+          <target id="t92"/>
+          <target id="t93"/>
+          <target id="t94"/>
+          <target id="t95"/>
+          <target id="t96"/>
+          <target id="t97"/>
+          <target id="t98"/>
+          <target id="t99"/>
+          <target id="t100"/>
+          <target id="t101"/>
+          <target id="t102"/>
+          <target id="t103"/>
+          <target id="t104"/>
+          <target id="t105"/>
+        </span>
+      </role>
+      <role id="rl22" semRole="AM-TMP">
+        <!--recent-->
+        <span>
+          <target head="yes" id="t79"/>
+        </span>
+      </role>
+      <role id="rl23" semRole="A1">
+        <!--U.S.-->
+        <externalReferences>
+          <externalRef reference="transcribe-25.4@Theme" resource="VerbNet"/>
+          <externalRef reference="Recording@Entity" resource="FrameNet"/>
+          <externalRef reference="Recording@Phenomenon" resource="FrameNet"/>
+          <externalRef reference="record.01@1" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t80"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr12">
+      <!--bankruptcy-->
+      <externalReferences>
+        <externalRef reference="bankruptcy.01" resource="NomBank"/>
+        <externalRef reference="disappearance-48.2" resource="VerbNet"/>
+        <externalRef reference="Death" resource="FrameNet"/>
+        <externalRef reference="die.01" resource="PropBank"/>
+        <externalRef reference="contextual" resource="EventType"/>
+        <externalRef reference="ili-30-00358431-v" resource="WordNet"/>
+        <externalRef reference="ili-30-00354845-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t76"/>
+      </span>
+      <role id="rl24" semRole="A1">
+        <!--after the bankruptcies of Lehman Brothers ( $ 691.06 billion ) , Washington Mutual ( $ 327.91 billion ) , and WorldCom (-->
+        <externalReferences>
+          <externalRef reference="disappearance-48.2@Patient" resource="VerbNet"/>
+          <externalRef reference="Death@Protagonist" resource="FrameNet"/>
+          <externalRef reference="die.01@1" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t83"/>
+          <target id="t84"/>
+          <target id="t85"/>
+          <target id="t86"/>
+          <target id="t87"/>
+          <target id="t88"/>
+          <target id="t89"/>
+          <target id="t90"/>
+          <target id="t91"/>
+          <target id="t92"/>
+          <target id="t93"/>
+          <target id="t94"/>
+          <target id="t95"/>
+          <target id="t96"/>
+          <target id="t97"/>
+          <target id="t98"/>
+          <target id="t99"/>
+          <target id="t100"/>
+          <target id="t101"/>
+          <target id="t102"/>
+          <target id="t103"/>
+          <target id="t104"/>
+          <target id="t105"/>
+        </span>
+      </role>
+    </predicate>
+    <predicate id="pr13">
+      <!--bankruptcies-->
+      <externalReferences>
+        <externalRef reference="bankruptcy.01" resource="NomBank"/>
+        <externalRef reference="disappearance-48.2" resource="VerbNet"/>
+        <externalRef reference="Death" resource="FrameNet"/>
+        <externalRef reference="die.01" resource="PropBank"/>
+        <externalRef reference="contextual" resource="EventType"/>
+        <externalRef reference="ili-30-00358431-v" resource="WordNet"/>
+        <externalRef reference="ili-30-00354845-v" resource="WordNet"/>
+      </externalReferences>
+      <span>
+        <target id="t85"/>
+      </span>
+      <role id="rl25" semRole="A1">
+        <!--of Lehman Brothers ( $ 691.06 billion ) , Washington Mutual ( $ 327.91 billion ) , and WorldCom (-->
+        <externalReferences>
+          <externalRef reference="disappearance-48.2@Patient" resource="VerbNet"/>
+          <externalRef reference="Death@Protagonist" resource="FrameNet"/>
+          <externalRef reference="die.01@1" resource="PropBank"/>
+        </externalReferences>
+        <span>
+          <target head="yes" id="t86"/>
+          <target id="t87"/>
+          <target id="t88"/>
+          <target id="t89"/>
+          <target id="t90"/>
+          <target id="t91"/>
+          <target id="t92"/>
+          <target id="t93"/>
+          <target id="t94"/>
+          <target id="t95"/>
+          <target id="t96"/>
+          <target id="t97"/>
+          <target id="t98"/>
+          <target id="t99"/>
+          <target id="t100"/>
+          <target id="t101"/>
+          <target id="t102"/>
+          <target id="t103"/>
+          <target id="t104"/>
+          <target id="t105"/>
+        </span>
+      </role>
+    </predicate>
+  </srl>
+  <timeExpressions>
+    <timex3 functionInDocument="CREATION_TIME" id="tmx0" type="DATE" value="2016-08-30"/>
+    <timex3 id="tmx1" type="DATE" value="2009-06-01">
+      <!--June 01 , 2009-->
+      <span>
+        <target id="w8"/>
+        <target id="w9"/>
+        <target id="w10"/>
+        <target id="w11"/>
+      </span>
+    </timex3>
+    <timex3 anchorTimeID="tmx0" id="tmx3" type="DATE" value="2016-08-29">
+      <!--Monday-->
+      <span>
+        <target id="w32"/>
+      </span>
+    </timex3>
+  </timeExpressions>
+  <temporalRelations>
+    <tlink from="tmx0" fromType="timex" id="tlink6" relType="BEFORE" to="tmx3" toType="timex"/>
+    <tlink from="tmx0" fromType="timex" id="tlink7" relType="BEFORE" to="tmx1" toType="timex"/>
+    <tlink from="tmx1" fromType="timex" id="tlink8" relType="BEFORE" to="tmx3" toType="timex"/>
+    <predicateAnchor anchorTime="tmx3" is="an1">
+      <span>
+        <target id="pr4"/>
+      </span>
+    </predicateAnchor>
+  </temporalRelations>
+  <markables>
+    <mark id="m1" lemma="U.S." source="DBpedia">
+      <span>
+        <!--U.S.-->
+        <target id="w1"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9178207" reference="http://dbpedia.org/resource/United_States" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m2" lemma="manufacturer" source="DBpedia">
+      <span>
+        <!--manufacturer-->
+        <target id="w2"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.91495174" reference="http://dbpedia.org/resource/Manufacturing" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m3" lemma="General motors" source="DBpedia">
+      <span>
+        <!--General Motors-->
+        <target id="w3"/>
+        <target id="w4"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9999724" reference="http://dbpedia.org/resource/General_Motors" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m4" lemma="bankruptcy protection" source="DBpedia">
+      <span>
+        <!--bankruptcy protection-->
+        <target id="w6"/>
+        <target id="w7"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.99995524" reference="http://dbpedia.org/resource/Chapter_11,_Title_11,_United_States_Code" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m5" lemma="June" source="DBpedia">
+      <span>
+        <!--June-->
+        <target id="w8"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.88775855" reference="http://dbpedia.org/resource/Death_in_June" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m6" lemma="United states" source="DBpedia">
+      <span>
+        <!--United States-->
+        <target id="w12"/>
+        <target id="w13"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9969391" reference="http://dbpedia.org/resource/United_States" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m7" lemma="automobile manufacturing" source="DBpedia">
+      <span>
+        <!--automobile manufacturing-->
+        <target id="w14"/>
+        <target id="w15"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Automotive_industry" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m8" lemma="firm" source="DBpedia">
+      <span>
+        <!--firm-->
+        <target id="w16"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.53142595" reference="http://dbpedia.org/resource/Law_firm" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m9" lemma="General Motors" source="DBpedia">
+      <span>
+        <!--General Motors-->
+        <target id="w17"/>
+        <target id="w18"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9999724" reference="http://dbpedia.org/resource/General_Motors" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m10" lemma="bankruptcy" source="DBpedia">
+      <span>
+        <!--bankruptcy-->
+        <target id="w21"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.99953276" reference="http://dbpedia.org/resource/Chapter_11,_Title_11,_United_States_Code" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m11" lemma="Chapter 11" source="DBpedia">
+      <span>
+        <!--Chapter 11-->
+        <target id="w23"/>
+        <target id="w24"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Chapter_11,_Title_11,_United_States_Code" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m12" lemma="protection" source="DBpedia">
+      <span>
+        <!--protection-->
+        <target id="w25"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9985354" reference="http://dbpedia.org/resource/Environmental_protection" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m13" lemma="creditor" source="DBpedia">
+      <span>
+        <!--creditors-->
+        <target id="w28"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Creditor" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m14" lemma="Monday" source="DBpedia">
+      <span>
+        <!--Monday-->
+        <target id="w32"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9990739" reference="http://dbpedia.org/resource/Monday" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m15" lemma="Manhattan" source="DBpedia">
+      <span>
+        <!--Manhattan-->
+        <target id="w36"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.996791" reference="http://dbpedia.org/resource/Manhattan" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m16" lemma="New York" source="DBpedia">
+      <span>
+        <!--New York-->
+        <target id="w38"/>
+        <target id="w39"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.71634007" reference="http://dbpedia.org/resource/New_York" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m17" lemma="federal bankruptcy court" source="DBpedia">
+      <span>
+        <!--federal bankruptcy court-->
+        <target id="w40"/>
+        <target id="w41"/>
+        <target id="w42"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/United_States_bankruptcy_court" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m18" lemma="large bankruptcy" source="DBpedia">
+      <span>
+        <!--largest bankruptcy-->
+        <target id="w47"/>
+        <target id="w48"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Chapter_11,_Title_11,_United_States_Code" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m19" lemma="U.S." source="DBpedia">
+      <span>
+        <!--U.S.-->
+        <target id="w52"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9178207" reference="http://dbpedia.org/resource/United_States" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m20" lemma="manufacturing" source="DBpedia">
+      <span>
+        <!--manufacturing-->
+        <target id="w53"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.992574" reference="http://dbpedia.org/resource/Manufacturing" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m21" lemma="asset" source="DBpedia">
+      <span>
+        <!--assets-->
+        <target id="w59"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.99995905" reference="http://dbpedia.org/resource/Asset" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m22" lemma="debt" source="DBpedia">
+      <span>
+        <!--debt-->
+        <target id="w66"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.991064" reference="http://dbpedia.org/resource/Debt" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m23" lemma="large bankruptcy" source="DBpedia">
+      <span>
+        <!--largest bankruptcy-->
+        <target id="w75"/>
+        <target id="w76"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Chapter_11,_Title_11,_United_States_Code" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m24" lemma="U.S. history" source="DBpedia">
+      <span>
+        <!--U.S. history-->
+        <target id="w80"/>
+        <target id="w81"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9999992" reference="http://dbpedia.org/resource/History_of_the_United_States" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m25" lemma="bankruptcy" source="DBpedia">
+      <span>
+        <!--bankruptcies-->
+        <target id="w85"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Bankruptcy" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m26" lemma="Lehman Brothers" source="DBpedia">
+      <span>
+        <!--Lehman Brothers-->
+        <target id="w87"/>
+        <target id="w88"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="0.9999993" reference="http://dbpedia.org/resource/Lehman_Brothers" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m27" lemma="Washington Mutual" source="DBpedia">
+      <span>
+        <!--Washington Mutual-->
+        <target id="w95"/>
+        <target id="w96"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/Washington_Mutual" reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+    <mark id="m28" lemma="WorldCom" source="DBpedia">
+      <span>
+        <!--WorldCom-->
+        <target id="w104"/>
+      </span>
+      <externalReferences>
+        <externalRef confidence="1.0" reference="http://dbpedia.org/resource/MCI_Inc." reftype="en" resource="spotlight" source="en"/>
+      </externalReferences>
+    </mark>
+  </markables>
+  <factualities>
+    <factuality id="f1">
+      <span>
+        <target id="t58"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="NON_FUTURE"/>
+      <factVal resource="factbank" value="NONE"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f2">
+      <span>
+        <target id="t49"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="UNDERSPECIFIED"/>
+      <factVal resource="factbank" value="NONE"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f3">
+      <span>
+        <target id="t66"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="UNDERSPECIFIED"/>
+      <factVal resource="factbank" value="NONE"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f4">
+      <span>
+        <target id="t6"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="UNDERSPECIFIED"/>
+      <factVal resource="factbank" value="NONE"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f5">
+      <span>
+        <target id="t7"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="NON_FUTURE"/>
+      <factVal resource="factbank" value="Uu"/>
+      <factVal resource="nwr:attributionCertainty" value="UNDERSPECIFIED"/>
+      <factVal resource="nwr:attributionPolarity" value="UNDERSPECIFIED"/>
+    </factuality>
+    <factuality id="f6">
+      <span>
+        <target id="t5"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="NON_FUTURE"/>
+      <factVal resource="factbank" value="CT+"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f7">
+      <span>
+        <target id="t28"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="UNDERSPECIFIED"/>
+      <factVal resource="factbank" value="NONE"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f8">
+      <span>
+        <target id="t76"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="UNDERSPECIFIED"/>
+      <factVal resource="factbank" value="NONE"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f9">
+      <span>
+        <target id="t77"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="UNDERSPECIFIED"/>
+      <factVal resource="factbank" value="CT+"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f10">
+      <span>
+        <target id="t85"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="UNDERSPECIFIED"/>
+      <factVal resource="factbank" value="CT+"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f11">
+      <span>
+        <target id="t25"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="UNDERSPECIFIED"/>
+      <factVal resource="factbank" value="NONE"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f12">
+      <span>
+        <target id="t19"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="NON_FUTURE"/>
+      <factVal resource="factbank" value="CT+"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+    <factuality id="f13">
+      <span>
+        <target id="t81"/>
+      </span>
+      <factVal resource="nwr:attributionTense" value="UNDERSPECIFIED"/>
+      <factVal resource="factbank" value="NONE"/>
+      <factVal resource="nwr:attributionCertainty" value="CERTAIN"/>
+      <factVal resource="nwr:attributionPolarity" value="POS"/>
+    </factuality>
+  </factualities>
+  <opinions>
+    <opinion id="o1">
+      <opinion_target>
+        <!-- its -->
+        <span>
+          <target id="t27"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="DSE" strength="1">
+        <!-- 11 protection -->
+        <span>
+          <target id="t24"/>
+          <target id="t25"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o2">
+      <opinion_target>
+        <!-- bankruptcy -->
+        <span>
+          <target id="t48"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="DSE" strength="1">
+        <!-- largest -->
+        <span>
+          <target id="t47"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o3">
+      <opinion_target>
+        <!-- assets -->
+        <span>
+          <target id="t59"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="DSE" strength="1">
+        <!-- declared -->
+        <span>
+          <target id="t58"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o4">
+      <opinion_target>
+        <!-- assets -->
+        <span>
+          <target id="t59"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="DSE" strength="1">
+        <!-- $ 82.29 billion -->
+        <span>
+          <target id="t61"/>
+          <target id="t62"/>
+          <target id="t63"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o5">
+      <opinion_target>
+        <!-- debt -->
+        <span>
+          <target id="t66"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="DSE" strength="1">
+        <!-- $ 172.81 billion -->
+        <span>
+          <target id="t68"/>
+          <target id="t69"/>
+          <target id="t70"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o6">
+      <opinion_target>
+        <!-- debt -->
+        <span>
+          <target id="t66"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="DSE" strength="1">
+        <!-- largest -->
+        <span>
+          <target id="t75"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o7">
+      <opinion_target>
+        <!-- debt -->
+        <span>
+          <target id="t66"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="DSE" strength="1">
+        <!-- 691.06 -->
+        <span>
+          <target id="t91"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o8">
+      <opinion_target>
+        <!-- debt -->
+        <span>
+          <target id="t66"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="DSE" strength="1">
+        <!-- 327.91 -->
+        <span>
+          <target id="t99"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+    <opinion id="o9">
+      <opinion_target>
+        <!-- debt -->
+        <span>
+          <target id="t66"/>
+        </span>
+      </opinion_target>
+      <opinion_expression polarity="DSE" strength="1">
+        <!-- 103.91 -->
+        <span>
+          <target id="t107"/>
+        </span>
+      </opinion_expression>
+    </opinion>
+  </opinions>
+</NAF>
