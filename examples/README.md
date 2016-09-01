@@ -1,0 +1,15 @@
+===============
+Examples
+===============
+
+---------
+FoLiA
+---------
+
+* ``potgrond.frog.folia.xml`` -- The output of a full run of Frog, using input ``potgrond.txt``. Documents such as these will be the most common FoLiA document. Corpora such as SoNaR and Basilex are largely formatted like this.
+* ``nederlab-dpo.35.mpeg21.0300.alto.folia.corrected.folia.xml`` -- The output of TICCL, providing corrections on **untokenised** text and linking substrings to external ALTO documents. Multiple text layers are defined and related to eachother in this document.
+* ``valkuil.folia.xml`` -- A simple example of the output of Valkuil. Contains suggestions for correction of orthography on tokenised text using the ``correction`` element, which is one of the more complex but powerful elements in FoLiA.
+* ``opencgn-fv601273.folia.xml`` - An example from the OpenCGN corpus. Contains phonetic transcriptions and time segmentation.
+
+
+
