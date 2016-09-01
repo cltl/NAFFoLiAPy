@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FoLiA xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ilk.uvt.nl/folia" xml:id="untitled" version="1.2.0" generator="pynlpl.formats.folia-v1.2.0.79">
+  <metadata type="native">
+    <annotations>
+      <token-annotation annotator="ucto" annotatortype="auto" datetime="2016-09-01T13:09:50" set="/etc/ucto//tokconfig-nl"/>
+      <correction-annotation set="https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/spellingcorrection.foliaset.xml"/>
+    </annotations>
+    <meta id="donated">no</meta>
+  </metadata>
+  <text xml:id="untitled.text">
+    <p xml:id="untitled.p.1">
+      <t>De aandelenmarikt doet het slegt. Hij word de nieuwe president. Dit schrijf je niet aanelkaar.</t>
+      <s xml:id="untitled.p.1.s.1">
+        <t>De aandelenmarikt doet het slegt.</t>
+        <w class="WORD" xml:id="untitled.p.1.s.1.w.1">
+          <t>De</t>
+        </w>
+        <w class="WORD" xml:id="untitled.p.1.s.1.w.2">
+          <t>aandelenmarikt</t>
+          <correction annotator="errorlist" annotatortype="auto" class="nonworderror" datetime="2016-09-01T13:09:50" xml:id="untitled.p.1.s.1.w.2.correction.1">
+            <suggestion auth="no">
+              <t>aandelenmarkt</t>
+            </suggestion>
+          </correction>
+          <correction annotator="hunspell" annotatortype="auto" class="nonworderror" datetime="2016-09-01T13:09:50" xml:id="untitled.p.1.s.1.w.2.correction.2">
+            <suggestion auth="no" confidence="1.0">
+              <t>aandelenmarkt</t>
+            </suggestion>
+          </correction>
+        </w>
+        <w class="WORD" xml:id="untitled.p.1.s.1.w.3">
+          <t>doet</t>
+        </w>
+        <w class="WORD" xml:id="untitled.p.1.s.1.w.4">
+          <t>het</t>
+        </w>
+        <w space="no" class="WORD" xml:id="untitled.p.1.s.1.w.5">
+          <t>slegt</t>
+          <correction annotator="hunspell" annotatortype="auto" class="nonworderror" datetime="2016-09-01T13:09:50" xml:id="untitled.p.1.s.1.w.5.correction.1">
+            <suggestion auth="no" confidence="1.0">
+              <t>Slegt</t>
+            </suggestion>
+            <suggestion auth="no" confidence="1.0">
+              <t>sleg</t>
+            </suggestion>
+            <suggestion auth="no" confidence="1.0">
+              <t>slet</t>
+            </suggestion>
+            <suggestion auth="no" confidence="1.0">
+              <t>legt</t>
+            </suggestion>
+            <suggestion auth="no" confidence="1.0">
+              <t>sleet</t>
+            </suggestion>
+          </correction>
+        </w>
+        <w class="PUNCTUATION" xml:id="untitled.p.1.s.1.w.6">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitled.p.1.s.2">
+        <t>Hij word de nieuwe president.</t>
+        <w class="WORD" xml:id="untitled.p.1.s.2.w.1">
+          <t>Hij</t>
+        </w>
+        <w class="WORD" xml:id="untitled.p.1.s.2.w.2">
+          <t>word</t>
+          <correction annotator="confusible_word_wordt" annotatortype="auto" class="confusion" datetime="2016-09-01T13:09:50" xml:id="untitled.p.1.s.2.w.2.correction.1">
+            <suggestion auth="no" confidence="0.990580847724">
+              <t>wordt</t>
+            </suggestion>
+          </correction>
+        </w>
+        <w class="WORD" xml:id="untitled.p.1.s.2.w.3">
+          <t>de</t>
+        </w>
+        <w class="WORD" xml:id="untitled.p.1.s.2.w.4">
+          <t>nieuwe</t>
+        </w>
+        <w space="no" class="WORD" xml:id="untitled.p.1.s.2.w.5">
+          <t>president</t>
+        </w>
+        <w class="PUNCTUATION" xml:id="untitled.p.1.s.2.w.6">
+          <t>.</t>
+        </w>
+      </s>
+      <s xml:id="untitled.p.1.s.3">
+        <t>Dit schrijf je niet aanelkaar.</t>
+        <w class="WORD" xml:id="untitled.p.1.s.3.w.1">
+          <t>Dit</t>
+        </w>
+        <w class="WORD" xml:id="untitled.p.1.s.3.w.2">
+          <t>schrijf</t>
+        </w>
+        <w class="WORD" xml:id="untitled.p.1.s.3.w.3">
+          <t>je</t>
+        </w>
+        <w class="WORD" xml:id="untitled.p.1.s.3.w.4">
+          <t>niet</t>
+        </w>
+        <correction annotator="hunspell" annotatortype="auto" class="runonerror" datetime="2016-09-01T13:09:50" xml:id="untitled.p.1.s.3.correction.2">
+          <current>
+            <correction annotator="runon" annotatortype="auto" class="runonerror" datetime="2016-09-01T13:09:50" xml:id="untitled.p.1.s.3.correction.1">
+              <current>
+                <w space="no" class="WORD" xml:id="untitled.p.1.s.3.w.5">
+                  <t>aanelkaar</t>
+                  <correction annotator="hunspell" annotatortype="auto" class="nonworderror" datetime="2016-09-01T13:09:50" xml:id="untitled.p.1.s.3.w.5.correction.1"/>
+                </w>
+              </current>
+              <suggestion auth="no" confidence="1.0">
+                <w>
+                  <t>aan</t>
+                </w>
+                <w>
+                  <t>elkaar</t>
+                </w>
+              </suggestion>
+            </correction>
+          </current>
+          <suggestion auth="no" confidence="1.0">
+            <w>
+              <t>aan</t>
+            </w>
+            <w>
+              <t>elkaar</t>
+            </w>
+          </suggestion>
+        </correction>
+        <w class="PUNCTUATION" xml:id="untitled.p.1.s.3.w.6">
+          <t>.</t>
+        </w>
+      </s>
+    </p>
+  </text>
+</FoLiA>
