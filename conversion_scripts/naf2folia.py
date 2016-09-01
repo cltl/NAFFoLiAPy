@@ -90,7 +90,7 @@ def convert_senses(naf_term, word):
                 senses[resource].append( ( confidence, reference, features) )
 
     for resource, sensedata in senses.items():
-        senseset = "https://raw.githubusercontent.com/proycon/folia/setdefinitions/" + resource.replace(' ','_') + ".foliaset.xml"
+        senseset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/" + resource.replace(' ','_') + ".foliaset.xml"
         word.doc.declare(folia.SenseAnnotation, senseset)
         first = True
         for confidence, reference, features in reversed(sorted(sensedata)): #get highest confidence item first, the rest will be alternatives
@@ -117,21 +117,21 @@ def convert_terms(nafparser, foliadoc):
             naf_pos = naf_term.get_pos()
             if naf_pos:
                 if not pos_declared:
-                    foliadoc.declare(folia.PosAnnotation, "https://raw.githubusercontent.com/proycon/folia/setdefinitions/naf_pos.foliaset.xml")
+                    foliadoc.declare(folia.PosAnnotation, "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_pos.foliaset.xml")
                     pos_declared = True
-                word.append(folia.PosAnnotation, cls=naf_pos, set="https://raw.githubusercontent.com/proycon/folia/setdefinitions/naf_pos.foliaset.xml")
+                word.append(folia.PosAnnotation, cls=naf_pos, set="https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_pos.foliaset.xml")
 
             naf_morphofeat = naf_term.get_morphofeat()
             if naf_morphofeat:
                 if not pos2_declared:
-                    foliadoc.declare(folia.PosAnnotation, "https://raw.githubusercontent.com/proycon/folia/setdefinitions/naf_morphofeat.foliaset.xml")
+                    foliadoc.declare(folia.PosAnnotation, "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_morphofeat.foliaset.xml")
                     pos2_declared = True
-                word.append(folia.PosAnnotation, cls=naf_morphofeat, set="https://raw.githubusercontent.com/proycon/folia/setdefinitions/naf_morphofeat.foliaset.xml")
+                word.append(folia.PosAnnotation, cls=naf_morphofeat, set="https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_morphofeat.foliaset.xml")
 
             naf_lemma = naf_term.get_lemma()
             if naf_lemma:
                 if not lemma_declared:
-                    foliadoc.declare(folia.LemmaAnnotation, "https://raw.githubusercontent.com/proycon/folia/setdefinitions/naf_lemma.foliaset.xml")
+                    foliadoc.declare(folia.LemmaAnnotation, "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_lemma.foliaset.xml")
                     lemma_declared = True
                 word.append(folia.LemmaAnnotation, cls=naf_lemma)
 
@@ -139,7 +139,7 @@ def convert_terms(nafparser, foliadoc):
 
 
 def convert_entities(nafparser, foliadoc):
-    entityset =  "https://raw.githubusercontent.com/proycon/folia/setdefinitions/naf_entities.foliaset.xml"
+    entityset =  "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_entities.foliaset.xml"
     first = True
     for naf_entity in nafparser.get_entities():
         if first:
@@ -160,7 +160,7 @@ def convert_entities(nafparser, foliadoc):
         layer.add(folia.Entity, *span,  id=foliadoc.id + '.' + naf_entity.get_id(), set=entityset, cls=naf_entity.get_type())
 
 def convert_chunks(nafparser, foliadoc):
-    chunkset =  "https://raw.githubusercontent.com/proycon/folia/setdefinitions/naf_entities.foliaset.xml"
+    chunkset =  "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_entities.foliaset.xml"
     first = True
     for naf_chunk in nafparser.get_chunks():
         if first:
@@ -183,8 +183,8 @@ def convert_chunks(nafparser, foliadoc):
 def convert_coreferences(nafparser, foliadoc):
     textbody = foliadoc.data[0]
     corefset = {
-            'entity': "https://raw.githubusercontent.com/proycon/folia/setdefinitions/naf_coreference.foliaset.xml",
-            'event': "https://raw.githubusercontent.com/proycon/folia/setdefinitions/naf_events.foliaset.xml"
+            'entity': "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_coreference.foliaset.xml",
+            'event': "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_events.foliaset.xml"
     }
     declared = defaultdict(bool)
     layer = {}
