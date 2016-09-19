@@ -231,6 +231,7 @@ def convert_semroles(nafparser, foliadoc):
 
         predicate_class = naf_predicate.get_uri()
         confidence = validate_confidence(naf_predicate.get_confidence())
+
         predicate = layer.add(folia.Predicate, *span, id=foliadoc.id + '.' + naf_predicate.get_id(), set=predicateset, cls=predicate_class, confidence=confidence)
 
         for naf_role in naf_predicate.get_roles():
@@ -238,6 +239,37 @@ def convert_semroles(nafparser, foliadoc):
             span = resolve_span(naf_role.get_span(), nafparser, foliadoc)
 
             predicate.add(folia.SemanticeRole, *span,  id=foliadoc.id + '.' + naf_role.get_id(), set=semroleset, cls=semrole_class)
+            # - NAF has no support for confidence on semantic roles
+
+def convert_dependencies(nafparser, foliadoc):
+    depset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_dependencies.foliaset.xml",
+    declared = False
+    for naf_dep in nafparser.get_dependencies():
+        naf_term = nafparser.get_term(naf_dep.get_from())
+        hd_span = [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+
+        naf_term = nafparser.get_term(naf_dep.get_to())
+        dep_span = [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+
+        sentence = hd_span[0].sentence()
+        assert dep_span[0].sentence() == sentence
+
+        if not declared:
+            foliadoc.declare(folia.Dependency, depset)
+            declared = True
+
+        try:
+            layer = sentence.annotation(folia.DependencyLayer, depset)
+        except folia.NoSuchAnnotation:
+            layer = sentence.add(folia.DependencyLayer, set=depset)
+
+        dependency = layer.add(folia.Dependency, set=depset, cls=naf_term.get_function() )
+        dependency.add(folia.Headspan, *hd_span)
+        dependency.add(folia.DependencyDependent, *dep_span)
+        # - NAF has no support for IDs or confidence on dependencies
+
+
+
 
 
 def naf2folia(naffile, docid=None):
@@ -265,6 +297,7 @@ def naf2folia(naffile, docid=None):
     convert_chunks(nafparser, foliadoc)
     convert_coreferences(nafparser, foliadoc)
     convert_semroles(nafparser, foliadoc)
+    convert_dependencies(nafparser, foliadoc)
 
     return foliadoc
 
