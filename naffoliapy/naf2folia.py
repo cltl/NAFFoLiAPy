@@ -141,6 +141,13 @@ def convert_terms(nafparser, foliadoc):
 
             convert_senses(naf_term, word)
 
+def resolve_span(nafspan, nafparser, foliadoc):
+    span = []
+    for target in nafspan:
+        naf_term = nafparser.get_term(target.get_id())
+        span += [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+    return span
+
 
 def convert_entities(nafparser, foliadoc):
     entityset =  "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_entities.foliaset.xml"
@@ -152,10 +159,7 @@ def convert_entities(nafparser, foliadoc):
         naf_references = list(naf_entity.get_references())
         if len(naf_references) > 1:
             raise Exception("Entity has multiple references, this was unexpected...",file=sys.stderr)
-        span = []
-        for target in naf_references[0].get_span():
-            naf_term = nafparser.get_term(target.get_id())
-            span += [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+        span = resolve_span(naf_references[0].get_span(), nafparser, foliadoc)
         sentence = span[0].sentence()
         try:
             layer = sentence.annotation(folia.EntitiesLayer, entityset)
@@ -170,13 +174,7 @@ def convert_chunks(nafparser, foliadoc):
         if first:
             foliadoc.declare(folia.Chunk, chunkset)
             first = False
-        naf_references = list(naf_chunk.get_references())
-        if len(naf_references) > 1:
-            raise Exception("Chunk has multiple references, this was unexpected...",file=sys.stderr)
-        span = []
-        for target in naf_references[0].get_span():
-            naf_term = nafparser.get_term(target.get_id())
-            span += [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+        span = resolve_span(naf_chunk.get_span(), nafparser, foliadoc)
         sentence = span[0].sentence()
         try:
             layer = sentence.annotation(folia.ChunkingLayer, chunkset)
@@ -187,8 +185,8 @@ def convert_chunks(nafparser, foliadoc):
 def convert_coreferences(nafparser, foliadoc):
     textbody = foliadoc.data[0]
     corefset = {
-            'entity': "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_coreference.foliaset.xml",
-            'event': "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_events.foliaset.xml"
+        'entity': "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_coreference.foliaset.xml",
+        'event': "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_events.foliaset.xml"
     }
     declared = defaultdict(bool)
     layer = {}
@@ -213,6 +211,34 @@ def convert_coreferences(nafparser, foliadoc):
                     span.append( foliadoc[foliadoc.id + '.' + w_id])
             corefchain.add(folia.CoreferenceLink, *span)
 
+def convert_semroles(nafparser, foliadoc):
+    predicateset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_predicates.foliaset.xml",
+    semroleset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_semroles.foliaset.xml"
+    declared = False
+    for naf_predicate in nafparser.get_predicates():
+        span = resolve_span(naf_predicate.get_span(), nafparser, foliadoc)
+        sentence = span[0].sentence()
+
+        if not declared:
+            foliadoc.declare(folia.SemanticRole, semroleset)
+            foliadoc.declare(folia.Predicate, predicateset)
+            declared = True
+
+        try:
+            layer = sentence.annotation(folia.SemanticRolesLayer, semroleset)
+        except folia.NoSuchAnnotation:
+            layer = sentence.add(folia.SemanticRolesLayer, set=semroleset)
+
+        predicate_class = naf_predicate.get_uri()
+        confidence = validate_confidence(naf_predicate.get_confidence())
+        predicate = layer.add(folia.Predicate, *span, set=predicateset, cls=predicate_class, confidence=confidence)
+
+        for naf_role in naf_predicate.get_roles():
+            semrole_class = naf_role.get_sem_role()
+            span = resolve_span(naf_role.get_span(), nafparser, foliadoc)
+
+            predicate.add(folia.SemanticeRole, *span, set=semroleset, cls=semrole_class)
+
 
 def naf2folia(naffile, docid=None):
     """
@@ -233,11 +259,12 @@ def naf2folia(naffile, docid=None):
     foliadoc.declare(folia.Sentence, 'undefined')
     foliadoc.metadata['language'] = nafparser.get_language()
 
-    textbody = convert_text_layer(nafparser,foliadoc)
+    convert_text_layer(nafparser,foliadoc)
     convert_terms(nafparser, foliadoc)
     convert_entities(nafparser, foliadoc)
     convert_chunks(nafparser, foliadoc)
     convert_coreferences(nafparser, foliadoc)
+    convert_semroles(nafparser, foliadoc)
 
     return foliadoc
 
@@ -264,6 +291,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
