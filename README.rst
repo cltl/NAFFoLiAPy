@@ -11,10 +11,10 @@ To clone this repository and install, do:
 
 * ``$ git clone https://github.com/cltl/NAFFoLiAPy.git``
 * ``$ cd NAFFoLiAPy``
-* ``$ pip install setup.py``
+* ``$ python3 install setup.py``
 
 
-You may want to use ``pip3`` for Python 3 and you may need to include ``sudo``
+You may want to use ``python2`` for Python 2.7 and you may need to include ``sudo``
 if you want to install the package globally. We recommend using a Python
 ``virtualenv`` though. Create and activate one as follows prior to executing
 the above steps:
