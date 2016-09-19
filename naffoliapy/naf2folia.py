@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
 
+# NAF2FoLiA Convertor
+# by Maarten van Gompel, Radboud University Nijmegen
+# Licensed under GPLv3
+
 from __future__ import print_function, unicode_literals, division, absolute_import
 
 import sys
@@ -245,7 +249,10 @@ def main():
     parser.add_argument('--id', type=str,help="Document ID for the FoLiA document (will be derived from the filename if not set)", action='store',default="",required=False)
     args = parser.parse_args()
     #args.storeconst, args.dataset, args.num, args.bar
-    args = parser.parse_args()
+
+    if not args.naffile:
+        parser.print_help()
+        sys.exit(2)
 
     foliadoc = naf2folia(args.naffile, args.id)
 
