@@ -203,7 +203,7 @@ def convert_coreferences(nafparser, foliadoc):
         except folia.NoSuchAnnotation:
             layer[coreftype] = textbody.add(folia.CoreferenceLayer, set=corefset[coreftype])
 
-        corefchain = layer[coreftype].add(folia.CoreferenceChain, set=corefset[coreftype])
+        corefchain = layer[coreftype].add(folia.CoreferenceChain, id=foliadoc.id + '.' + naf_coref.get_id(),  set=corefset[coreftype])
         for naf_span in naf_coref.get_spans():
             span =  []
             for term_id in naf_span.get_span_ids():
@@ -231,13 +231,13 @@ def convert_semroles(nafparser, foliadoc):
 
         predicate_class = naf_predicate.get_uri()
         confidence = validate_confidence(naf_predicate.get_confidence())
-        predicate = layer.add(folia.Predicate, *span, set=predicateset, cls=predicate_class, confidence=confidence)
+        predicate = layer.add(folia.Predicate, *span, id=foliadoc.id + '.' + naf_predicate.get_id(), set=predicateset, cls=predicate_class, confidence=confidence)
 
         for naf_role in naf_predicate.get_roles():
             semrole_class = naf_role.get_sem_role()
             span = resolve_span(naf_role.get_span(), nafparser, foliadoc)
 
-            predicate.add(folia.SemanticeRole, *span, set=semroleset, cls=semrole_class)
+            predicate.add(folia.SemanticeRole, *span,  id=foliadoc.id + '.' + naf_role.get_id(), set=semroleset, cls=semrole_class)
 
 
 def naf2folia(naffile, docid=None):
