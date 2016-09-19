@@ -3,6 +3,25 @@ NAFFoLiA
 
 Python library and command-line tools for converting between FoLiA and NAF.
 
+Installation
+-----------------
+
+To clone this repository and install, do:
+
+    $ git clone https://github.com/cltl/NAFFoLiAPy.git
+    $ cd NAFFoLiAPy
+    $ pip install setup.py
+
+You may want to use ``pip3`` for Python 3 and you may need to include ``sudo``
+if you want to install the package globally. We recommend using a Python
+``virtualenv`` though. Create and activate one as follows prior to executing
+the above steps:
+
+    $ virtualenv --python=python3 naffoliaenv
+    $ . naffoliaenv/bin/activate
+
+Alternatively, use a python distribution like Anaconda.
+
 NAF to FoLiA
 ----------------
 
