@@ -300,6 +300,9 @@ def convert_attribution(nafparser, foliadoc):
     pass
 
 
+
+
+
 def naf2folia(naffile, docid=None):
     """
     Converts a NAF Document to FoLiA, returns a FoLiA document instance.
@@ -360,6 +363,14 @@ def naf2folia(naffile, docid=None):
     convert_factuality(nafparser, foliadoc)
     convert_opinions(nafparser, foliadoc)
     convert_attribution(nafparser, foliadoc)
+
+    #add annotator information to declarations
+    #NAF may have multiple annotators per layer, making it not entirely clear
+    #what specific annotation was added/modified by which. We therefore
+    #combine multiple annotators using a pipe (|) where needed.
+
+    #TODO: missing functionality in kafnafparser to iterate over linguistic processors (issue cltl/KafNafParserPy#13)
+    #foliadoc.defaultannotator(folia.Word, 
 
     return foliadoc
 
