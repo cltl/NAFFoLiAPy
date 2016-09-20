@@ -310,6 +310,7 @@ def naf2folia(naffile, docid=None):
 
     nafparser = naf.KafNafParser(naffile)
 
+
     if not docid:
         #derive document ID from filename
         docid = os.path.basename(naffile).split('.')[0]
@@ -318,6 +319,22 @@ def naf2folia(naffile, docid=None):
     foliadoc.declare(folia.Word, 'undefined')
     foliadoc.declare(folia.Sentence, 'undefined')
     foliadoc.metadata['language'] = nafparser.get_language()
+
+    naf_header = nafparser.get_header()
+    if naf_header.get_publicId(): foliadoc.metadata['publicId'] = naf_header.get_publicId()
+
+    naf_filedesc = naf_header.get_fileDesc()
+    if naf_filedesc is not None:
+        if naf_filedesc.get_title(): foliadoc.metadata['title'] = naf_filedesc.get_title()
+        if naf_filedesc.get_author(): foliadoc.metadata['author'] = naf_filedesc.get_author()
+        if naf_filedesc.get_creationtime(): foliadoc.metadata['creationtime'] = naf_filedesc.get_creationtime()
+        if naf_filedesc.get_location(): foliadoc.metadata['source'] = naf_filedesc.get_location()
+        if naf_filedesc.get_filename(): foliadoc.metadata['filename'] = naf_filedesc.get_filename()
+        if naf_filedesc.get_filetype(): foliadoc.metadata['filetype'] = naf_filedesc.get_filetype()
+        if naf_filedesc.get_publisher(): foliadoc.metadata['publisher'] = naf_filedesc.get_publisher()
+        if naf_filedesc.get_magazine(): foliadoc.metadata['magazine'] = naf_filedesc.get_magazine()
+        if naf_filedesc.get_section(): foliadoc.metadata['section'] = naf_filedesc.get_section()
+
 
     convert_text_layer(nafparser,foliadoc)
     convert_terms(nafparser, foliadoc)
