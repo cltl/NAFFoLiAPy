@@ -220,7 +220,7 @@ def convert_coreferences(nafparser, foliadoc):
             corefchain.add(folia.CoreferenceLink, *span)
 
 def convert_semroles(nafparser, foliadoc):
-    predicateset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_predicates.foliaset.xml",
+    predicateset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_predicates.foliaset.xml"
     semroleset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_semroles.foliaset.xml"
     declared = False
     for naf_predicate in nafparser.get_predicates():
@@ -246,11 +246,11 @@ def convert_semroles(nafparser, foliadoc):
             semrole_class = naf_role.get_sem_role()
             span = resolve_span(naf_role.get_span(), nafparser, foliadoc)
 
-            predicate.add(folia.SemanticeRole, *span,  id=foliadoc.id + '.' + naf_role.get_id(), set=semroleset, cls=semrole_class)
+            predicate.add(folia.SemanticRole, *span,  id=foliadoc.id + '.' + naf_role.get_id(), set=semroleset, cls=semrole_class)
             # - NAF has no support for confidence on semantic roles
 
 def convert_dependencies(nafparser, foliadoc):
-    depset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_dependencies.foliaset.xml",
+    depset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_dependencies.foliaset.xml"
     declared = False
     for naf_dep in nafparser.get_dependencies():
         naf_term = nafparser.get_term(naf_dep.get_from())
@@ -267,11 +267,11 @@ def convert_dependencies(nafparser, foliadoc):
             declared = True
 
         try:
-            layer = sentence.annotation(folia.DependencyLayer, depset)
+            layer = sentence.annotation(folia.DependenciesLayer, depset)
         except folia.NoSuchAnnotation:
-            layer = sentence.add(folia.DependencyLayer, set=depset)
+            layer = sentence.add(folia.DependenciesLayer, set=depset)
 
-        dependency = layer.add(folia.Dependency, set=depset, cls=naf_term.get_function() )
+        dependency = layer.add(folia.Dependency, set=depset, cls=naf_dep.get_function() )
         dependency.add(folia.Headspan, *hd_span)
         dependency.add(folia.DependencyDependent, *dep_span)
         # - NAF has no support for IDs or confidence on dependencies
