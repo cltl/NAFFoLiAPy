@@ -79,7 +79,7 @@ def validate_confidence(confidence):
     return confidence
 
 def unsupported_notice(collection, annotationtitle):
-    if not collection or (isinstance(collection, types.GeneratorType) and not list(collection)):
+    if collection is not None and (not isinstance(collection, types.GeneratorType) or not list(collection)):
         print("WARNING: The following annotation type in NAF can not be converted to FoLiA yet: " +  annotationtitle + ". Skipping....",file=sys.stderr)
 
 
