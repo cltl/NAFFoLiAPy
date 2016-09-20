@@ -314,12 +314,18 @@ def naf2folia(naffile, docid=None):
     if not docid:
         #derive document ID from filename
         docid = os.path.basename(naffile).split('.')[0]
+        try:
+            folia.isncname(docid)
+        except ValueError:
+            print("Document ID can not be extracted from filename (invalid XML NCName), please set --id manually",file=sys.stderr)
+            sys.exit(2)
 
     foliadoc = folia.Document(id=docid)
     foliadoc.declare(folia.Word, 'undefined')
     foliadoc.declare(folia.Sentence, 'undefined')
     foliadoc.metadata['language'] = nafparser.get_language()
 
+    #Convert metadata from nafHeader/fileDesc and nafHeader/public
     naf_header = nafparser.get_header()
     if naf_header.get_publicId(): foliadoc.metadata['publicId'] = naf_header.get_publicId()
     try:
