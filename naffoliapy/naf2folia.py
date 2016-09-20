@@ -81,24 +81,45 @@ def unsupported_notice(collection, annotationtitle):
     if collection is not None and list(collection):
         print("WARNING: The following annotation type in NAF can not be converted to FoLiA yet: " +  annotationtitle,file=sys.stderr)
 
+
+def _get_exrefs(exref, result):
+    #Depth first search getting all nested external references (FoLiA does not support the unbounded nesting)
+    for exref2 in exref.get_external_references():
+        result.append(exref2)
+        _get_exrefs(exref2, result)
+
 def convert_senses(naf_term, word):
     senses = defaultdict(list) #resource => []
     for naf_exref in naf_term.get_external_references():
         resource = naf_exref.get_resource()
         reference = naf_exref.get_reference()
         features = {}
+        confidence = validate_confidence(naf_exref.get_confidence())
+        if confidence is None: confidence = 0 #needed for sorting later
+
         if resource.lower().find('wordnet') != -1 or resource.startswith('wn'):
             #wordnet
             #see if the ID follows the NAF convention for wordnet
             if len(reference) > 10 and reference[3] == '-' and reference[6] == '-' and reference[-2] == '-':
                 features = {'version': reference[4:6], 'language': reference[:3],'pos': reference[-1]}
                 reference = reference[7:-2]
-                confidence = validate_confidence(naf_exref.get_confidence())
-                if confidence is None: confidence = 0 #needed for sorting later
                 senses[resource].append( ( confidence, reference, features) )
 
+        elif resource.lower().find('odwn') != -1:
+            #ODWN (breaks the above convention a bit)
+            if reference[:4] == 'odwn' and len(reference) > 10 and reference[4] == '-' and reference[7] == '-' and reference[-2] == '-':
+                children_exrefs = []
+                _get_exrefs(naf_exref, children_exrefs)
+                for child_exref in children_exrefs:
+                    features[child_exref.get_resource()] = child_exref.get_reference()
+
+                features['pos'] = reference[-1]
+                senses[resource].append( ( confidence, reference, features) )
+
+
+
     for resource, sensedata in senses.items():
-        senseset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/" + resource.replace(' ','_') + ".foliaset.xml"
+        senseset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_sense_" + resource.replace(' ','_') + ".foliaset.xml"
         word.doc.declare(folia.SenseAnnotation, senseset)
         first = True
         for confidence, reference, features in reversed(sorted(sensedata)): #get highest confidence item first, the rest will be alternatives
