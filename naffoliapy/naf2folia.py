@@ -175,6 +175,25 @@ def convert_entities(nafparser, foliadoc):
             layer = sentence.add(folia.EntitiesLayer, set=entityset)
         layer.add(folia.Entity, *span,  id=foliadoc.id + '.' + naf_entity.get_id(), set=entityset, cls=naf_entity.get_type())
 
+def convert_markables(nafparser, foliadoc):
+    markableset =  "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_markables.foliaset.xml"
+    first = True
+    for naf_mark in nafparser.get_markables():
+        if first:
+            foliadoc.declare(folia.Entity, markableset)
+            first = False
+        span = resolve_span(naf_mark.get_span(), nafparser, foliadoc)
+        sentence = span[0].sentence()
+        try:
+            layer = sentence.annotation(folia.EntitiesLayer, markableset)
+        except folia.NoSuchAnnotation:
+            layer = sentence.add(folia.EntitiesLayer, set=markableset)
+        markable = layer.add(folia.Entity, *span,  id=foliadoc.id + '.' + naf_mark.get_id(), set=markableset)
+        if naf_mark.get_lemma():
+            markable.add(folia.Feature, subset="lemma",cls=naf_mark.get_lemma())
+        if naf_mark.get_source():
+            markable.add(folia.Feature, subset="source",cls=naf_mark.get_source())
+
 def convert_chunks(nafparser, foliadoc):
     chunkset =  "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_entities.foliaset.xml"
     first = True
@@ -352,6 +371,7 @@ def naf2folia(naffile, docid=None):
     convert_text_layer(nafparser,foliadoc)
     convert_terms(nafparser, foliadoc)
     convert_entities(nafparser, foliadoc)
+    convert_markables(nafparser, foliadoc)
     convert_chunks(nafparser, foliadoc)
     convert_coreferences(nafparser, foliadoc)
     convert_semroles(nafparser, foliadoc)
