@@ -4,13 +4,13 @@ NAF/@xml:lang           meta[@id="language"]    (if native metadata is used and 
 NAF/@version            FoLiA/@version          mandatory in both (describes format version in both, not document version)
 n/a                     FoLiA/@xml:id           ID of the document, mandatory, may correspond to NAF/public/publicID? But is optional in NAF
 NafHeader               metadata/annotations
-fileDesc                metadata[@type="native"]
+fileDesc                metadata[@type="native"] 
 fileDesc/@title  (opt)  meta[@id="title"] (opt)
-fileDesc/@author (opt)  meta[@id="author"] (opt)
+fileDesc/@author (opt)  meta[@id="author"] (opt
 
 fileDesc/@X             meta[@id="X"]
 n/a                     meta[@id="Y"]   
- -> FoLiA native metadata is a simple key->value store. Can attributes be added at will to fileDesc in NAF?
+ -> FoLiA native metadata is a simple key->value store.
 
 public/publicId (opt)   FoLiA/@xml:id or a metadata entry (meta)
 public/uri (opt)        a metadata entry (meta)
@@ -47,15 +47,15 @@ terms/term              text//w   (see note at end)
 -> FoLiA does not make the token/term distinction like NAF does. The w element can be considered more like a term and it is not prohibited to have spaces in its text (technically multiple tokens). Alternatively, some types of terms may be represented as FoLiA entities.
 
 
-sentiment               text//subjectivity    (I'm not too happy about the FoLiA tag name, 'sentiment' would be better but this has existed historically (used in VU-DNC for instance), considering renaming in FoLiA v1.3)
+sentiment               //sentiments/sentiment  (span annotation, since FoLiA 1.3)
  @resource              @set (i.e, a FoLiA Set Definition covering the vocabulary)
- @polarity              @class or feat/[@subset="polarity"] ?
+ @polarity              @class or feat/[@subset="polarity"]?
  @strength              @class or feat/[@subset="strength"] ?
  @subjectivity          @class or feat/[@subset="subjectivity"] ?
  @sentiment_semantic_type         @class or feat/[@subset="semantic_type"] ?
  @sentiment_modifier              @class or feat/[@subset="modifier"] ?
  @sentiment_product_feature       @class or feat/[@subset="product"] ?
--> This is a bit underdeveloped in FoLiA. I think we can pre-define some subsets based on NAF attributes (polarity/strength/subjectivity/smeantic_type/modifier) for FoLiA v1.3 (which implies they can be used directly as attributes)
+-> Prior to FoLiA 1.3, there was only the text//subjectivity element (token annotation), this is limited and only used in the VU-DNC project. The class in that set would map to NAF's sentiment/@subjectivity I think.
 
 
 externalRef             alignment
@@ -106,17 +106,15 @@ span                    coferencelink
 target                  wref
 @head="yes"             embed wref(s) within hd
 
-opinions/opinion        n/a (only subjectivity element exists, can be considered for future implementation)
+opinions/opinion        sentiments/sentiment (since FoLiA 1.3)
 
-attribution/statement   n/a (can be considered for future implementation)
+attribution/statement   statements/statement (since FoLiA 1.3)
 
-srl/predicate/role      semroles/semrole
+srl/predicate/role      semroles/predicate/semrole
 @id                     @xml:id
 @semRole                @class      [set-dependent]
 @confidence             @confidence
 span/target             wref            
--> In FoLiA, roles are not grouped at predicate level, can be considered for future implementation
-
 
 Events as Coreference clusters      Would work in FoLiA as well
 
@@ -142,4 +140,4 @@ This is a non-exhaustive list of things that FoLiA contains but are currently no
  - text markup/layout (styling, hyperlinks, linebreaks, whitespace, gaps) (folia:t-*, folia:br)
  - higher-order annotation of arbitrary substrings (folia:str)
  - metrics, the ability to associate some measure (key->value) with any annotation (folia:metric)
- - description, ability for a description to be associated with any annotation (folia:desc)
+ - description and comments, ability for a description or comment to be associated with any annotation (folia:desc and folia:comment)
