@@ -10,6 +10,7 @@ from __future__ import print_function, unicode_literals, division, absolute_impo
 import sys
 import os
 import argparse
+import types
 from collections import defaultdict
 
 import KafNafParserPy as naf
@@ -78,8 +79,8 @@ def validate_confidence(confidence):
     return confidence
 
 def unsupported_notice(collection, annotationtitle):
-    if collection is not None and list(collection):
-        print("WARNING: The following annotation type in NAF can not be converted to FoLiA yet: " +  annotationtitle,file=sys.stderr)
+    if not collection or (isinstance(collection, types.GeneratorType) and not list(collection)):
+        print("WARNING: The following annotation type in NAF can not be converted to FoLiA yet: " +  annotationtitle + ". Skipping....",file=sys.stderr)
 
 
 def _get_exrefs(exref, result):
@@ -217,7 +218,13 @@ def convert_exrefs(naf_element, folia_element):
             foliadoc.declare(folia.Alignment, alignset)
 
         confidence = validate_confidence(naf_exref.get_confidence())
-        folia_element.add(folia.Alignment, cls=naf_exref.get_resource(), href=naf_exref.get_reference(), format="text/html", confidence=confidence)
+        resource = naf_exref.get_resource()
+        reference = naf_exref.get_reference()
+        if reference.find('://') == -1:
+            #reference is not a URL
+            print("WARNING: External reference '" + reference + + "' for resource '" + resource + "' is not a URL! Skipping...",file=sys.stderr)
+            continue
+        folia_element.add(folia.Alignment, cls=resource, href=reference, format="text/html", confidence=confidence)
 
 def convert_markables(nafparser, foliadoc):
     markableset =  "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_markables.foliaset.xml"
@@ -325,7 +332,7 @@ def convert_dependencies(nafparser, foliadoc):
         dep_span = [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
 
         sentence = hd_span[0].sentence()
-        assert dep_span[0].sentence() == sentence
+        assert dep_span[0].sentence() is sentence
 
         if not declared:
             foliadoc.declare(folia.Dependency, depset)
@@ -355,7 +362,7 @@ def convert_syntax(nafparser, foliadoc):
     unsupported_notice(nafparser.get_trees(), "Constituency Parse (syntax)")
 
 def convert_factuality(nafparser, foliadoc):
-    unsupported_notice(nafparser.get_factvalues(), "Factuality")
+    unsupported_notice(nafparser.factuality_layer, "Factuality")
 
 def convert_opinions(nafparser, foliadoc):
     unsupported_notice(nafparser.get_opinions(), "Opinions")
