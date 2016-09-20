@@ -77,6 +77,10 @@ def validate_confidence(confidence):
         return 1.0
     return confidence
 
+def unsupported_notice(collection, annotationtitle):
+    if collection is not None and list(collection):
+        print("WARNING: The following annotation type in NAF can not be converted to FoLiA yet: " +  annotationtitle,file=sys.stderr)
+
 def convert_senses(naf_term, word):
     senses = defaultdict(list) #resource => []
     for naf_exref in naf_term.get_external_references():
@@ -107,6 +111,9 @@ def convert_senses(naf_term, word):
                 for subset, cls in features.items():
                     sense.add(folia.Feature, subset=subset,cls=cls)
             first = False
+
+def convert_sentiment(naf_term, word):
+    unsupported_notice(naf_term.get_sentiment(), "Sentiment")
 
 def convert_terms(nafparser, foliadoc):
     pos_declared = pos2_declared = lemma_declared = False
@@ -140,6 +147,7 @@ def convert_terms(nafparser, foliadoc):
                 word.append(folia.LemmaAnnotation, cls=naf_lemma)
 
             convert_senses(naf_term, word)
+            convert_sentiment(naf_term, word)
 
 def resolve_span(nafspan, nafparser, foliadoc):
     span = []
@@ -268,8 +276,28 @@ def convert_dependencies(nafparser, foliadoc):
         dependency.add(folia.DependencyDependent, *dep_span)
         # - NAF has no support for IDs or confidence on dependencies
 
+def convert_timeexpressions(nafparser, foliadoc):
+    unsupported_notice(nafparser.get_timeExpressions(), "Time Expressions")
 
+def convert_temporalrelations(nafparser, foliadoc):
+    unsupported_notice(nafparser.get_tlinks(), "Temporal Relations")
 
+def convert_causalrelations(nafparser, foliadoc):
+    #Not documented in NAF specification yet
+    unsupported_notice(nafparser.get_clinks(), "Causal Relations")
+
+def convert_syntax(nafparser, foliadoc):
+    unsupported_notice(nafparser.get_trees(), "Constituency Parse (syntax)")
+
+def convert_factuality(nafparser, foliadoc):
+    unsupported_notice(nafparser.get_factvalues(), "Factuality")
+
+def convert_opinions(nafparser, foliadoc):
+    unsupported_notice(nafparser.get_opinions(), "Opinions")
+
+def convert_attribution(nafparser, foliadoc):
+    #Not supported in KafNafParser yet!!!
+    pass
 
 
 def naf2folia(naffile, docid=None):
@@ -298,6 +326,13 @@ def naf2folia(naffile, docid=None):
     convert_coreferences(nafparser, foliadoc)
     convert_semroles(nafparser, foliadoc)
     convert_dependencies(nafparser, foliadoc)
+    convert_timeexpressions(nafparser, foliadoc)
+    convert_temporalrelations(nafparser, foliadoc)
+    convert_causalrelations(nafparser, foliadoc)
+    convert_syntax(nafparser, foliadoc)
+    convert_factuality(nafparser, foliadoc)
+    convert_opinions(nafparser, foliadoc)
+    convert_attribution(nafparser, foliadoc)
 
     return foliadoc
 
