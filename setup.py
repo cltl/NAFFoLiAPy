@@ -38,5 +38,5 @@ setup(
     },
     #include_package_data=True,
     #package_data = {'foliatools': ['*.xsl', '../schemas/*.yml','../schemas/*.rng']},
-    install_requires=['pynlpl >= 1.0', 'KafNafParserPy >= 1.81', 'lxml >= 2.2','docutils']
+    install_requires=['pynlpl >= 1.0.7', 'KafNafParserPy >= 1.81', 'lxml >= 2.2','docutils']
 )

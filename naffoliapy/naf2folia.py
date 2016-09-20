@@ -95,7 +95,7 @@ def convert_senses(naf_term, word):
         reference = naf_exref.get_reference()
         features = {}
         confidence = validate_confidence(naf_exref.get_confidence())
-        if confidence is None: confidence = 0 #needed for sorting later
+        #if confidence is None: confidence = 0 #needed for sorting later
 
         if resource.lower().find('wordnet') != -1 or resource.startswith('wn'):
             #wordnet
@@ -106,32 +106,35 @@ def convert_senses(naf_term, word):
                 senses[resource].append( ( confidence, reference, features) )
 
         elif resource.lower().find('odwn') != -1:
-            #ODWN (breaks the above convention a bit)
-            if reference[:4] == 'odwn' and len(reference) > 10 and reference[4] == '-' and reference[7] == '-' and reference[-2] == '-':
-                children_exrefs = []
-                _get_exrefs(naf_exref, children_exrefs)
-                for child_exref in children_exrefs:
-                    features[child_exref.get_resource()] = child_exref.get_reference()
+            #ODWN
+            children_exrefs = []
+            _get_exrefs(naf_exref, children_exrefs)
+            for child_exref in children_exrefs:
+                features[child_exref.get_resource()] = child_exref.get_reference()
 
-                features['pos'] = reference[-1]
-                senses[resource].append( ( confidence, reference, features) )
+            features['pos'] = reference[-1]
+            senses[resource].append( ( confidence, reference, features) )
+        elif resource.lower().find('framenet') != -1:
+            senses[resource].append( ( confidence, reference, features) )
+        else:
+            print("WARNING: Conversion from external reference with resource '" + resource + "' is not known! Skipping...",file=sys.stderr)
 
 
 
     for resource, sensedata in senses.items():
         senseset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_sense_" + resource.replace(' ','_') + ".foliaset.xml"
         word.doc.declare(folia.SenseAnnotation, senseset)
-        first = True
-        for confidence, reference, features in reversed(sorted(sensedata)): #get highest confidence item first, the rest will be alternatives
-            if first:
-                anchor = word
-            else:
-                anchor = word.add(folia.Alternative)
-            sense = anchor.add(folia.SenseAnnotation, set=senseset, cls=reference, confidence=confidence)
+        #first = True
+        for confidence, reference, features in sensedata: #reversed(sorted(sensedata)): #get highest confidence item first, the rest will be alternatives (DISABLED)
+            #if first:
+            #    anchor = word
+            #else:
+            #    anchor = word.add(folia.Alternative)
+            sense = word.add(folia.SenseAnnotation, set=senseset, cls=reference, confidence=confidence)
             if features:
                 for subset, cls in features.items():
                     sense.add(folia.Feature, subset=subset,cls=cls)
-            first = False
+            #first = False
 
 def convert_sentiment(naf_term, word):
     unsupported_notice(naf_term.get_sentiment(), "Sentiment")
@@ -194,7 +197,27 @@ def convert_entities(nafparser, foliadoc):
             layer = sentence.annotation(folia.EntitiesLayer, entityset)
         except folia.NoSuchAnnotation:
             layer = sentence.add(folia.EntitiesLayer, set=entityset)
-        layer.add(folia.Entity, *span,  id=foliadoc.id + '.' + naf_entity.get_id(), set=entityset, cls=naf_entity.get_type())
+        entity = layer.add(folia.Entity, *span,  id=foliadoc.id + '.' + naf_entity.get_id(), set=entityset, cls=naf_entity.get_type())
+
+        convert_exrefs(naf_entity, entity)
+
+def convert_exrefs(naf_element, folia_element):
+    """Converts external references to alignments. Not all external references are processed here, the ones that are not converted to alignments (but to senses for instance) are processed in convert_senses"""
+    alignset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_alignments.foliaset.xml"
+
+    foliadoc = folia_element.doc
+
+    naf_exrefs = []
+    for naf_exref in naf_element.get_external_references(): #FoLiA does not supported nested references beyond two levels, flatten them
+        naf_exrefs.append(naf_exref)
+        _get_exrefs(naf_exref, naf_exrefs)
+
+    for naf_exref in naf_exrefs:
+        if not foliadoc.declared(folia.Alignment, alignset):
+            foliadoc.declare(folia.Alignment, alignset)
+
+        confidence = validate_confidence(naf_exref.get_confidence())
+        folia_element.add(folia.Alignment, cls=naf_exref.get_resource(), href=naf_exref.get_reference(), format="text/html", confidence=confidence)
 
 def convert_markables(nafparser, foliadoc):
     markableset =  "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_markables.foliaset.xml"
@@ -214,6 +237,8 @@ def convert_markables(nafparser, foliadoc):
             markable.add(folia.Feature, subset="lemma",cls=naf_mark.get_lemma())
         if naf_mark.get_source():
             markable.add(folia.Feature, subset="source",cls=naf_mark.get_source())
+
+        convert_exrefs(naf_mark, markable)
 
 def convert_chunks(nafparser, foliadoc):
     chunkset =  "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_entities.foliaset.xml"
