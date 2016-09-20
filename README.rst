@@ -50,8 +50,8 @@ The following conversions are currently supported by ``naf2folia``:
     * External references on predicate level (usually to framenet) are converted to FoLiA senses
 * Dependency relations
 * Metadata
-  * FoLiA's native metadata scheme is used to convert the information in NAF's ``fileDesc`` and ``public`` element.
-  * Information from the linguistic preprocessors is **not** converted yet.
+   * FoLiA's native metadata scheme is used to convert the information in NAF's ``fileDesc`` and ``public`` element.
+   * Information from the linguistic preprocessors is **not** converted yet.
 
 Anything not listed is not yet supported. The tool attempts to warn whenever it
 encounters something it can not (yet) convert as much as possible, but this is
