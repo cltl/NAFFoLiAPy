@@ -322,13 +322,17 @@ def naf2folia(naffile, docid=None):
 
     naf_header = nafparser.get_header()
     if naf_header.get_publicId(): foliadoc.metadata['publicId'] = naf_header.get_publicId()
+    try:
+        if naf_header.get_uri(): foliadoc.metadata['source'] = naf_header.get_uri()
+    except AttributeError:
+        pass
 
     naf_filedesc = naf_header.get_fileDesc()
     if naf_filedesc is not None:
         if naf_filedesc.get_title(): foliadoc.metadata['title'] = naf_filedesc.get_title()
         if naf_filedesc.get_author(): foliadoc.metadata['author'] = naf_filedesc.get_author()
         if naf_filedesc.get_creationtime(): foliadoc.metadata['creationtime'] = naf_filedesc.get_creationtime()
-        if naf_filedesc.get_location(): foliadoc.metadata['source'] = naf_filedesc.get_location()
+        if naf_filedesc.get_location(): foliadoc.metadata['location'] = naf_filedesc.get_location()
         if naf_filedesc.get_filename(): foliadoc.metadata['filename'] = naf_filedesc.get_filename()
         if naf_filedesc.get_filetype(): foliadoc.metadata['filetype'] = naf_filedesc.get_filetype()
         if naf_filedesc.get_publisher(): foliadoc.metadata['publisher'] = naf_filedesc.get_publisher()
