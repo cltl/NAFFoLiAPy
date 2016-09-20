@@ -27,26 +27,40 @@ Alternatively, use a python distribution like Anaconda.
 NAF to FoLiA
 ----------------
 
-The following conversions are currently supported:
+The following conversions are currently supported by ``naf2folia``:
 
 * Raw text
 * Token and terms 
    * No support yet for multi-token terms!
    * Offset information is preserved in the conversion
 * Part-of-Speech
-   * NAF's morphosyntactic feature (``morphofeat``) is converted as a second type of part-of-speech
+   * NAF's morphosyntactic feature (``morphofeat``) is converted as a second type of part-of-speech (different set).
 * Lemmas
 * Lexical semantic senses (wordnet external references in NAF)
+    * In NAF these are external references on the terms
+    * Conversion to FoLiA senses is only supported for known resources.
+    * Nested external references are expressed using FoLiA's feature mechanism.
 * Named Entities
+    * External references in NAF's entities layer are converted as FoLiA alignments.
+* Markables
+    * External references in NAF's markables layer are converted as FoLiA alignments
 * Co-references and events as co-references
 * Chunks
+* Semantic roles and predicates
+    * External references on predicate level (usually to framenet) are converted to FoLiA senses
+* Dependency relations
+* Metadata
+  * FoLiA's native metadata scheme is used to convert the information in NAF's ``fileDesc`` and ``public`` element.
+  * Information from the linguistic preprocessors is **not** converted yet.
 
-Anything not listed is not yet supported.
+Anything not listed is not yet supported. The tool attempts to warn whenever it
+encounters something it can not (yet) convert as much as possible, but this is
+not guaranteed.
 
 FoLiA to NAF
 -----------------
 
-The following conversions are currently supported:
+The following conversions are currently supported by ``folia2naf``:
 
 * Raw text (created from tokens)
 * Words to text and terms
