@@ -372,7 +372,7 @@ def convert_opinions(nafparser, foliadoc):
                 sentiment.add(folia.Feature,subset='polarity',cls=naf_opinion.get_expression().get_polarity())
             if naf_opinion.get_expression().get_strength():
                 sentiment.add(folia.Feature,subset='strength',cls=naf_opinion.get_expression().get_strength())
-            #TODO: add rest of the attributes (not supported in NAF library yet, pending issue #14)
+            #TODO: add rest of the attributes (not supported in NAF library yet, pending issue cltl/KafNafParserPy#14)
 
             if naf_opinion.get_holder():
                 span = resolve_span(naf_opinion.get_holder().get_span(), nafparser, foliadoc)
