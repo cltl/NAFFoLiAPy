@@ -348,6 +348,40 @@ def convert_dependencies(nafparser, foliadoc):
         dependency.add(folia.DependencyDependent, *dep_span)
         # - NAF has no support for IDs or confidence on dependencies
 
+def convert_opinions(nafparser, foliadoc):
+    sentimentset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_sentiment.foliaset.xml"
+    declared = False
+    for naf_opinion in nafparser.get_opinions():
+        if naf_opinion.get_expression():
+            if not declared:
+                foliadoc.declare(folia.Sentiment, sentimentset)
+                declared = True
+
+            span = resolve_span(naf_opinion.get_span(), nafparser, foliadoc)
+            sentence = span[0].sentence()
+
+            try:
+                layer = sentence.annotation(folia.SentimentLayer, sentimentset)
+            except folia.NoSuchAnnotation:
+                layer = sentence.add(folia.SentimentLayer, set=sentimentset)
+
+            sentiment = layer.add(folia.Sentiment, id=foliadoc.id + '.' + naf_opinion.get_id(), set=sentimentset)
+            sentiment.add(folia.Headspan, *span)
+
+            if naf_opinion.get_expression().get_polarity():
+                sentiment.add(folia.Feature,subset='polarity',cls=naf_opinion.get_expression().get_polarity())
+            if naf_opinion.get_expression().get_strength():
+                sentiment.add(folia.Feature,subset='strength',cls=naf_opinion.get_expression().get_strength())
+            #TODO: add rest of the attributes (not supported in NAF library yet, pending issue #14)
+
+            if naf_opinion.get_holder():
+                span = resolve_span(naf_opinion.get_holder().get_span(), nafparser, foliadoc)
+                sentiment.add(folia.Source, *span)
+            if naf_opinion.get_target():
+                span = resolve_span(naf_opinion.get_target().get_span(), nafparser, foliadoc)
+                sentiment.add(folia.Target, *span)
+
+
 def convert_timeexpressions(nafparser, foliadoc):
     unsupported_notice(nafparser.get_timeExpressions(), "Time Expressions")
 
@@ -364,8 +398,6 @@ def convert_syntax(nafparser, foliadoc):
 def convert_factuality(nafparser, foliadoc):
     unsupported_notice(nafparser.factuality_layer, "Factuality")
 
-def convert_opinions(nafparser, foliadoc):
-    unsupported_notice(nafparser.get_opinions(), "Opinions")
 
 def convert_attribution(nafparser, foliadoc):
     #Not supported in KafNafParser yet!!!
