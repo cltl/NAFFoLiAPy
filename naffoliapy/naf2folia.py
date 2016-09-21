@@ -118,7 +118,7 @@ def convert_senses(naf_term, word):
         elif resource.lower().find('framenet') != -1:
             senses[resource].append( ( confidence, reference, features) )
         else:
-            print("WARNING: Conversion from external reference with resource '" + resource + "' is not known! Skipping...",file=sys.stderr)
+            print("WARNING: Conversion from external reference with resource '" + resource + "' is not known (reference=" + reference+")! Skipping...",file=sys.stderr)
 
 
 
@@ -357,7 +357,7 @@ def convert_opinions(nafparser, foliadoc):
                 foliadoc.declare(folia.Sentiment, sentimentset)
                 declared = True
 
-            span = resolve_span(naf_opinion.get_span(), nafparser, foliadoc)
+            span = resolve_span(naf_opinion.get_expression().get_span(), nafparser, foliadoc)
             sentence = span[0].sentence()
 
             try:
@@ -366,7 +366,6 @@ def convert_opinions(nafparser, foliadoc):
                 layer = sentence.add(folia.SentimentLayer, set=sentimentset)
 
             sentiment = layer.add(folia.Sentiment, id=foliadoc.id + '.' + naf_opinion.get_id(), set=sentimentset)
-            sentiment.add(folia.Headspan, *span)
 
             if naf_opinion.get_expression().get_polarity():
                 sentiment.add(folia.Feature,subset='polarity',cls=naf_opinion.get_expression().get_polarity())
@@ -374,6 +373,7 @@ def convert_opinions(nafparser, foliadoc):
                 sentiment.add(folia.Feature,subset='strength',cls=naf_opinion.get_expression().get_strength())
             #TODO: add rest of the attributes (not supported in NAF library yet, pending issue cltl/KafNafParserPy#14)
 
+            sentiment.add(folia.Headspan, *span)
             if naf_opinion.get_holder():
                 span = resolve_span(naf_opinion.get_holder().get_span(), nafparser, foliadoc)
                 sentiment.add(folia.Source, *span)
