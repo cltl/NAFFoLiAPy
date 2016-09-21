@@ -178,8 +178,12 @@ def resolve_span(nafspan, nafparser, foliadoc):
     span = []
     for target in nafspan:
         naf_term = nafparser.get_term(target.get_id())
-        span += [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+        try:
+            span += [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+        except KeyError:
+            print("NAF error: Span refers to one or more non-existing term IDs:" + ','.join(naf_term.get_span().get_span_ids()) ,  file=sys.stderr)
     return span
+
 
 
 def convert_entities(nafparser, foliadoc):
@@ -383,7 +387,33 @@ def convert_opinions(nafparser, foliadoc):
 
 
 def convert_timeexpressions(nafparser, foliadoc):
-    unsupported_notice(nafparser.get_timeExpressions(), "Time Expressions")
+    timexset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_timex3.foliaset.xml"
+    first = True
+    for naf_timex in nafparser.get_timeExpressions():
+        if naf_timex:
+            if first:
+                foliadoc.declare(folia.Entity, timexset)
+                first = False
+            if not naf_timex.get_span():
+                #NAF has meta constructs like: <timex3 functionInDocument="CREATION_TIME" id="tx1" type="DATE" value="2005-05-07"/>
+                #These can not be covered by FoLiA entities as they do not refer to the text. Also, 
+                #NAF library does not implement methods to access functionInDocument yet.
+                print("WARNING: Time expression has no span and can not be converted: " + naf_timex.get_id() ,file=sys.stderr)
+                continue
+            try:
+                span = [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_timex.get_span().get_span_ids() ]
+            except KeyError:
+                print("NAF error: Span refers to one or more non-existing token IDs:" + ','.join(naf_timex.get_span().get_span_ids()) ,  file=sys.stderr)
+            sentence = span[0].sentence()
+            try:
+                layer = sentence.annotation(folia.EntitiesLayer, timexset)
+            except folia.NoSuchAnnotation:
+                layer = sentence.add(folia.EntitiesLayer, set=timexset)
+            timex = layer.add(folia.Entity, *span,  id=foliadoc.id + '.' + naf_timex.get_id(), cls=naf_timex.get_type(), set=timexset)
+            if naf_timex.get_value():
+                timex.add(folia.Feature, subset="value",cls=naf_timex.get_value())
+            #TODO: add rest of the attributes (not supported in NAF library yet, pending issue cltl/KafNafParserPy#15)
+
 
 def convert_temporalrelations(nafparser, foliadoc):
     unsupported_notice(nafparser.get_tlinks(), "Temporal Relations")
