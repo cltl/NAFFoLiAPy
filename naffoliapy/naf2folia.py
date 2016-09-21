@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
 
-# NAF2FoLiA Convertor
+# NAF2FoLiA Converter
 # by Maarten van Gompel, Radboud University Nijmegen
 # Licensed under GPLv3
 
@@ -224,11 +224,29 @@ def convert_exrefs(naf_element, folia_element):
         confidence = validate_confidence(naf_exref.get_confidence())
         resource = naf_exref.get_resource()
         reference = naf_exref.get_reference()
+        mimetype = "text/html"
         if reference.find('://') == -1:
             #reference is not a URL
-            print("WARNING: External reference '" + reference + + "' for resource '" + resource + "' is not a URL! Skipping...",file=sys.stderr)
-            continue
-        folia_element.add(folia.Alignment, cls=resource, href=reference, format="text/html", confidence=confidence)
+            if resource.lower() == "odwn" or resource.lower().find('wordnet') != -1:
+                if naf_exref.get_source() == "dominant_sense":
+                    #add as feature rather than an alignment
+                    folia_element.add(folia.Feature, subset="ODWN_dominant_sense", cls=reference)
+                else:
+                    alignment = folia_element.add(folia.Alignment, cls=resource, format="application/unknown", confidence=confidence) #location of ontology not defined!
+                    alignment.add(folia.AlignReference, id=reference, type="unknown")
+            elif resource.lower() == "framenet":
+                alignment = folia_element.add(folia.Alignment, cls=resource, format="application/rdf+xml", confidence=confidence) #location of ontology not defined!
+                alignment.add(folia.AlignReference, id="http://www.newsreader-project.eu/framenet#" + reference, type="rdf:description")
+            elif resource.lower() == "eso":
+                alignment = folia_element.add(folia.Alignment, cls=resource, href="https://raw.githubusercontent.com/newsreader/eso/master/ESO_Version2.owl", format="application/rdf+xml", confidence=confidence)
+                alignment.add(folia.AlignReference, id="http://www.newsreader-project.eu/domain-ontology#" + reference, type="rdf:description")
+            else:
+                print("WARNING: External reference '" + reference + "' for resource '" + resource + "' is not a URL! Context ID is " + str(folia_element.id) + ". Skipping...",file=sys.stderr)
+        else:
+            #reference is a URL
+            alignment = folia_element.add(folia.Alignment, cls=resource, href=reference, format=mimetype, confidence=confidence)
+
+
 
 def convert_markables(nafparser, foliadoc):
     markableset =  "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_markables.foliaset.xml"
@@ -295,6 +313,8 @@ def convert_coreferences(nafparser, foliadoc):
                     span.append( foliadoc[foliadoc.id + '.' + w_id])
             corefchain.add(folia.CoreferenceLink, *span)
 
+        convert_exrefs(naf_coref, corefchain)
+
 def convert_semroles(nafparser, foliadoc):
     predicateset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_predicates.foliaset.xml"
     semroleset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_semroles.foliaset.xml"
@@ -322,8 +342,11 @@ def convert_semroles(nafparser, foliadoc):
             semrole_class = naf_role.get_sem_role()
             span = resolve_span(naf_role.get_span(), nafparser, foliadoc)
 
-            predicate.add(folia.SemanticRole, *span,  id=foliadoc.id + '.' + naf_role.get_id(), set=semroleset, cls=semrole_class)
+            semrole = predicate.add(folia.SemanticRole, *span,  id=foliadoc.id + '.' + naf_role.get_id(), set=semroleset, cls=semrole_class)
             # - NAF has no support for confidence on semantic roles
+
+            convert_exrefs(naf_role, semrole)
+        convert_exrefs(naf_predicate, predicate)
 
 def convert_dependencies(nafparser, foliadoc):
     depset = "https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/naf_dependencies.foliaset.xml"
@@ -516,7 +539,6 @@ def main():
     parser.add_argument('foliafile', nargs='?', help='Path to a FoLiA output document')
     parser.add_argument('--id', type=str,help="Document ID for the FoLiA document (will be derived from the filename if not set)", action='store',default="",required=False)
     args = parser.parse_args()
-    #args.storeconst, args.dataset, args.num, args.bar
 
     if not args.naffile:
         parser.print_help()
