@@ -43,12 +43,16 @@ The following conversions are currently supported by ``naf2folia``:
 * Named Entities
     * External references in NAF's entities layer are converted as FoLiA alignments.
 * Markables
+    * Are converted to FoLiA entities
     * External references in NAF's markables layer are converted as FoLiA alignments
 * Co-references and events as co-references
 * Chunks
 * Semantic roles and predicates
     * External references on predicate level (usually to framenet) are converted to FoLiA senses
 * Dependency relations
+* Time expressions
+    * Time expressions are converted to FoLiA entities
+* Sentiment analysis (opinion layer)
 * Metadata
    * FoLiA's native metadata scheme is used to convert the information in NAF's ``fileDesc`` and ``public`` element.
    * Information from the linguistic preprocessors is **not** converted yet.
