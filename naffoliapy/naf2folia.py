@@ -398,7 +398,12 @@ def convert_opinions(nafparser, foliadoc):
                 sentiment.add(folia.Feature,subset='polarity',cls=naf_opinion.get_expression().get_polarity())
             if naf_opinion.get_expression().get_strength():
                 sentiment.add(folia.Feature,subset='strength',cls=naf_opinion.get_expression().get_strength())
-            #TODO: add rest of the attributes (not supported in NAF library yet, pending issue cltl/KafNafParserPy#14)
+            if naf_opinion.get_expression().get_subjectivity():
+                sentiment.add(folia.Feature,subset='subjectivity',cls=naf_opinion.get_expression().get_subjectivity())
+            if naf_opinion.get_expression().get_sentiment_semantic_type():
+                sentiment.add(folia.Feature,subset='semantic_type',cls=naf_opinion.get_expression().get_sentiment_semantic_type())
+            if naf_opinion.get_expression().get_sentiment_product_feature():
+                sentiment.add(folia.Feature,subset='product_feature',cls=naf_opinion.get_expression().get_sentiment_product_feature())
 
             sentiment.add(folia.Headspan, *span)
             if naf_opinion.get_holder():
