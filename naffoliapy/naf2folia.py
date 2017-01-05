@@ -424,8 +424,7 @@ def convert_timeexpressions(nafparser, foliadoc):
                 first = False
             if not naf_timex.get_span():
                 #NAF has meta constructs like: <timex3 functionInDocument="CREATION_TIME" id="tx1" type="DATE" value="2005-05-07"/>
-                #These can not be covered by FoLiA entities as they do not refer to the text. Also, 
-                #NAF library does not implement methods to access functionInDocument yet.
+                #These can not be covered by FoLiA entities as they do not refer to the text. 
                 print("WARNING: Time expression has no span and can not be converted: " + naf_timex.get_id() ,file=sys.stderr)
                 continue
             try:
@@ -440,7 +439,21 @@ def convert_timeexpressions(nafparser, foliadoc):
             timex = layer.add(folia.Entity, *span,  id=foliadoc.id + '.' + naf_timex.get_id(), cls=naf_timex.get_type(), set=timexset)
             if naf_timex.get_value():
                 timex.add(folia.Feature, subset="value",cls=naf_timex.get_value())
-            #TODO: add rest of the attributes (not supported in NAF library yet, pending issue cltl/KafNafParserPy#15)
+            if naf_timex.get_mod():
+                timex.add(folia.Feature, subset="mod",cls=naf_timex.get_mod())
+            if naf_timex.get_quant():
+                timex.add(folia.Feature, subset="quant",cls=naf_timex.get_quant())
+            if naf_timex.get_freq():
+                timex.add(folia.Feature, subset="freq",cls=naf_timex.get_freq())
+            if naf_timex.get_temporalFunction():
+                timex.add(folia.Feature, subset="temporalFunction",cls=naf_timex.get_temporalFunction())
+            if naf_timex.get_valueFromFunction():
+                timex.add(folia.Feature, subset="valueFromFunction",cls=naf_timex.get_valueFromFunction())
+            if naf_timex.get_functionInDocument():
+                timex.add(folia.Feature, subset="functionInDocument",cls=naf_timex.get_functionInDocument())
+            if naf_timex.get_comment():
+                timex.add(folia.Comment, value=naf_timex.get_comment())
+            #TODO: beginPoint and endPoint are not handled yet, best solved with alignments
 
 
 def convert_temporalrelations(nafparser, foliadoc):
