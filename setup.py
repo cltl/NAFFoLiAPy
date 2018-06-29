@@ -11,7 +11,7 @@ def read(fname):
 
 setup(
     name = "NAFFoLiAPy",
-    version = "0.1",
+    version = "0.1.1",
     author = "Antske Fokkens and Maarten van Gompel",
     author_email = "proycon@anaproy.nl",
     description = ("Converters between two formats for linguistic annotation: FoLiA and NAF"),
@@ -39,5 +39,5 @@ setup(
     zip_safe=False,
     include_package_data=True,
     package_data = {'naffoliapy': ['../examples/*.xml']},
-    install_requires=['pynlpl >= 1.0.7', 'KafNafParserPy >= 1.86', 'lxml >= 2.2','docutils']
+    install_requires=['pynlpl >= 1.2.7', 'KafNafParserPy >= 1.88', 'lxml >= 2.2','docutils']
 )
