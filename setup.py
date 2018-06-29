@@ -38,6 +38,6 @@ setup(
     },
     zip_safe=False,
     include_package_data=True,
-    package_data = {'naffoliapy': ['../examples/*.xml']},
+    package_data = {'naffoliapy': ['../examples/100911_Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing.naf.xml']},
     install_requires=['pynlpl >= 1.2.7', 'KafNafParserPy >= 1.88', 'lxml >= 2.2','docutils']
 )
