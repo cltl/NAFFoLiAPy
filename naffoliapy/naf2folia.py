@@ -175,13 +175,24 @@ def convert_terms(nafparser, foliadoc):
             convert_sentiment(naf_term, word)
 
 def resolve_span(nafspan, nafparser, foliadoc):
+    assert isinstance(nafspan, naf.span_data.Cspan)
     span = []
     for target in nafspan:
         naf_term = nafparser.get_term(target.get_id())
-        try:
-            span += [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
-        except KeyError:
-            print("NAF error: Span refers to one or more non-existing term IDs:" + ','.join(naf_term.get_span().get_span_ids()) ,  file=sys.stderr)
+        if naf_term is None:
+            #perhaps it's a token and not a term? Seems to be allows in NAF and happens
+            naf_token = nafparser.get_token(target.get_id())
+            if naf_token is None:
+                raise Exception("NAF span target with ID " + target.get_id() + " failed to resolve (either as term or token ) in span " + ','.join(nafspan.get_span_ids()))
+            try:
+                span.append( foliadoc[foliadoc.id + '.' + naf_token.get_id()] )
+            except KeyError:
+                print("NAF error: Span refers to one or more non-existing term or token IDs:" + ','.join(naf_term.get_span().get_span_ids()) ,  file=sys.stderr)
+        else:
+            try:
+                span += [ foliadoc[foliadoc.id + '.' + w_id] for w_id in naf_term.get_span().get_span_ids() ]
+            except KeyError:
+                print("NAF error: Span refers to one or more non-existing term or token IDs:" + ','.join(naf_term.get_span().get_span_ids()) ,  file=sys.stderr)
     return span
 
 
@@ -424,7 +435,7 @@ def convert_timeexpressions(nafparser, foliadoc):
                 first = False
             if not naf_timex.get_span():
                 #NAF has meta constructs like: <timex3 functionInDocument="CREATION_TIME" id="tx1" type="DATE" value="2005-05-07"/>
-                #These can not be covered by FoLiA entities as they do not refer to the text. 
+                #These can not be covered by FoLiA entities as they do not refer to the text.
                 print("WARNING: Time expression has no span and can not be converted: " + naf_timex.get_id() ,file=sys.stderr)
                 continue
             try:
@@ -488,7 +499,6 @@ def naf2folia(naffile, docid=None):
 
     nafparser = naf.KafNafParser(naffile)
 
-
     if not docid:
         #derive document ID from filename
         docid = os.path.basename(naffile).split('.')[0]
@@ -546,7 +556,7 @@ def naf2folia(naffile, docid=None):
     #combine multiple annotators using a pipe (|) where needed.
 
     #TODO: missing functionality in kafnafparser to iterate over linguistic processors (issue cltl/KafNafParserPy#13)
-    #foliadoc.defaultannotator(folia.Word, 
+    #foliadoc.defaultannotator(folia.Word,
 
     return foliadoc
 
