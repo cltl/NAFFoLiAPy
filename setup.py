@@ -18,7 +18,7 @@ setup(
     license = "GPL",
     keywords = "nlp computational_linguistics linguistics converter folia naf",
     url = "https://github.com/cltl/NAFFoLiAPy",
-    packages=['naffoliapy'],
+    packages=['naffoliapy','naffoliapy.tests'],
     long_description=read('README.rst'),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -36,7 +36,8 @@ setup(
             'naf2folia = naffoliapy.naf2folia:main',
         ]
     },
-    #include_package_data=True,
-    #package_data = {'foliatools': ['*.xsl', '../schemas/*.yml','../schemas/*.rng']},
+    zip_safe=False,
+    include_package_data=True,
+    package_data = {'naffoliapy': ['../examples/*.xml']},
     install_requires=['pynlpl >= 1.0.7', 'KafNafParserPy >= 1.86', 'lxml >= 2.2','docutils']
 )

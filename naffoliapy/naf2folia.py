@@ -175,6 +175,7 @@ def convert_terms(nafparser, foliadoc):
             convert_sentiment(naf_term, word)
 
 def resolve_span(nafspan, nafparser, foliadoc):
+    """Converts a NAF span to a list of FoLiA objects"""
     assert isinstance(nafspan, naf.span_data.Cspan)
     span = []
     for target in nafspan:
@@ -492,12 +493,16 @@ def convert_attribution(nafparser, foliadoc):
 def naf2folia(naffile, docid=None):
     """
     Converts a NAF Document to FoLiA, returns a FoLiA document instance.
-    :param naffile: The NAF file to load (str)
+    :param naffile: The NAF file to load (str) or ready instance of KafNafParser
     :param docid: the ID for the FoLiA document, will be derived from the filename if not specified (may not always work out) (str)
     :return: a folia.Document instance
     """
 
-    nafparser = naf.KafNafParser(naffile)
+    if not isinstance(naffile, naf.KafNafParser):
+        nafparser = naf.KafNafParser(naffile)
+    else:
+        nafparser = naffile
+        naffile = nafparser.get_filename()
 
     if not docid:
         #derive document ID from filename
