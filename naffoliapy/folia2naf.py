@@ -40,7 +40,7 @@ def set_public_information(folia_obj, naf_header):
 
     if 'http' in folia_obj.id:
         naf_public.set_uri(folia_obj.id)
-    naf_header.set_publicId(naf_public)
+    naf_header.set_public(naf_public)
 
 
 def add_lps_to_header(naf_obj, tooldict, layername):
@@ -196,7 +196,7 @@ def get_and_add_term_information(folia_word, word_count):
 
 
 
-def text_to_text_layer(folia_obj, naf_obj):
+def text_to_text_layer(folia_obj, naf_obj, annotationtypes):
     '''
     Goes through folia's text and adds all tokens to NAF token layer
     :param folia_obj: folia input object
@@ -224,8 +224,10 @@ def text_to_text_layer(folia_obj, naf_obj):
                 naf_word.set_sent(sent_nr)
                 naf_word.set_para(str(naf_para))
                 naf_obj.add_wf(naf_word)
-                naf_term = get_and_add_term_information(word, word_count)
-                naf_obj.add_term(naf_term)
+                if folia.AnnotationType.POS in annotationtypes:
+                #change: only call this if term information is present
+                    naf_term = get_and_add_term_information(word, word_count)
+                    naf_obj.add_term(naf_term)
             naf_sent += 1
 
 def add_raw_from_text_layer(naf_obj):
@@ -345,6 +347,20 @@ def entities_to_entity_layer(folia_obj, naf_obj):
         naf_entity.set_type(entity.cls)
         naf_obj.add_entity(naf_entity)
 
+def retrieve_annotation_layers(folia_obj):
+    '''
+    Checks which annotations are present in folia object
+    :param folia_obj: inputfile
+    :return:
+    '''
+
+    annotationtypes = set()
+    for annotationtype, setname in folia_obj.annotations:
+        annotationtypes.add(annotationtype)
+
+    return annotationtypes
+
+
 def check_overall_info(folia_obj):
     '''
     Prints information about possible mismatches and problems in conversion
@@ -355,8 +371,9 @@ def check_overall_info(folia_obj):
         print('[WARNING] FoLiA input did not have a version indicated.', file=sys.stderr)
     elif not folia_obj.version in tested_versions:
         print('[WARNING] FoLiA version not represented in testset; unknown errors may have occurred.', file=sys.stderr)
-
+    annotationtypes = retrieve_annotation_layers(folia_obj)
     #TODO: create online documentation about missing correspondences; point to them in warnings.
+    return annotationtypes
 
 
 def convert_file_to_naf(inputfolia, outputnaf=None):
@@ -370,14 +387,14 @@ def convert_file_to_naf(inputfolia, outputnaf=None):
         outputnaf = "".join([inputfolia, '.naf'])
 
     folia_obj = folia.Document(file=inputfolia)
-    check_overall_info(folia_obj)
+    annotationtypes = check_overall_info(folia_obj)
     # check what information is present and print warnings if not all can be handled (yet)
 
 
     naf_obj = KafNafParser(type='NAF')
     if folia_obj.language() is not None:
         naf_obj.set_language(folia_obj.language())
-    text_to_text_layer(folia_obj, naf_obj)
+    text_to_text_layer(folia_obj, naf_obj, annotationtypes)
     add_raw_from_text_layer(naf_obj)
     head2deps = dependencies_to_dependency_layer(folia_obj, naf_obj)
     chunking_to_chunks_layer(folia_obj, naf_obj, head2deps)
