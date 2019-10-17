@@ -1,3 +1,20 @@
+FoLiA Library for Python
+================================
+
+.. image:: https://travis-ci.org/cltl/naffoliapy.svg?branch=master
+    :target: https://travis-ci.com/cltl/NAFFoLiaPy
+
+.. image:: http://applejack.science.ru.nl/lamabadge.php/NAFFoLiaPy
+   :target: http://applejack.science.ru.nl/languagemachines/
+
+.. image:: https://www.repostatus.org/badges/latest/suspended.svg
+   :alt: Project Status: Suspended – Initial development has started, but there has not yet been a stable, usable release; work has been stopped for the time being but the author(s) intend on resuming work.
+   :target: https://www.repostatus.org/#suspended
+
+.. image:: https://img.shields.io/pypi/v/naffoliapy
+   :alt: Latest release in the Python Package Index
+   :target: https://pypi.org/project/NAFFoLiAPy/
+
 NAFFoLiA
 ============
 
@@ -30,7 +47,7 @@ NAF to FoLiA
 The following conversions are currently supported by ``naf2folia``:
 
 * Raw text
-* Token and terms 
+* Token and terms
    * No support yet for multi-token terms!
    * Offset information is preserved in the conversion
 * Part-of-Speech
@@ -76,6 +93,6 @@ The following conversions are currently supported by ``folia2naf``:
    * Chunks
    * Entities
    * Dependencies
-  
+
 Anything not listed is not yet supported
 
